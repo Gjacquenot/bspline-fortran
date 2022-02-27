@@ -4,9 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
    <meta name="description" content="BSPLINE-FORTRAN -- Multidimensional B-Spline Interpolation of Data on a Regular Grid">
-    
     <meta name="author" content="Jacob Williams" >
     <link rel="icon" href="../favicon.png">
 
@@ -16,10 +14,7 @@
     <link href="../css/pygments.css" rel="stylesheet">
     <link href="../css/font-awesome.min.css" rel="stylesheet">
     <link href="../css/local.css" rel="stylesheet">
-    
     <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
-    
-    
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -48,58 +43,27 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-        
             <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
               <a href="#" class="dropdown-toggle"
               data-toggle="dropdown" role="button"
               aria-haspopup="true"
      aria-expanded="false">Contents <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          
-              
             <li><a href="../lists/files.html">Source Files</a></li>
-        
-        
-        
             <li><a href="../lists/modules.html">Modules</a></li>
-        
-            
-                                
             <li><a href="../lists/procedures.html">Procedures</a></li>
-        
-        
             <li><a href="../lists/absint.html">Abstract Interfaces</a></li>
-               
-            <li><a href="../lists/types.html">Derived Types</a></li>
-        
-               
-        
-        
+                   <li><a href="../lists/types.html">Derived Types</a></li>
+       
             </ul>
         
             </li>
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/files.html">Source Files</a></li>
-
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/modules.html">Modules</a></li>
-
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/absint.html">Abstract Interfaces</a></li>
-                             
-<li class="visible-xs hidden-sm visible-lg"><a href="../lists/types.html">Derived Types</a></li>
-
-
-
-
+                             <li class="visible-xs hidden-sm visible-lg"><a href="../lists/types.html">Derived Types</a></li>
           </ul>
-        
         <form action="../search.html" class="navbar-form navbar-right" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
@@ -108,51 +72,29 @@
         <button type="submit" class="btn btn-default">Submit</button>
 -->
         </form>
-        
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
     <div class="container">
-    
-  
   <div class="row">
     <h1>db1fqad
       <small>Subroutine</small>
-    
     </h1>
-    
-<div class="row">
+    <div class="row">
   <div class="col-lg-12">
 <div class="well well-sm">
   <ul class="list-inline" style="margin-bottom:0px;display:inline">
-     
-     
-     
-     
-     
-    
-    
      <li><i class="fa fa-list-ol"></i>
        <a data-toggle="tooltip"
     data-placement="bottom" data-html="true"
     title=" 0.4% of total for procedures.">16 statements</a>
      </li> 
-     
-     
-     
     <li><i class="fa fa-code"></i><a href="../src/bspline_sub_module.f90"> Source File</a></li>
-     
-     
   </ul>
   <ol class="breadcrumb in-well text-right">
-  
-    
      <li><a href='../sourcefile/bspline_sub_module.f90.html'>bspline_sub_module.f90</a></li>
-    
      <li><a href='../module/bspline_sub_module.html'>bspline_sub_module</a></li>
-    
-  
      <li class="active">db1fqad</li>
   </ol>
 </div>
@@ -168,57 +110,19 @@
   
   <div class="row">
     <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
-    
-<div id="sidebar">
-  
-<h3>Contents</h3>
+    <div id="sidebar">
+  <h3>Contents</h3>
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="panel panel-primary">
-  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
-  <div class="list-group">
-    <a class="list-group-item" href="../proc/db1fqad.html#src">db1fqad</a>
-  </div>
-</div>
-
-
+<em>None</em>
 
 </div>
 
     </div>
     
     <div class="col-md-9" id='text'>
-    <h2>
-public subroutine db1fqad(fun, tx, bcoef, nx, kx, idx, x1, x2, tol, f, iflag, w0)
+    <h2>public subroutine db1fqad(fun, tx, bcoef, nx, kx, idx, x1, x2, tol, f, iflag, w0)</h2>
     
-    
-   
-</h2>
-    
-  
 
-
-    
     <p>Computes the integral on <code>(x1,x2)</code> of a product of a
   function <code>fun</code> and the <code>idx</code>-th derivative of a <code>kx</code>-th order b-spline,
   using the b-representation <code>(tx,bcoef,nx,kx)</code>, with an adaptive
@@ -230,186 +134,80 @@ public subroutine db1fqad(fun, tx, bcoef, nx, kx, idx, x1, x2, tol, f, iflag, w0
 </ul>
 <p></p><div class="alert alert-info" role="alert"><h4>Note</h4><p>This one is not pure, because we are not enforcing
       that the user function <code>fun</code> be pure.</p></div>
-    
 
     <h3>Arguments</h3>
-    
-      
-<table class="table table-striped varlist">
-<thead><tr><th>Type</th>
-<th>Intent</th><th>Optional</th>
-<th>Attributes</th><th></th><th>Name</th><th></th></thead>
-
-
-
+      <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Intent</th><th>Optional</th><th>Attributes</th><th></th><th>Name</th><th></th></thead>
 <tbody>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-fun"></span>procedure(<a href='../interface/b1fqad_func.html'>b1fqad_func</a>)</td>
-  <td></td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-fun~2"></span>procedure(<a href='../interface/b1fqad_func.html'>b1fqad_func</a>)</td>
+<td></td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>fun</strong></td><td><p>external function of one argument for the
- integrand <code>bf(x)=fun(x)*dbvalu(tx,bcoef,nx,kx,id,x,inbv,work)</code></p></td>
-  
+integrand <code>bf(x)=fun(x)*dbvalu(tx,bcoef,nx,kx,id,x,inbv,work)</code></p></td>
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-tx~13"></span>real(kind=wp),</td>
-  <td>intent(in),</td>
-  <td></td>
-  
-  <td>dimension(nx+kx)</td><td>::</td>
+  <td><span class="anchor" id="variable-tx~26"></span>real(kind=wp),</td>
+<td>intent(in),</td>
+  <td></td>  <td>dimension(nx+kx)</td><td>::</td>
   <td><strong>tx</strong></td><td><p>knot array</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-bcoef~13"></span>real(kind=wp),</td>
-  <td>intent(in),</td>
-  <td></td>
-  
-  <td>dimension(nx)</td><td>::</td>
+<td>intent(in),</td>
+  <td></td>  <td>dimension(nx)</td><td>::</td>
   <td><strong>bcoef</strong></td><td><p>b-spline coefficient array</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-nx~13"></span>integer(kind=ip),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-nx~26"></span>integer(kind=ip),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>nx</strong></td><td><p>length of coefficient array</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-kx~13"></span>integer(kind=ip),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-kx~38"></span>integer(kind=ip),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>kx</strong></td><td><p>order of b-spline, <code>kx &gt;= 1</code></p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-idx~3"></span>integer(kind=ip),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-idx~10"></span>integer(kind=ip),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>idx</strong></td><td><p>order of the spline derivative, <code>0 &lt;= idx &lt;= k-1</code>
- <code>idx=0</code> gives the spline function</p></td>
-  
+<code>idx=0</code> gives the spline function</p></td>
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-x1~2"></span>real(kind=wp),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-x1~4"></span>real(kind=wp),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>x1</strong></td><td><p>left point of quadrature interval in <code>t(k) &lt;= x &lt;= t(n+1)</code></p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-x2~2"></span>real(kind=wp),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-x2~4"></span>real(kind=wp),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>x2</strong></td><td><p>right point of quadrature interval in <code>t(k) &lt;= x &lt;= t(n+1)</code></p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-tol"></span>real(kind=wp),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-tol~2"></span>real(kind=wp),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>tol</strong></td><td><p>desired accuracy for the quadrature, suggest
- <code>10*dtol &lt; tol &lt;= 0.1</code> where <code>dtol</code> is the maximum
- of <code>1.0e-300</code> and real(wp) unit roundoff for
- the machine</p></td>
-  
+<code>10*dtol &lt; tol &lt;= 0.1</code> where <code>dtol</code> is the maximum
+of <code>1.0e-300</code> and real(wp) unit roundoff for
+the machine</p></td>
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-f~5"></span>real(kind=wp),</td>
-  <td>intent(out)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-f~13"></span>real(kind=wp),</td>
+<td>intent(out)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>f</strong></td><td><p>integral of <code>bf(x)</code> on <code>(x1,x2)</code></p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-iflag~10"></span>integer(kind=ip),</td>
-  <td>intent(out)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-iflag~32"></span>integer(kind=ip),</td>
+<td>intent(out)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>iflag</strong></td><td><p>status flag:</p>
 <ul>
 <li>
@@ -417,33 +215,17 @@ public subroutine db1fqad(fun, tx, bcoef, nx, kx, idx, x1, x2, tol, f, iflag, w0
 <li>
 <script type="math/tex"> \ne 0 </script> : error</li>
 </ul></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-w0~4"></span>real(kind=wp),</td>
-  <td>intent(inout),</td>
-  <td></td>
-  
-  <td>dimension(3_ip*kx)</td><td>::</td>
+<td>intent(inout),</td>
+  <td></td>  <td>dimension(3_ip*kx)</td><td>::</td>
   <td><strong>w0</strong></td><td><p>work array for <a href="../proc/dbfqad.html">dbfqad</a></p></td>
-  
 </tr>
-
 </tbody>
 </table>
 
-    
-    
-    
     <br>
-    
-    
     <div class="panel panel-default">
       <div class="panel-heading">
   <h3 class="panel-title">Calls</h3>
@@ -455,80 +237,125 @@ public subroutine db1fqad(fun, tx, bcoef, nx, kx, idx, x1, x2, tol, f, iflag, w0
 <!-- Generated by graphviz version 2.43.0 (0)
  -->
 <!-- Title: proc~~db1fqad~~CallsGraph Pages: 1 -->
-<svg id="procdb1fqadCallsGraph" width="414pt" height="74pt"
- viewBox="0.00 0.00 414.00 74.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="proc~~db1fqad~~CallsGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 70)">
+<svg id="procdb1fqadCallsGraph" width="641pt" height="88pt"
+ viewBox="0.00 0.00 641.00 88.09" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="proc~~db1fqad~~CallsGraph" class="graph" transform="scale(1.07 1.07) rotate(0) translate(4 90)">
 <title>proc~~db1fqad~~CallsGraph</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-70 410,-70 410,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-90 680,-90 680,4 -4,4"/>
 <!-- proc~db1fqad -->
 <g id="proc~~db1fqad~~CallsGraph_node1" class="node">
 <title>proc~db1fqad</title>
-<polygon fill="none" stroke="black" points="57,-45 0,-45 0,-21 57,-21 57,-45"/>
-<text text-anchor="middle" x="28.5" y="-30.6" font-family="Helvetica,sans-Serif" font-size="10.50">db1fqad</text>
+<polygon fill="none" stroke="black" points="57,-86 0,-86 0,-62 57,-62 57,-86"/>
+<text text-anchor="middle" x="28.5" y="-71.6" font-family="Helvetica,sans-Serif" font-size="10.50">db1fqad</text>
 </g>
 <!-- proc~dbfqad -->
 <g id="proc~~db1fqad~~CallsGraph_node2" class="node">
 <title>proc~dbfqad</title>
 <g id="a_proc~~db1fqad~~CallsGraph_node2"><a xlink:href=".././proc/dbfqad.html" xlink:title="dbfqad">
-<polygon fill="#d9534f" stroke="#d9534f" points="147,-45 93,-45 93,-21 147,-21 147,-45"/>
-<text text-anchor="middle" x="120" y="-30.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dbfqad</text>
+<polygon fill="#d9534f" stroke="#d9534f" points="147,-86 93,-86 93,-62 147,-62 147,-86"/>
+<text text-anchor="middle" x="120" y="-71.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dbfqad</text>
 </a>
 </g>
 </g>
 <!-- proc~db1fqad&#45;&gt;proc~dbfqad -->
 <g id="proc~~db1fqad~~CallsGraph_edge1" class="edge">
 <title>proc~db1fqad&#45;&gt;proc~dbfqad</title>
-<path fill="none" stroke="#000000" d="M57.33,-33C65.35,-33 74.23,-33 82.69,-33"/>
-<polygon fill="#000000" stroke="#000000" points="82.72,-36.5 92.72,-33 82.72,-29.5 82.72,-36.5"/>
+<path fill="none" stroke="#000000" d="M57.33,-74C65.35,-74 74.23,-74 82.69,-74"/>
+<polygon fill="#000000" stroke="#000000" points="82.72,-77.5 92.72,-74 82.72,-70.5 82.72,-77.5"/>
 </g>
 <!-- proc~dintrv -->
 <g id="proc~~db1fqad~~CallsGraph_node3" class="node">
 <title>proc~dintrv</title>
 <g id="a_proc~~db1fqad~~CallsGraph_node3"><a xlink:href=".././proc/dintrv.html" xlink:title="dintrv">
-<polygon fill="#d9534f" stroke="#d9534f" points="237,-66 183,-66 183,-42 237,-42 237,-66"/>
-<text text-anchor="middle" x="210" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dintrv</text>
+<polygon fill="#d9534f" stroke="#d9534f" points="507,-86 453,-86 453,-62 507,-62 507,-86"/>
+<text text-anchor="middle" x="480" y="-71.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dintrv</text>
 </a>
 </g>
 </g>
 <!-- proc~dbfqad&#45;&gt;proc~dintrv -->
 <g id="proc~~db1fqad~~CallsGraph_edge2" class="edge">
 <title>proc~dbfqad&#45;&gt;proc~dintrv</title>
-<path fill="none" stroke="#000000" d="M147.4,-39.3C155.48,-41.23 164.51,-43.38 173.1,-45.43"/>
-<polygon fill="#000000" stroke="#000000" points="172.38,-48.86 182.92,-47.78 174,-42.05 172.38,-48.86"/>
+<path fill="none" stroke="#000000" d="M147.24,-74.52C158.28,-74.71 171.27,-74.91 183,-75 287,-75.84 313,-75.84 417,-75 425.25,-74.93 434.12,-74.82 442.49,-74.69"/>
+<polygon fill="#000000" stroke="#000000" points="442.81,-78.18 452.76,-74.52 442.7,-71.18 442.81,-78.18"/>
 </g>
 <!-- proc~dbsgq8 -->
 <g id="proc~~db1fqad~~CallsGraph_node4" class="node">
 <title>proc~dbsgq8</title>
 <g id="a_proc~~db1fqad~~CallsGraph_node4"><a xlink:href=".././proc/dbsgq8.html" xlink:title="dbsgq8">
-<polygon fill="#d9534f" stroke="#d9534f" points="237,-24 183,-24 183,0 237,0 237,-24"/>
-<text text-anchor="middle" x="210" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dbsgq8</text>
+<polygon fill="#d9534f" stroke="#d9534f" points="237,-66 183,-66 183,-42 237,-42 237,-66"/>
+<text text-anchor="middle" x="210" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dbsgq8</text>
 </a>
 </g>
 </g>
 <!-- proc~dbfqad&#45;&gt;proc~dbsgq8 -->
 <g id="proc~~db1fqad~~CallsGraph_edge3" class="edge">
 <title>proc~dbfqad&#45;&gt;proc~dbsgq8</title>
-<path fill="none" stroke="#000000" d="M147.4,-26.7C155.48,-24.77 164.51,-22.62 173.1,-20.57"/>
-<polygon fill="#000000" stroke="#000000" points="174,-23.95 182.92,-18.22 172.38,-17.14 174,-23.95"/>
+<path fill="none" stroke="#000000" d="M147.4,-68C155.48,-66.16 164.51,-64.11 173.1,-62.16"/>
+<polygon fill="#000000" stroke="#000000" points="173.94,-65.56 182.92,-59.93 172.39,-58.73 173.94,-65.56"/>
 </g>
 <!-- proc~get_temp_x_for_extrap -->
 <g id="proc~~db1fqad~~CallsGraph_node5" class="node">
 <title>proc~get_temp_x_for_extrap</title>
 <g id="a_proc~~db1fqad~~CallsGraph_node5"><a xlink:href=".././proc/get_temp_x_for_extrap.html" xlink:title="get_temp_x_for_extrap">
-<polygon fill="#d94e8f" stroke="#d94e8f" points="406,-66 273,-66 273,-42 406,-42 406,-66"/>
-<text text-anchor="middle" x="339.5" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">get_temp_x_for_extrap</text>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="676,-86 543,-86 543,-62 676,-62 676,-86"/>
+<text text-anchor="middle" x="609.5" y="-71.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">get_temp_x_for_extrap</text>
 </a>
 </g>
 </g>
 <!-- proc~dintrv&#45;&gt;proc~get_temp_x_for_extrap -->
 <g id="proc~~db1fqad~~CallsGraph_edge4" class="edge">
 <title>proc~dintrv&#45;&gt;proc~get_temp_x_for_extrap</title>
-<path fill="none" stroke="#000000" d="M237.11,-54C244.81,-54 253.66,-54 262.85,-54"/>
+<path fill="none" stroke="#000000" d="M507.11,-74C514.81,-74 523.66,-74 532.85,-74"/>
+<polygon fill="#000000" stroke="#000000" points="532.92,-77.5 542.92,-74 532.92,-70.5 532.92,-77.5"/>
+</g>
+<!-- none~g8 -->
+<g id="proc~~db1fqad~~CallsGraph_node6" class="node">
+<title>none~g8</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="327,-66 273,-66 273,-42 327,-42 327,-66"/>
+<text text-anchor="middle" x="300" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">g8</text>
+</g>
+<!-- proc~dbsgq8&#45;&gt;none~g8 -->
+<g id="proc~~db1fqad~~CallsGraph_edge5" class="edge">
+<title>proc~dbsgq8&#45;&gt;none~g8</title>
+<path fill="none" stroke="#000000" d="M237.4,-54C245.39,-54 254.31,-54 262.82,-54"/>
 <polygon fill="#000000" stroke="#000000" points="262.92,-57.5 272.92,-54 262.92,-50.5 262.92,-57.5"/>
+</g>
+<!-- proc~dbvalu -->
+<g id="proc~~db1fqad~~CallsGraph_node7" class="node">
+<title>proc~dbvalu</title>
+<g id="a_proc~~db1fqad~~CallsGraph_node7"><a xlink:href=".././proc/dbvalu.html" xlink:title="dbvalu">
+<polygon fill="#d9534f" stroke="#d9534f" points="417,-66 363,-66 363,-42 417,-42 417,-66"/>
+<text text-anchor="middle" x="390" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dbvalu</text>
+</a>
+</g>
+</g>
+<!-- none~g8&#45;&gt;proc~dbvalu -->
+<g id="proc~~db1fqad~~CallsGraph_edge6" class="edge">
+<title>none~g8&#45;&gt;proc~dbvalu</title>
+<path fill="none" stroke="#000000" d="M327.4,-54C335.39,-54 344.31,-54 352.82,-54"/>
+<polygon fill="#000000" stroke="#000000" points="352.92,-57.5 362.92,-54 352.92,-50.5 352.92,-57.5"/>
+</g>
+<!-- fun -->
+<g id="proc~~db1fqad~~CallsGraph_node8" class="node">
+<title>fun</title>
+<polygon fill="#777777" stroke="#777777" points="417,-24 363,-24 363,0 417,0 417,-24"/>
+<text text-anchor="middle" x="390" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">fun</text>
+</g>
+<!-- none~g8&#45;&gt;fun -->
+<g id="proc~~db1fqad~~CallsGraph_edge7" class="edge">
+<title>none~g8&#45;&gt;fun</title>
+<path fill="none" stroke="#000000" d="M326.45,-41.85C335.21,-37.67 345.17,-32.92 354.52,-28.46"/>
+<polygon fill="#000000" stroke="#000000" points="356.09,-31.59 363.6,-24.12 353.07,-25.27 356.09,-31.59"/>
+</g>
+<!-- proc~dbvalu&#45;&gt;proc~dintrv -->
+<g id="proc~~db1fqad~~CallsGraph_edge8" class="edge">
+<title>proc~dbvalu&#45;&gt;proc~dintrv</title>
+<path fill="none" stroke="#000000" d="M417.4,-60C425.48,-61.84 434.51,-63.89 443.1,-65.84"/>
+<polygon fill="#000000" stroke="#000000" points="442.39,-69.27 452.92,-68.07 443.94,-62.44 442.39,-69.27"/>
 </g>
 </g>
 </svg>
-</div><div><a type="button" class="graph-help" data-toggle="modal" href="#graph-help-text">Help</a></div><div class="modal fade" id="graph-help-text" tabindex="-1" role="dialog"><div class="modal-dialog modal-lg" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 class="modal-title" id="-graph-help-label">Graph Key</h4></div><div class="modal-body">
+</div><script>var panprocdb1fqadCallsGraph = svgPanZoom('#procdb1fqadCallsGraph', {zoomEnabled: true,controlIconsEnabled: true, fit: true, center: true,}); </script><div><a type="button" class="graph-help" data-toggle="modal" href="#graph-help-text">Help</a></div><div class="modal fade" id="graph-help-text" tabindex="-1" role="dialog"><div class="modal-dialog modal-lg" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 class="modal-title" id="-graph-help-label">Graph Key</h4></div><div class="modal-body">
     <p>Nodes of different colours represent the following: </p>
     <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
@@ -589,8 +416,6 @@ public subroutine db1fqad(fun, tx, bcoef, nx, kx, idx, x1, x2, tol, f, iflag, w0
     </div></div></div></div>
       </div>
     </div>
-     
-     
     <div class="panel panel-default">
       <div class="panel-heading">
   <h3 class="panel-title">Called by</h3>
@@ -691,118 +516,41 @@ public subroutine db1fqad(fun, tx, bcoef, nx, kx, idx, x1, x2, tol, f, iflag, w0
     </div></div></div></div>
       </div>
     </div>
-     
     <br>
 
     <section class="visible-xs visible-sm hidden-md">
-      
-<h3>Contents</h3>
+      <h3>Contents</h3>
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="panel panel-primary">
-  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
-  <div class="list-group">
-    <a class="list-group-item" href="../proc/db1fqad.html#src">db1fqad</a>
-  </div>
-</div>
-
-
+<em>None</em>
 
     </section>
     <br class="visible-xs visible-sm hidden-md">
 
-    
 
-    
-    
-    
     
     
 
     
     
-    
-    
-    
 
 
-    
-    
-    
-    <section>
-    <h2><span class="anchor" id="src"></span>Source Code</h2>
-    <div class="highlight"><pre><span></span>    <span class="k">subroutine </span><span class="n">db1fqad</span><span class="p">(</span><span class="n">fun</span><span class="p">,</span><span class="n">tx</span><span class="p">,</span><span class="n">bcoef</span><span class="p">,</span><span class="n">nx</span><span class="p">,</span><span class="n">kx</span><span class="p">,</span><span class="n">idx</span><span class="p">,</span><span class="n">x1</span><span class="p">,</span><span class="n">x2</span><span class="p">,</span><span class="n">tol</span><span class="p">,</span><span class="n">f</span><span class="p">,</span><span class="n">iflag</span><span class="p">,</span><span class="n">w0</span><span class="p">)</span>
-
-    <span class="k">implicit none</span>
-
-<span class="k">    procedure</span><span class="p">(</span><span class="n">b1fqad_func</span><span class="p">)</span>              <span class="kd">::</span> <span class="n">fun</span>    <span class="c">!! external function of one argument for the</span>
-                                                  <span class="c">!! integrand `bf(x)=fun(x)*dbvalu(tx,bcoef,nx,kx,id,x,inbv,work)`</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>              <span class="kd">::</span> <span class="n">nx</span>     <span class="c">!! length of coefficient array</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>              <span class="kd">::</span> <span class="n">kx</span>     <span class="c">!! order of b-spline, `kx &gt;= 1`</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(</span><span class="n">nx</span><span class="o">+</span><span class="n">kx</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="kd">::</span> <span class="n">tx</span>     <span class="c">!! knot array</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(</span><span class="n">nx</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>   <span class="kd">::</span> <span class="n">bcoef</span>  <span class="c">!! b-spline coefficient array</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>              <span class="kd">::</span> <span class="n">idx</span>    <span class="c">!! order of the spline derivative, `0 &lt;= idx &lt;= k-1`</span>
-                                                  <span class="c">!! `idx=0` gives the spline function</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>                 <span class="kd">::</span> <span class="n">x1</span>     <span class="c">!! left point of quadrature interval in `t(k) &lt;= x &lt;= t(n+1)`</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>                 <span class="kd">::</span> <span class="n">x2</span>     <span class="c">!! right point of quadrature interval in `t(k) &lt;= x &lt;= t(n+1)`</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>                 <span class="kd">::</span> <span class="n">tol</span>    <span class="c">!! desired accuracy for the quadrature, suggest</span>
-                                                  <span class="c">!! `10*dtol &lt; tol &lt;= 0.1` where `dtol` is the maximum</span>
-                                                  <span class="c">!! of `1.0e-300` and real(wp) unit roundoff for</span>
-                                                  <span class="c">!! the machine</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">out</span><span class="p">)</span>                <span class="kd">::</span> <span class="n">f</span>      <span class="c">!! integral of `bf(x)` on `(x1,x2)`</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">out</span><span class="p">)</span>             <span class="kd">::</span> <span class="n">iflag</span>  <span class="c">!! status flag:</span>
-                                                  <span class="c">!!</span>
-                                                  <span class="c">!! * \( = 0 \)   : no errors</span>
-                                                  <span class="c">!! * \( \ne 0 \) : error</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(</span><span class="mi">3_ip</span><span class="o">*</span><span class="n">kx</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">inout</span><span class="p">)</span> <span class="kd">::</span> <span class="n">w0</span>  <span class="c">!! work array for [[dbfqad]]</span>
-
-    <span class="k">call </span><span class="n">dbfqad</span><span class="p">(</span><span class="n">fun</span><span class="p">,</span><span class="n">tx</span><span class="p">,</span><span class="n">bcoef</span><span class="p">,</span><span class="n">nx</span><span class="p">,</span><span class="n">kx</span><span class="p">,</span><span class="n">idx</span><span class="p">,</span><span class="n">x1</span><span class="p">,</span><span class="n">x2</span><span class="p">,</span><span class="n">tol</span><span class="p">,</span><span class="n">f</span><span class="p">,</span><span class="n">iflag</span><span class="p">,</span><span class="n">w0</span><span class="p">)</span>
-
-    <span class="k">end subroutine </span><span class="n">db1fqad</span>
-</pre></div>
-
-    </section>
-    <br>
     
     
     </div>
   </div>
-
 
     <hr>    
     </div> <!-- /container -->
     <footer>
       <div class="container">
       <div class="row">
-        <div class="col-xs-6 col-md-6"><p>bspline-fortran was developed by Jacob Williams<br>&copy; 2021 
-                                          </p>
+        <div class="col-xs-6 col-md-6"><p>bspline-fortran was developed by Jacob Williams<br>&copy; 2022 
+</p>
         </div>
         <div class="col-xs-6 col-md-6">
           <p class="text-right">
             Documentation generated by 
             <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
-            
-            
           </p>
         </div>
       </div>
@@ -830,14 +578,11 @@ public subroutine db1fqad(fun, tx, bcoef, nx, kx, idx, x1, x2, tol, f, iflag, w0
         extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
       });
     </script>
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
     
     <script src="../tipuesearch/tipuesearch_content.js"></script>
     <script src="../tipuesearch/tipuesearch_set.js"></script>
     <script src="../tipuesearch/tipuesearch.js"></script>
-    
     
   </body>
 </html>

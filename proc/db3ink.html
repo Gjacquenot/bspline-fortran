@@ -4,9 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
    <meta name="description" content="BSPLINE-FORTRAN -- Multidimensional B-Spline Interpolation of Data on a Regular Grid">
-    
     <meta name="author" content="Jacob Williams" >
     <link rel="icon" href="../favicon.png">
 
@@ -16,10 +14,7 @@
     <link href="../css/pygments.css" rel="stylesheet">
     <link href="../css/font-awesome.min.css" rel="stylesheet">
     <link href="../css/local.css" rel="stylesheet">
-    
     <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
-    
-    
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -48,58 +43,27 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-        
             <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
               <a href="#" class="dropdown-toggle"
               data-toggle="dropdown" role="button"
               aria-haspopup="true"
      aria-expanded="false">Contents <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          
-              
             <li><a href="../lists/files.html">Source Files</a></li>
-        
-        
-        
             <li><a href="../lists/modules.html">Modules</a></li>
-        
-            
-                                
             <li><a href="../lists/procedures.html">Procedures</a></li>
-        
-        
             <li><a href="../lists/absint.html">Abstract Interfaces</a></li>
-               
-            <li><a href="../lists/types.html">Derived Types</a></li>
-        
-               
-        
-        
+                   <li><a href="../lists/types.html">Derived Types</a></li>
+       
             </ul>
         
             </li>
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/files.html">Source Files</a></li>
-
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/modules.html">Modules</a></li>
-
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/absint.html">Abstract Interfaces</a></li>
-                             
-<li class="visible-xs hidden-sm visible-lg"><a href="../lists/types.html">Derived Types</a></li>
-
-
-
-
+                             <li class="visible-xs hidden-sm visible-lg"><a href="../lists/types.html">Derived Types</a></li>
           </ul>
-        
         <form action="../search.html" class="navbar-form navbar-right" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
@@ -108,51 +72,29 @@
         <button type="submit" class="btn btn-default">Submit</button>
 -->
         </form>
-        
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
     <div class="container">
-    
-  
   <div class="row">
     <h1>db3ink
       <small>Subroutine</small>
-    
     </h1>
-    
-<div class="row">
+    <div class="row">
   <div class="col-lg-12">
 <div class="well well-sm">
   <ul class="list-inline" style="margin-bottom:0px;display:inline">
-     
-     
-     
-     
-     
-    
-    
      <li><i class="fa fa-list-ol"></i>
        <a data-toggle="tooltip"
     data-placement="bottom" data-html="true"
     title=" 1.3% of total for procedures.">47 statements</a>
      </li> 
-     
-     
-     
     <li><i class="fa fa-code"></i><a href="../src/bspline_sub_module.f90"> Source File</a></li>
-     
-     
   </ul>
   <ol class="breadcrumb in-well text-right">
-  
-    
      <li><a href='../sourcefile/bspline_sub_module.f90.html'>bspline_sub_module.f90</a></li>
-    
      <li><a href='../module/bspline_sub_module.html'>bspline_sub_module</a></li>
-    
-  
      <li class="active">db3ink</li>
   </ol>
 </div>
@@ -168,57 +110,32 @@
   
   <div class="row">
     <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
-    
-<div id="sidebar">
-  
-<h3>Contents</h3>
+    <div id="sidebar">
+  <h3>Contents</h3>
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="panel panel-primary">
-  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
-  <div class="list-group">
-    <a class="list-group-item" href="../proc/db3ink.html#src">db3ink</a>
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-0">Variables</a></h3></div>
+  <div id="vars-0" class="panel-collapse collapse">
+    <div class="list-group">
+      <a class="list-group-item" href="../proc/db3ink.html#variable-status_ok~6">status_ok</a>
+      <a class="list-group-item" href="../proc/db3ink.html#variable-temp~2">temp</a>
+      <a class="list-group-item" href="../proc/db3ink.html#variable-work~3">work</a>
+      <a class="list-group-item" href="../proc/db3ink.html#variable-i~2">i</a>
+      <a class="list-group-item" href="../proc/db3ink.html#variable-j">j</a>
+      <a class="list-group-item" href="../proc/db3ink.html#variable-k~4">k</a>
+      <a class="list-group-item" href="../proc/db3ink.html#variable-ii">ii</a>
+    </div>
   </div>
 </div>
-
-
 
 </div>
 
     </div>
     
     <div class="col-md-9" id='text'>
-    <h2>
-public pure subroutine db3ink(x, nx, y, ny, z, nz, fcn, kx, ky, kz, iknot, tx, ty, tz, bcoef, iflag)
+    <h2>public pure subroutine db3ink(x, nx, y, ny, z, nz, fcn, kx, ky, kz, iknot, tx, ty, tz, bcoef, iflag)</h2>
     
-    
-   
-</h2>
-    
-  
 
-
-    
     <p>Determines the parameters of a function that interpolates
   the three-dimensional gridded data
   <script type="math/tex; mode=display"> [x(i),y(j),z(k),\mathrm{fcn}(i,j,k)] ~\mathrm{for}~
@@ -272,285 +189,134 @@ public pure subroutine db3ink(x, nx, y, ny, z, nz, fcn, kx, ky, kz, iknot, tx, t
 <li>JEC : 000330 modified array declarations.</li>
 <li>Jacob Williams, 2/24/2015 : extensive refactoring of CMLIB routine.</li>
 </ul>
-    
 
     <h3>Arguments</h3>
-    
-      
-<table class="table table-striped varlist">
-<thead><tr><th>Type</th>
-<th>Intent</th><th>Optional</th>
-<th>Attributes</th><th></th><th>Name</th><th></th></thead>
-
-
-
+      <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Intent</th><th>Optional</th><th>Attributes</th><th></th><th>Name</th><th></th></thead>
 <tbody>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-x~8"></span>real(kind=wp),</td>
-  <td>intent(in),</td>
-  <td></td>
-  
-  <td>dimension(:)</td><td>::</td>
+  <td><span class="anchor" id="variable-x~32"></span>real(kind=wp),</td>
+<td>intent(in),</td>
+  <td></td>  <td>dimension(:)</td><td>::</td>
   <td><strong>x</strong></td><td><p><code>(nx)</code> array of <script type="math/tex">x</script> abcissae. must be strictly increasing.</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-nx~16"></span>integer(kind=ip),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-nx~29"></span>integer(kind=ip),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>nx</strong></td><td><p>number of <script type="math/tex">x</script> abcissae ( <script type="math/tex"> \ge 3 </script> )</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-y~2"></span>real(kind=wp),</td>
-  <td>intent(in),</td>
-  <td></td>
-  
-  <td>dimension(:)</td><td>::</td>
+  <td><span class="anchor" id="variable-y~22"></span>real(kind=wp),</td>
+<td>intent(in),</td>
+  <td></td>  <td>dimension(:)</td><td>::</td>
   <td><strong>y</strong></td><td><p><code>(ny)</code> array of <script type="math/tex">y</script> abcissae. must be strictly increasing.</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-ny~8"></span>integer(kind=ip),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-ny~19"></span>integer(kind=ip),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>ny</strong></td><td><p>number of <script type="math/tex">y</script> abcissae ( <script type="math/tex"> \ge 3 </script> )</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-z"></span>real(kind=wp),</td>
-  <td>intent(in),</td>
-  <td></td>
-  
-  <td>dimension(:)</td><td>::</td>
+  <td><span class="anchor" id="variable-z~17"></span>real(kind=wp),</td>
+<td>intent(in),</td>
+  <td></td>  <td>dimension(:)</td><td>::</td>
   <td><strong>z</strong></td><td><p><code>(nz)</code> array of <script type="math/tex">z</script> abcissae. must be strictly increasing.</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-nz~5"></span>integer(kind=ip),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-nz~14"></span>integer(kind=ip),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>nz</strong></td><td><p>number of <script type="math/tex">z</script> abcissae ( <script type="math/tex"> \ge 3 </script> )</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-fcn~5"></span>real(kind=wp),</td>
-  <td>intent(in),</td>
-  <td></td>
-  
-  <td>dimension(:,:,:)</td><td>::</td>
+  <td><span class="anchor" id="variable-fcn~29"></span>real(kind=wp),</td>
+<td>intent(in),</td>
+  <td></td>  <td>dimension(:,:,:)</td><td>::</td>
   <td><strong>fcn</strong></td><td><p><code>(nx,ny,nz)</code> matrix of function values to interpolate. <code>fcn(i,j,k)</code> should
- contain the function value at the point (<code>x(i)</code>,<code>y(j)</code>,<code>z(k)</code>)</p></td>
-  
+contain the function value at the point (<code>x(i)</code>,<code>y(j)</code>,<code>z(k)</code>)</p></td>
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-kx~16"></span>integer(kind=ip),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-kx~41"></span>integer(kind=ip),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>kx</strong></td><td><p>The order of spline pieces in <script type="math/tex">x</script>
- ( <script type="math/tex"> 2 \le k_x < n_x </script> )
- (order = polynomial degree + 1)</p></td>
-  
+( <script type="math/tex"> 2 \le k_x < n_x </script> )
+(order = polynomial degree + 1)</p></td>
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-ky~8"></span>integer(kind=ip),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-ky~29"></span>integer(kind=ip),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>ky</strong></td><td><p>The order of spline pieces in <script type="math/tex">y</script>
- ( <script type="math/tex"> 2 \le k_y < n_y </script> )
- (order = polynomial degree + 1)</p></td>
-  
+( <script type="math/tex"> 2 \le k_y < n_y </script> )
+(order = polynomial degree + 1)</p></td>
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-kz~5"></span>integer(kind=ip),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-kz~22"></span>integer(kind=ip),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>kz</strong></td><td><p>the order of spline pieces in <script type="math/tex">z</script>
- ( <script type="math/tex"> 2 \le k_z < n_z </script> )
- (order = polynomial degree + 1)</p></td>
-  
+( <script type="math/tex"> 2 \le k_z < n_z </script> )
+(order = polynomial degree + 1)</p></td>
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-iknot~3"></span>integer(kind=ip),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-iknot~9"></span>integer(kind=ip),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>iknot</strong></td><td><p>knot sequence flag:</p>
 <ul>
 <li>0 = knot sequence chosen by <a href="../proc/db3ink.html">db3ink</a>.</li>
 <li>1 = knot sequence chosen by user.</li>
 </ul></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-tx~16"></span>real(kind=wp),</td>
-  <td>intent(inout),</td>
-  <td></td>
-  
-  <td>dimension(:)</td><td>::</td>
+  <td><span class="anchor" id="variable-tx~29"></span>real(kind=wp),</td>
+<td>intent(inout),</td>
+  <td></td>  <td>dimension(:)</td><td>::</td>
   <td><strong>tx</strong></td><td><p>The <code>(nx+kx)</code> knots in the <script type="math/tex">x</script> direction for the spline
- interpolant.</p>
+interpolant.</p>
 <ul>
 <li>If <code>iknot=0</code> these are chosen by <a href="../proc/db3ink.html">db3ink</a>.</li>
 <li>If <code>iknot=1</code> these are specified by the user.</li>
 </ul>
 <p>Must be non-decreasing.</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-ty~8"></span>real(kind=wp),</td>
-  <td>intent(inout),</td>
-  <td></td>
-  
-  <td>dimension(:)</td><td>::</td>
+  <td><span class="anchor" id="variable-ty~19"></span>real(kind=wp),</td>
+<td>intent(inout),</td>
+  <td></td>  <td>dimension(:)</td><td>::</td>
   <td><strong>ty</strong></td><td><p>The <code>(ny+ky)</code> knots in the <script type="math/tex">y</script> direction for the spline
- interpolant.</p>
+interpolant.</p>
 <ul>
 <li>If <code>iknot=0</code> these are chosen by <a href="../proc/db3ink.html">db3ink</a>.</li>
 <li>If <code>iknot=1</code> these are specified by the user.</li>
 </ul>
 <p>Must be non-decreasing.</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-tz~5"></span>real(kind=wp),</td>
-  <td>intent(inout),</td>
-  <td></td>
-  
-  <td>dimension(:)</td><td>::</td>
+  <td><span class="anchor" id="variable-tz~14"></span>real(kind=wp),</td>
+<td>intent(inout),</td>
+  <td></td>  <td>dimension(:)</td><td>::</td>
   <td><strong>tz</strong></td><td><p>The <code>(nz+kz)</code> knots in the <script type="math/tex">z</script> direction for the spline
- interpolant.</p>
+interpolant.</p>
 <ul>
 <li>If <code>iknot=0</code> these are chosen by <a href="../proc/db3ink.html">db3ink</a>.</li>
 <li>If <code>iknot=1</code> these are specified by the user.</li>
 </ul>
 <p>Must be non-decreasing.</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-bcoef~16"></span>real(kind=wp),</td>
-  <td>intent(out),</td>
-  <td></td>
-  
-  <td>dimension(:,:,:)</td><td>::</td>
+<td>intent(out),</td>
+  <td></td>  <td>dimension(:,:,:)</td><td>::</td>
   <td><strong>bcoef</strong></td><td><p><code>(nx,ny,nz)</code> matrix of coefficients of the b-spline interpolant.</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-iflag~13"></span>integer(kind=ip),</td>
-  <td>intent(out)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-iflag~35"></span>integer(kind=ip),</td>
+<td>intent(out)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>iflag</strong></td><td><ul>
 <li>0 = successful execution.</li>
 <li>2 = <code>iknot</code> out of range.</li>
@@ -591,18 +357,11 @@ public pure subroutine db3ink(x, nx, y, ny, z, nz, fcn, kx, ky, kz, iknot, tx, t
 <li>802 = <code>size(z)</code> <script type="math/tex">\ne</script>
 <code>size(bcoef,3)</code></li>
 </ul></td>
-  
 </tr>
-
 </tbody>
 </table>
 
-    
-    
-    
     <br>
-    
-    
     <div class="panel panel-default">
       <div class="panel-heading">
   <h3 class="panel-title">Calls</h3>
@@ -614,127 +373,187 @@ public pure subroutine db3ink(x, nx, y, ny, z, nz, fcn, kx, ky, kz, iknot, tx, t
 <!-- Generated by graphviz version 2.43.0 (0)
  -->
 <!-- Title: proc~~db3ink~~CallsGraph Pages: 1 -->
-<svg id="procdb3inkCallsGraph" width="360pt" height="179pt"
- viewBox="0.00 0.00 360.00 179.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="proc~~db3ink~~CallsGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 175)">
+<svg id="procdb3inkCallsGraph" width="362pt" height="284pt"
+ viewBox="0.00 0.00 362.00 284.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="proc~~db3ink~~CallsGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 280)">
 <title>proc~~db3ink~~CallsGraph</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-175 356,-175 356,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-280 358,-280 358,4 -4,4"/>
 <!-- proc~db3ink -->
 <g id="proc~~db3ink~~CallsGraph_node1" class="node">
 <title>proc~db3ink</title>
-<polygon fill="none" stroke="black" points="54,-129 0,-129 0,-105 54,-105 54,-129"/>
-<text text-anchor="middle" x="27" y="-114.6" font-family="Helvetica,sans-Serif" font-size="10.50">db3ink</text>
+<polygon fill="none" stroke="black" points="54,-182 0,-182 0,-158 54,-158 54,-182"/>
+<text text-anchor="middle" x="27" y="-167.6" font-family="Helvetica,sans-Serif" font-size="10.50">db3ink</text>
 </g>
-<!-- proc~check_inputs -->
+<!-- proc~dbtpcf -->
 <g id="proc~~db3ink~~CallsGraph_node2" class="node">
-<title>proc~check_inputs</title>
-<g id="a_proc~~db3ink~~CallsGraph_node2"><a xlink:href=".././proc/check_inputs.html" xlink:title="check_inputs">
-<polygon fill="#d9534f" stroke="#d9534f" points="172,-171 90,-171 90,-147 172,-147 172,-171"/>
-<text text-anchor="middle" x="131" y="-156.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">check_inputs</text>
+<title>proc~dbtpcf</title>
+<g id="a_proc~~db3ink~~CallsGraph_node2"><a xlink:href=".././proc/dbtpcf.html" xlink:title="dbtpcf">
+<polygon fill="#d9534f" stroke="#d9534f" points="158,-234 104,-234 104,-210 158,-210 158,-234"/>
+<text text-anchor="middle" x="131" y="-219.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dbtpcf</text>
 </a>
 </g>
 </g>
-<!-- proc~db3ink&#45;&gt;proc~check_inputs -->
+<!-- proc~db3ink&#45;&gt;proc~dbtpcf -->
 <g id="proc~~db3ink~~CallsGraph_edge1" class="edge">
-<title>proc~db3ink&#45;&gt;proc~check_inputs</title>
-<path fill="none" stroke="#000000" d="M54,-127.71C65.39,-132.39 78.97,-137.99 91.49,-143.14"/>
-<polygon fill="#000000" stroke="#000000" points="90.22,-146.41 100.8,-146.98 92.89,-139.93 90.22,-146.41"/>
+<title>proc~db3ink&#45;&gt;proc~dbtpcf</title>
+<path fill="none" stroke="#000000" d="M51.66,-182.06C65.08,-188.9 82.09,-197.57 96.82,-205.09"/>
+<polygon fill="#000000" stroke="#000000" points="95.62,-208.4 106.12,-209.82 98.8,-202.16 95.62,-208.4"/>
 </g>
 <!-- proc~dbknot -->
 <g id="proc~~db3ink~~CallsGraph_node3" class="node">
 <title>proc~dbknot</title>
 <g id="a_proc~~db3ink~~CallsGraph_node3"><a xlink:href=".././proc/dbknot.html" xlink:title="dbknot">
-<polygon fill="#d9534f" stroke="#d9534f" points="158,-129 104,-129 104,-105 158,-105 158,-129"/>
-<text text-anchor="middle" x="131" y="-114.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dbknot</text>
+<polygon fill="#d9534f" stroke="#d9534f" points="158,-182 104,-182 104,-158 158,-158 158,-182"/>
+<text text-anchor="middle" x="131" y="-167.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dbknot</text>
 </a>
 </g>
 </g>
 <!-- proc~db3ink&#45;&gt;proc~dbknot -->
-<g id="proc~~db3ink~~CallsGraph_edge3" class="edge">
-<title>proc~db3ink&#45;&gt;proc~dbknot</title>
-<path fill="none" stroke="#000000" d="M54,-117C66.02,-117 80.49,-117 93.57,-117"/>
-<polygon fill="#000000" stroke="#000000" points="93.69,-120.5 103.69,-117 93.69,-113.5 93.69,-120.5"/>
-</g>
-<!-- proc~dbtpcf -->
-<g id="proc~~db3ink~~CallsGraph_node4" class="node">
-<title>proc~dbtpcf</title>
-<g id="a_proc~~db3ink~~CallsGraph_node4"><a xlink:href=".././proc/dbtpcf.html" xlink:title="dbtpcf">
-<polygon fill="#d9534f" stroke="#d9534f" points="158,-87 104,-87 104,-63 158,-63 158,-87"/>
-<text text-anchor="middle" x="131" y="-72.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dbtpcf</text>
-</a>
-</g>
-</g>
-<!-- proc~db3ink&#45;&gt;proc~dbtpcf -->
 <g id="proc~~db3ink~~CallsGraph_edge2" class="edge">
-<title>proc~db3ink&#45;&gt;proc~dbtpcf</title>
-<path fill="none" stroke="#000000" d="M54,-106.29C66.26,-101.25 81.07,-95.15 94.35,-89.68"/>
-<polygon fill="#000000" stroke="#000000" points="95.78,-92.88 103.69,-85.83 93.11,-86.4 95.78,-92.88"/>
+<title>proc~db3ink&#45;&gt;proc~dbknot</title>
+<path fill="none" stroke="#000000" d="M54,-170C66.02,-170 80.49,-170 93.57,-170"/>
+<polygon fill="#000000" stroke="#000000" points="93.69,-173.5 103.69,-170 93.69,-166.5 93.69,-173.5"/>
 </g>
-<!-- proc~dbnslv -->
-<g id="proc~~db3ink~~CallsGraph_node5" class="node">
-<title>proc~dbnslv</title>
-<g id="a_proc~~db3ink~~CallsGraph_node5"><a xlink:href=".././proc/dbnslv.html" xlink:title="dbnslv">
-<polygon fill="#d9534f" stroke="#d9534f" points="352,-108 298,-108 298,-84 352,-84 352,-108"/>
-<text text-anchor="middle" x="325" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dbnslv</text>
+<!-- proc~check_inputs -->
+<g id="proc~~db3ink~~CallsGraph_node4" class="node">
+<title>proc~check_inputs</title>
+<g id="a_proc~~db3ink~~CallsGraph_node4"><a xlink:href=".././proc/check_inputs.html" xlink:title="check_inputs">
+<polygon fill="#d9534f" stroke="#d9534f" points="172,-119 90,-119 90,-95 172,-95 172,-119"/>
+<text text-anchor="middle" x="131" y="-104.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">check_inputs</text>
 </a>
 </g>
 </g>
-<!-- proc~dbtpcf&#45;&gt;proc~dbnslv -->
-<g id="proc~~db3ink~~CallsGraph_edge4" class="edge">
-<title>proc~dbtpcf&#45;&gt;proc~dbnslv</title>
-<path fill="none" stroke="#000000" d="M158.29,-77.88C191.81,-81.54 249.91,-87.9 287.65,-92.02"/>
-<polygon fill="#000000" stroke="#000000" points="287.39,-95.52 297.72,-93.13 288.16,-88.56 287.39,-95.52"/>
+<!-- proc~db3ink&#45;&gt;proc~check_inputs -->
+<g id="proc~~db3ink~~CallsGraph_edge3" class="edge">
+<title>proc~db3ink&#45;&gt;proc~check_inputs</title>
+<path fill="none" stroke="#000000" d="M47.67,-157.85C63.05,-148.35 84.64,-135.02 101.85,-124.39"/>
+<polygon fill="#000000" stroke="#000000" points="103.72,-127.34 110.39,-119.11 100.05,-121.39 103.72,-127.34"/>
 </g>
 <!-- proc~dbintk -->
-<g id="proc~~db3ink~~CallsGraph_node6" class="node">
+<g id="proc~~db3ink~~CallsGraph_node5" class="node">
 <title>proc~dbintk</title>
-<g id="a_proc~~db3ink~~CallsGraph_node6"><a xlink:href=".././proc/dbintk.html" xlink:title="dbintk">
-<polygon fill="#d9534f" stroke="#d9534f" points="262,-67 208,-67 208,-43 262,-43 262,-67"/>
-<text text-anchor="middle" x="235" y="-52.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dbintk</text>
+<g id="a_proc~~db3ink~~CallsGraph_node5"><a xlink:href=".././proc/dbintk.html" xlink:title="dbintk">
+<polygon fill="#d9534f" stroke="#d9534f" points="262,-234 208,-234 208,-210 262,-210 262,-234"/>
+<text text-anchor="middle" x="235" y="-219.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dbintk</text>
 </a>
 </g>
 </g>
 <!-- proc~dbtpcf&#45;&gt;proc~dbintk -->
-<g id="proc~~db3ink~~CallsGraph_edge5" class="edge">
+<g id="proc~~db3ink~~CallsGraph_edge4" class="edge">
 <title>proc~dbtpcf&#45;&gt;proc~dbintk</title>
-<path fill="none" stroke="#000000" d="M158,-69.9C170.02,-67.55 184.49,-64.71 197.57,-62.14"/>
-<polygon fill="#000000" stroke="#000000" points="198.55,-65.52 207.69,-60.16 197.2,-58.65 198.55,-65.52"/>
+<path fill="none" stroke="#000000" d="M158,-222C170.02,-222 184.49,-222 197.57,-222"/>
+<polygon fill="#000000" stroke="#000000" points="197.69,-225.5 207.69,-222 197.69,-218.5 197.69,-225.5"/>
+</g>
+<!-- proc~dbnslv -->
+<g id="proc~~db3ink~~CallsGraph_node6" class="node">
+<title>proc~dbnslv</title>
+<g id="a_proc~~db3ink~~CallsGraph_node6"><a xlink:href=".././proc/dbnslv.html" xlink:title="dbnslv">
+<polygon fill="#d9534f" stroke="#d9534f" points="353,-276 299,-276 299,-252 353,-252 353,-276"/>
+<text text-anchor="middle" x="326" y="-261.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dbnslv</text>
+</a>
+</g>
+</g>
+<!-- proc~dbtpcf&#45;&gt;proc~dbnslv -->
+<g id="proc~~db3ink~~CallsGraph_edge5" class="edge">
+<title>proc~dbtpcf&#45;&gt;proc~dbnslv</title>
+<path fill="none" stroke="#000000" d="M158.23,-229.89C172.8,-234.11 191.31,-239.21 208,-243 234.87,-249.11 265.55,-254.56 288.75,-258.38"/>
+<polygon fill="#000000" stroke="#000000" points="288.41,-261.87 298.84,-260.01 289.53,-254.96 288.41,-261.87"/>
+</g>
+<!-- none~check -->
+<g id="proc~~db3ink~~CallsGraph_node7" class="node">
+<title>none~check</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="262,-108 208,-108 208,-84 262,-84 262,-108"/>
+<text text-anchor="middle" x="235" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">check</text>
+</g>
+<!-- proc~check_inputs&#45;&gt;none~check -->
+<g id="proc~~db3ink~~CallsGraph_edge6" class="edge">
+<title>proc~check_inputs&#45;&gt;none~check</title>
+<path fill="none" stroke="#000000" d="M172.02,-102.68C180.5,-101.77 189.4,-100.81 197.73,-99.91"/>
+<polygon fill="#000000" stroke="#000000" points="198.33,-103.37 207.89,-98.82 197.58,-96.41 198.33,-103.37"/>
 </g>
 <!-- proc~dbintk&#45;&gt;proc~dbnslv -->
-<g id="proc~~db3ink~~CallsGraph_edge6" class="edge">
+<g id="proc~~db3ink~~CallsGraph_edge9" class="edge">
 <title>proc~dbintk&#45;&gt;proc~dbnslv</title>
-<path fill="none" stroke="#000000" d="M261.93,-67.08C270.36,-71.01 279.86,-75.43 288.84,-79.62"/>
-<polygon fill="#000000" stroke="#000000" points="287.41,-82.81 297.95,-83.87 290.37,-76.47 287.41,-82.81"/>
+<path fill="none" stroke="#000000" d="M261.74,-234.15C270.6,-238.33 280.67,-243.08 290.13,-247.54"/>
+<polygon fill="#000000" stroke="#000000" points="288.78,-250.78 299.32,-251.88 291.77,-244.45 288.78,-250.78"/>
 </g>
 <!-- proc~dbnfac -->
-<g id="proc~~db3ink~~CallsGraph_node7" class="node">
+<g id="proc~~db3ink~~CallsGraph_node10" class="node">
 <title>proc~dbnfac</title>
-<g id="a_proc~~db3ink~~CallsGraph_node7"><a xlink:href=".././proc/dbnfac.html" xlink:title="dbnfac">
-<polygon fill="#d9534f" stroke="#d9534f" points="352,-66 298,-66 298,-42 352,-42 352,-66"/>
-<text text-anchor="middle" x="325" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dbnfac</text>
+<g id="a_proc~~db3ink~~CallsGraph_node10"><a xlink:href=".././proc/dbnfac.html" xlink:title="dbnfac">
+<polygon fill="#d9534f" stroke="#d9534f" points="353,-234 299,-234 299,-210 353,-210 353,-234"/>
+<text text-anchor="middle" x="326" y="-219.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dbnfac</text>
 </a>
 </g>
 </g>
 <!-- proc~dbintk&#45;&gt;proc~dbnfac -->
-<g id="proc~~db3ink~~CallsGraph_edge7" class="edge">
+<g id="proc~~db3ink~~CallsGraph_edge8" class="edge">
 <title>proc~dbintk&#45;&gt;proc~dbnfac</title>
-<path fill="none" stroke="#000000" d="M262.4,-54.7C270.39,-54.61 279.31,-54.51 287.82,-54.41"/>
-<polygon fill="#000000" stroke="#000000" points="287.96,-57.91 297.92,-54.3 287.88,-50.91 287.96,-57.91"/>
+<path fill="none" stroke="#000000" d="M262.22,-222C270.55,-222 279.91,-222 288.82,-222"/>
+<polygon fill="#000000" stroke="#000000" points="288.97,-225.5 298.97,-222 288.97,-218.5 288.97,-225.5"/>
 </g>
 <!-- proc~dbspvn -->
-<g id="proc~~db3ink~~CallsGraph_node8" class="node">
+<g id="proc~~db3ink~~CallsGraph_node13" class="node">
 <title>proc~dbspvn</title>
-<g id="a_proc~~db3ink~~CallsGraph_node8"><a xlink:href=".././proc/dbspvn.html" xlink:title="dbspvn">
-<polygon fill="#d9534f" stroke="#d9534f" points="352,-24 298,-24 298,0 352,0 352,-24"/>
-<text text-anchor="middle" x="325" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dbspvn</text>
+<g id="a_proc~~db3ink~~CallsGraph_node13"><a xlink:href=".././proc/dbspvn.html" xlink:title="dbspvn">
+<polygon fill="#d9534f" stroke="#d9534f" points="353,-192 299,-192 299,-168 353,-168 353,-192"/>
+<text text-anchor="middle" x="326" y="-177.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dbspvn</text>
 </a>
 </g>
 </g>
 <!-- proc~dbintk&#45;&gt;proc~dbspvn -->
-<g id="proc~~db3ink~~CallsGraph_edge8" class="edge">
+<g id="proc~~db3ink~~CallsGraph_edge7" class="edge">
 <title>proc~dbintk&#45;&gt;proc~dbspvn</title>
-<path fill="none" stroke="#000000" d="M260.98,-42.79C270.07,-38.35 280.5,-33.26 290.22,-28.51"/>
-<polygon fill="#000000" stroke="#000000" points="291.81,-31.62 299.26,-24.09 288.74,-25.33 291.81,-31.62"/>
+<path fill="none" stroke="#000000" d="M261.74,-209.85C270.6,-205.67 280.67,-200.92 290.13,-196.46"/>
+<polygon fill="#000000" stroke="#000000" points="291.77,-199.55 299.32,-192.12 288.78,-193.22 291.77,-199.55"/>
+</g>
+<!-- none~check_k -->
+<g id="proc~~db3ink~~CallsGraph_node8" class="node">
+<title>none~check_k</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="353.5,-150 298.5,-150 298.5,-126 353.5,-126 353.5,-150"/>
+<text text-anchor="middle" x="326" y="-135.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">check_k</text>
+</g>
+<!-- none~check&#45;&gt;none~check_k -->
+<g id="proc~~db3ink~~CallsGraph_edge13" class="edge">
+<title>none~check&#45;&gt;none~check_k</title>
+<path fill="none" stroke="#000000" d="M261.74,-108.15C270.6,-112.33 280.67,-117.08 290.13,-121.54"/>
+<polygon fill="#000000" stroke="#000000" points="288.78,-124.78 299.32,-125.88 291.77,-118.45 288.78,-124.78"/>
+</g>
+<!-- none~check_t -->
+<g id="proc~~db3ink~~CallsGraph_node9" class="node">
+<title>none~check_t</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="353,-108 299,-108 299,-84 353,-84 353,-108"/>
+<text text-anchor="middle" x="326" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">check_t</text>
+</g>
+<!-- none~check&#45;&gt;none~check_t -->
+<g id="proc~~db3ink~~CallsGraph_edge11" class="edge">
+<title>none~check&#45;&gt;none~check_t</title>
+<path fill="none" stroke="#000000" d="M262.22,-96C270.55,-96 279.91,-96 288.82,-96"/>
+<polygon fill="#000000" stroke="#000000" points="288.97,-99.5 298.97,-96 288.97,-92.5 288.97,-99.5"/>
+</g>
+<!-- none~check_x -->
+<g id="proc~~db3ink~~CallsGraph_node11" class="node">
+<title>none~check_x</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="353.5,-66 298.5,-66 298.5,-42 353.5,-42 353.5,-66"/>
+<text text-anchor="middle" x="326" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">check_x</text>
+</g>
+<!-- none~check&#45;&gt;none~check_x -->
+<g id="proc~~db3ink~~CallsGraph_edge12" class="edge">
+<title>none~check&#45;&gt;none~check_x</title>
+<path fill="none" stroke="#000000" d="M261.74,-83.85C270.6,-79.67 280.67,-74.92 290.13,-70.46"/>
+<polygon fill="#000000" stroke="#000000" points="291.77,-73.55 299.32,-66.12 288.78,-67.22 291.77,-73.55"/>
+</g>
+<!-- none~check_n -->
+<g id="proc~~db3ink~~CallsGraph_node12" class="node">
+<title>none~check_n</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="354,-24 298,-24 298,0 354,0 354,-24"/>
+<text text-anchor="middle" x="326" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">check_n</text>
+</g>
+<!-- none~check&#45;&gt;none~check_n -->
+<g id="proc~~db3ink~~CallsGraph_edge10" class="edge">
+<title>none~check&#45;&gt;none~check_n</title>
+<path fill="none" stroke="#000000" d="M246.98,-83.92C259.04,-70.88 279.2,-49.73 298,-33 298.95,-32.16 299.93,-31.31 300.92,-30.46"/>
+<polygon fill="#000000" stroke="#000000" points="303.19,-33.13 308.73,-24.1 298.76,-27.7 303.19,-33.13"/>
 </g>
 </g>
 </svg>
@@ -799,8 +618,6 @@ public pure subroutine db3ink(x, nx, y, ny, z, nz, fcn, kx, ky, kz, iknot, tx, t
     </div></div></div></div>
       </div>
     </div>
-     
-     
     <div class="panel panel-default">
       <div class="panel-heading">
   <h3 class="panel-title">Called by</h3>
@@ -823,65 +640,65 @@ public pure subroutine db3ink(x, nx, y, ny, z, nz, fcn, kx, ky, kz, iknot, tx, t
 <polygon fill="none" stroke="black" points="596,-45 542,-45 542,-21 596,-21 596,-45"/>
 <text text-anchor="middle" x="569" y="-30.6" font-family="Helvetica,sans-Serif" font-size="10.50">db3ink</text>
 </g>
-<!-- proc~initialize_3d_specify_knots -->
-<g id="proc~~db3ink~~CalledByGraph_node2" class="node">
-<title>proc~initialize_3d_specify_knots</title>
-<g id="a_proc~~db3ink~~CalledByGraph_node2"><a xlink:href=".././proc/initialize_3d_specify_knots.html" xlink:title="initialize_3d_specify_knots">
-<polygon fill="#d9534f" stroke="#d9534f" points="506,-24 354,-24 354,0 506,0 506,-24"/>
-<text text-anchor="middle" x="430" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">initialize_3d_specify_knots</text>
-</a>
-</g>
-</g>
-<!-- proc~initialize_3d_specify_knots&#45;&gt;proc~db3ink -->
-<g id="proc~~db3ink~~CalledByGraph_edge1" class="edge">
-<title>proc~initialize_3d_specify_knots&#45;&gt;proc~db3ink</title>
-<path fill="none" stroke="#000000" d="M506.31,-23.54C515.22,-24.91 523.97,-26.25 531.96,-27.47"/>
-<polygon fill="#000000" stroke="#000000" points="531.55,-30.95 541.96,-29.01 532.61,-24.03 531.55,-30.95"/>
-</g>
 <!-- proc~initialize_3d_auto_knots -->
-<g id="proc~~db3ink~~CalledByGraph_node3" class="node">
+<g id="proc~~db3ink~~CalledByGraph_node2" class="node">
 <title>proc~initialize_3d_auto_knots</title>
-<g id="a_proc~~db3ink~~CalledByGraph_node3"><a xlink:href=".././proc/initialize_3d_auto_knots.html" xlink:title="initialize_3d_auto_knots">
-<polygon fill="#d9534f" stroke="#d9534f" points="499.5,-66 360.5,-66 360.5,-42 499.5,-42 499.5,-66"/>
-<text text-anchor="middle" x="430" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">initialize_3d_auto_knots</text>
+<g id="a_proc~~db3ink~~CalledByGraph_node2"><a xlink:href=".././proc/initialize_3d_auto_knots.html" xlink:title="initialize_3d_auto_knots">
+<polygon fill="#d9534f" stroke="#d9534f" points="499.5,-24 360.5,-24 360.5,0 499.5,0 499.5,-24"/>
+<text text-anchor="middle" x="430" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">initialize_3d_auto_knots</text>
 </a>
 </g>
 </g>
 <!-- proc~initialize_3d_auto_knots&#45;&gt;proc~db3ink -->
-<g id="proc~~db3ink~~CalledByGraph_edge2" class="edge">
+<g id="proc~~db3ink~~CalledByGraph_edge1" class="edge">
 <title>proc~initialize_3d_auto_knots&#45;&gt;proc~db3ink</title>
-<path fill="none" stroke="#000000" d="M499.9,-43.44C510.86,-41.76 521.81,-40.08 531.62,-38.58"/>
-<polygon fill="#000000" stroke="#000000" points="532.41,-42 541.77,-37.02 531.35,-35.08 532.41,-42"/>
+<path fill="none" stroke="#000000" d="M499.9,-22.56C510.86,-24.24 521.81,-25.92 531.62,-27.42"/>
+<polygon fill="#000000" stroke="#000000" points="531.35,-30.92 541.77,-28.98 532.41,-24 531.35,-30.92"/>
 </g>
-<!-- proc~bspline_3d_constructor_auto_knots -->
-<g id="proc~~db3ink~~CalledByGraph_node4" class="node">
-<title>proc~bspline_3d_constructor_auto_knots</title>
-<g id="a_proc~~db3ink~~CalledByGraph_node4"><a xlink:href=".././proc/bspline_3d_constructor_auto_knots.html" xlink:title="bspline_3d_constructor_auto_knots">
-<polygon fill="#d94e8f" stroke="#d94e8f" points="311.5,-66 112.5,-66 112.5,-42 311.5,-42 311.5,-66"/>
-<text text-anchor="middle" x="212" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">bspline_3d_constructor_auto_knots</text>
+<!-- proc~initialize_3d_specify_knots -->
+<g id="proc~~db3ink~~CalledByGraph_node3" class="node">
+<title>proc~initialize_3d_specify_knots</title>
+<g id="a_proc~~db3ink~~CalledByGraph_node3"><a xlink:href=".././proc/initialize_3d_specify_knots.html" xlink:title="initialize_3d_specify_knots">
+<polygon fill="#d9534f" stroke="#d9534f" points="506,-66 354,-66 354,-42 506,-42 506,-66"/>
+<text text-anchor="middle" x="430" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">initialize_3d_specify_knots</text>
 </a>
 </g>
 </g>
-<!-- proc~bspline_3d_constructor_auto_knots&#45;&gt;proc~initialize_3d_auto_knots -->
-<g id="proc~~db3ink~~CalledByGraph_edge4" class="edge">
-<title>proc~bspline_3d_constructor_auto_knots&#45;&gt;proc~initialize_3d_auto_knots</title>
-<path fill="none" stroke="#000000" d="M311.52,-54C324.38,-54 337.43,-54 349.92,-54"/>
-<polygon fill="#000000" stroke="#000000" points="350.26,-57.5 360.26,-54 350.26,-50.5 350.26,-57.5"/>
+<!-- proc~initialize_3d_specify_knots&#45;&gt;proc~db3ink -->
+<g id="proc~~db3ink~~CalledByGraph_edge2" class="edge">
+<title>proc~initialize_3d_specify_knots&#45;&gt;proc~db3ink</title>
+<path fill="none" stroke="#000000" d="M506.31,-42.46C515.22,-41.09 523.97,-39.75 531.96,-38.53"/>
+<polygon fill="#000000" stroke="#000000" points="532.61,-41.97 541.96,-36.99 531.55,-35.05 532.61,-41.97"/>
 </g>
 <!-- proc~bspline_3d_constructor_specify_knots -->
-<g id="proc~~db3ink~~CalledByGraph_node5" class="node">
+<g id="proc~~db3ink~~CalledByGraph_node4" class="node">
 <title>proc~bspline_3d_constructor_specify_knots</title>
-<g id="a_proc~~db3ink~~CalledByGraph_node5"><a xlink:href=".././proc/bspline_3d_constructor_specify_knots.html" xlink:title="bspline_3d_constructor_specify_knots">
-<polygon fill="#d94e8f" stroke="#d94e8f" points="318,-24 106,-24 106,0 318,0 318,-24"/>
-<text text-anchor="middle" x="212" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">bspline_3d_constructor_specify_knots</text>
+<g id="a_proc~~db3ink~~CalledByGraph_node4"><a xlink:href=".././proc/bspline_3d_constructor_specify_knots.html" xlink:title="bspline_3d_constructor_specify_knots">
+<polygon fill="#d94e8f" stroke="#d94e8f" points="318,-66 106,-66 106,-42 318,-42 318,-66"/>
+<text text-anchor="middle" x="212" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">bspline_3d_constructor_specify_knots</text>
 </a>
 </g>
 </g>
 <!-- proc~bspline_3d_constructor_specify_knots&#45;&gt;proc~initialize_3d_specify_knots -->
-<g id="proc~~db3ink~~CalledByGraph_edge3" class="edge">
+<g id="proc~~db3ink~~CalledByGraph_edge4" class="edge">
 <title>proc~bspline_3d_constructor_specify_knots&#45;&gt;proc~initialize_3d_specify_knots</title>
-<path fill="none" stroke="#000000" d="M318.15,-12C326.7,-12 335.26,-12 343.64,-12"/>
-<polygon fill="#000000" stroke="#000000" points="343.75,-15.5 353.75,-12 343.75,-8.5 343.75,-15.5"/>
+<path fill="none" stroke="#000000" d="M318.15,-54C326.7,-54 335.26,-54 343.64,-54"/>
+<polygon fill="#000000" stroke="#000000" points="343.75,-57.5 353.75,-54 343.75,-50.5 343.75,-57.5"/>
+</g>
+<!-- proc~bspline_3d_constructor_auto_knots -->
+<g id="proc~~db3ink~~CalledByGraph_node5" class="node">
+<title>proc~bspline_3d_constructor_auto_knots</title>
+<g id="a_proc~~db3ink~~CalledByGraph_node5"><a xlink:href=".././proc/bspline_3d_constructor_auto_knots.html" xlink:title="bspline_3d_constructor_auto_knots">
+<polygon fill="#d94e8f" stroke="#d94e8f" points="311.5,-24 112.5,-24 112.5,0 311.5,0 311.5,-24"/>
+<text text-anchor="middle" x="212" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">bspline_3d_constructor_auto_knots</text>
+</a>
+</g>
+</g>
+<!-- proc~bspline_3d_constructor_auto_knots&#45;&gt;proc~initialize_3d_auto_knots -->
+<g id="proc~~db3ink~~CalledByGraph_edge3" class="edge">
+<title>proc~bspline_3d_constructor_auto_knots&#45;&gt;proc~initialize_3d_auto_knots</title>
+<path fill="none" stroke="#000000" d="M311.52,-12C324.38,-12 337.43,-12 349.92,-12"/>
+<polygon fill="#000000" stroke="#000000" points="350.26,-15.5 360.26,-12 350.26,-8.5 350.26,-15.5"/>
 </g>
 <!-- interface~bspline_3d -->
 <g id="proc~~db3ink~~CalledByGraph_node6" class="node">
@@ -892,17 +709,17 @@ public pure subroutine db3ink(x, nx, y, ny, z, nz, fcn, kx, ky, kz, iknot, tx, t
 </a>
 </g>
 </g>
-<!-- interface~bspline_3d&#45;&gt;proc~bspline_3d_constructor_auto_knots -->
-<g id="proc~~db3ink~~CalledByGraph_edge5" class="edge">
-<title>interface~bspline_3d&#45;&gt;proc~bspline_3d_constructor_auto_knots</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M70.16,-37.1C79.7,-38.24 90.6,-39.55 102.03,-40.92"/>
-<polygon fill="#000000" stroke="#000000" points="101.84,-44.43 112.19,-42.14 102.68,-37.48 101.84,-44.43"/>
-</g>
 <!-- interface~bspline_3d&#45;&gt;proc~bspline_3d_constructor_specify_knots -->
-<g id="proc~~db3ink~~CalledByGraph_edge6" class="edge">
+<g id="proc~~db3ink~~CalledByGraph_edge5" class="edge">
 <title>interface~bspline_3d&#45;&gt;proc~bspline_3d_constructor_specify_knots</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M70.16,-28.9C79.3,-27.8 89.69,-26.56 100.59,-25.25"/>
-<polygon fill="#000000" stroke="#000000" points="101.22,-28.7 110.73,-24.03 100.39,-21.75 101.22,-28.7"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M70.16,-37.1C79.3,-38.2 89.69,-39.44 100.59,-40.75"/>
+<polygon fill="#000000" stroke="#000000" points="100.39,-44.25 110.73,-41.97 101.22,-37.3 100.39,-44.25"/>
+</g>
+<!-- interface~bspline_3d&#45;&gt;proc~bspline_3d_constructor_auto_knots -->
+<g id="proc~~db3ink~~CalledByGraph_edge6" class="edge">
+<title>interface~bspline_3d&#45;&gt;proc~bspline_3d_constructor_auto_knots</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M70.16,-28.9C79.7,-27.76 90.6,-26.45 102.03,-25.08"/>
+<polygon fill="#000000" stroke="#000000" points="102.68,-28.52 112.19,-23.86 101.84,-21.57 102.68,-28.52"/>
 </g>
 </g>
 </svg>
@@ -967,219 +784,100 @@ public pure subroutine db3ink(x, nx, y, ny, z, nz, fcn, kx, ky, kz, iknot, tx, t
     </div></div></div></div>
       </div>
     </div>
-     
     <br>
 
     <section class="visible-xs visible-sm hidden-md">
-      
-<h3>Contents</h3>
+      <h3>Contents</h3>
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="panel panel-primary">
-  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
-  <div class="list-group">
-    <a class="list-group-item" href="../proc/db3ink.html#src">db3ink</a>
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-1">Variables</a></h3></div>
+  <div id="vars-1" class="panel-collapse collapse">
+    <div class="list-group">
+      <a class="list-group-item" href="../proc/db3ink.html#variable-status_ok~6">status_ok</a>
+      <a class="list-group-item" href="../proc/db3ink.html#variable-temp~2">temp</a>
+      <a class="list-group-item" href="../proc/db3ink.html#variable-work~3">work</a>
+      <a class="list-group-item" href="../proc/db3ink.html#variable-i~2">i</a>
+      <a class="list-group-item" href="../proc/db3ink.html#variable-j">j</a>
+      <a class="list-group-item" href="../proc/db3ink.html#variable-k~4">k</a>
+      <a class="list-group-item" href="../proc/db3ink.html#variable-ii">ii</a>
+    </div>
   </div>
 </div>
-
-
 
     </section>
     <br class="visible-xs visible-sm hidden-md">
 
-    
 
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-
-
-    
-    
-    
-    <section>
-    <h2><span class="anchor" id="src"></span>Source Code</h2>
-    <div class="highlight"><pre><span></span>    <span class="k">pure subroutine </span><span class="n">db3ink</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">nx</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">ny</span><span class="p">,</span><span class="n">z</span><span class="p">,</span><span class="n">nz</span><span class="p">,</span><span class="n">fcn</span><span class="p">,</span><span class="n">kx</span><span class="p">,</span><span class="n">ky</span><span class="p">,</span><span class="n">kz</span><span class="p">,</span><span class="n">iknot</span><span class="p">,</span><span class="n">tx</span><span class="p">,</span><span class="n">ty</span><span class="p">,</span><span class="n">tz</span><span class="p">,</span><span class="n">bcoef</span><span class="p">,</span><span class="n">iflag</span><span class="p">)</span>
-
-    <span class="k">implicit none</span>
-
-<span class="k">    </span><span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>                   <span class="kd">::</span> <span class="n">nx</span>    <span class="c">!! number of \(x\) abcissae ( \( \ge 3 \) )</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>                   <span class="kd">::</span> <span class="n">ny</span>    <span class="c">!! number of \(y\) abcissae ( \( \ge 3 \) )</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>                   <span class="kd">::</span> <span class="n">nz</span>    <span class="c">!! number of \(z\) abcissae ( \( \ge 3 \) )</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>                   <span class="kd">::</span> <span class="n">kx</span>    <span class="c">!! The order of spline pieces in \(x\)</span>
-                                                      <span class="c">!! ( \( 2 \le k_x &lt; n_x \) )</span>
-                                                      <span class="c">!! (order = polynomial degree + 1)</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>                   <span class="kd">::</span> <span class="n">ky</span>    <span class="c">!! The order of spline pieces in \(y\)</span>
-                                                      <span class="c">!! ( \( 2 \le k_y &lt; n_y \) )</span>
-                                                      <span class="c">!! (order = polynomial degree + 1)</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>                   <span class="kd">::</span> <span class="n">kz</span>    <span class="c">!! the order of spline pieces in \(z\)</span>
-                                                      <span class="c">!! ( \( 2 \le k_z &lt; n_z \) )</span>
-                                                      <span class="c">!! (order = polynomial degree + 1)</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>         <span class="kd">::</span> <span class="n">x</span>     <span class="c">!! `(nx)` array of \(x\) abcissae. must be strictly increasing.</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>         <span class="kd">::</span> <span class="n">y</span>     <span class="c">!! `(ny)` array of \(y\) abcissae. must be strictly increasing.</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>         <span class="kd">::</span> <span class="n">z</span>     <span class="c">!! `(nz)` array of \(z\) abcissae. must be strictly increasing.</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:,:,:),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>     <span class="kd">::</span> <span class="n">fcn</span>   <span class="c">!! `(nx,ny,nz)` matrix of function values to interpolate. `fcn(i,j,k)` should</span>
-                                                      <span class="c">!! contain the function value at the point (`x(i)`,`y(j)`,`z(k)`)</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>                   <span class="kd">::</span> <span class="n">iknot</span> <span class="c">!! knot sequence flag:</span>
-                                                      <span class="c">!!</span>
-                                                      <span class="c">!! * 0 = knot sequence chosen by [[db3ink]].</span>
-                                                      <span class="c">!! * 1 = knot sequence chosen by user.</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:),</span><span class="k">intent</span><span class="p">(</span><span class="n">inout</span><span class="p">)</span>      <span class="kd">::</span> <span class="n">tx</span>    <span class="c">!! The `(nx+kx)` knots in the \(x\) direction for the spline</span>
-                                                      <span class="c">!! interpolant.</span>
-                                                      <span class="c">!!</span>
-                                                      <span class="c">!! * If `iknot=0` these are chosen by [[db3ink]].</span>
-                                                      <span class="c">!! * If `iknot=1` these are specified by the user.</span>
-                                                      <span class="c">!!</span>
-                                                      <span class="c">!! Must be non-decreasing.</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:),</span><span class="k">intent</span><span class="p">(</span><span class="n">inout</span><span class="p">)</span>      <span class="kd">::</span> <span class="n">ty</span>    <span class="c">!! The `(ny+ky)` knots in the \(y\) direction for the spline</span>
-                                                      <span class="c">!! interpolant.</span>
-                                                      <span class="c">!!</span>
-                                                      <span class="c">!! * If `iknot=0` these are chosen by [[db3ink]].</span>
-                                                      <span class="c">!! * If `iknot=1` these are specified by the user.</span>
-                                                      <span class="c">!!</span>
-                                                      <span class="c">!! Must be non-decreasing.</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:),</span><span class="k">intent</span><span class="p">(</span><span class="n">inout</span><span class="p">)</span>      <span class="kd">::</span> <span class="n">tz</span>    <span class="c">!! The `(nz+kz)` knots in the \(z\) direction for the spline</span>
-                                                      <span class="c">!! interpolant.</span>
-                                                      <span class="c">!!</span>
-                                                      <span class="c">!! * If `iknot=0` these are chosen by [[db3ink]].</span>
-                                                      <span class="c">!! * If `iknot=1` these are specified by the user.</span>
-                                                      <span class="c">!!</span>
-                                                      <span class="c">!! Must be non-decreasing.</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:,:,:),</span><span class="k">intent</span><span class="p">(</span><span class="n">out</span><span class="p">)</span>    <span class="kd">::</span> <span class="n">bcoef</span> <span class="c">!! `(nx,ny,nz)` matrix of coefficients of the b-spline interpolant.</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">out</span><span class="p">)</span>                  <span class="kd">::</span> <span class="n">iflag</span> <span class="c">!! *  0 = successful execution.</span>
-                                                      <span class="c">!! *  2 = `iknot` out of range.</span>
-                                                      <span class="c">!! *  3 = `nx` out of range.</span>
-                                                      <span class="c">!! *  4 = `kx` out of range.</span>
-                                                      <span class="c">!! *  5 = `x` not strictly increasing.</span>
-                                                      <span class="c">!! *  6 = `tx` not non-decreasing.</span>
-                                                      <span class="c">!! *  7 = `ny` out of range.</span>
-                                                      <span class="c">!! *  8 = `ky` out of range.</span>
-                                                      <span class="c">!! *  9 = `y` not strictly increasing.</span>
-                                                      <span class="c">!! * 10 = `ty` not non-decreasing.</span>
-                                                      <span class="c">!! * 11 = `nz` out of range.</span>
-                                                      <span class="c">!! * 12 = `kz` out of range.</span>
-                                                      <span class="c">!! * 13 = `z` not strictly increasing.</span>
-                                                      <span class="c">!! * 14 = `ty` not non-decreasing.</span>
-                                                      <span class="c">!! * 700 = `size(x) ` \(\ne\) `size(fcn,1)`</span>
-                                                      <span class="c">!! * 701 = `size(y) ` \(\ne\) `size(fcn,2)`</span>
-                                                      <span class="c">!! * 702 = `size(z) ` \(\ne\) `size(fcn,3)`</span>
-                                                      <span class="c">!! * 706 = `size(x) ` \(\ne\) `nx`</span>
-                                                      <span class="c">!! * 707 = `size(y) ` \(\ne\) `ny`</span>
-                                                      <span class="c">!! * 708 = `size(z) ` \(\ne\) `nz`</span>
-                                                      <span class="c">!! * 712 = `size(tx)` \(\ne\) `nx+kx`</span>
-                                                      <span class="c">!! * 713 = `size(ty)` \(\ne\) `ny+ky`</span>
-                                                      <span class="c">!! * 714 = `size(tz)` \(\ne\) `nz+kz`</span>
-                                                      <span class="c">!! * 800 = `size(x) ` \(\ne\) `size(bcoef,1)`</span>
-                                                      <span class="c">!! * 801 = `size(y) ` \(\ne\) `size(bcoef,2)`</span>
-                                                      <span class="c">!! * 802 = `size(z) ` \(\ne\) `size(bcoef,3)`</span>
-
-    <span class="kt">logical</span> <span class="kd">::</span> <span class="n">status_ok</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:),</span><span class="k">allocatable</span> <span class="kd">::</span> <span class="n">temp</span> <span class="c">!! work array of length `nx*ny*nz`</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:),</span><span class="k">allocatable</span> <span class="kd">::</span> <span class="n">work</span> <span class="c">!! work array of length `max(2*kx*(nx+1),</span>
-                                              <span class="c">!! 2*ky*(ny+1),2*kz*(nz+1))`</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">)</span> <span class="kd">::</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">ii</span> <span class="c">!! counter</span>
-
-    <span class="c">! check validity of input</span>
-
-    <span class="k">call </span><span class="n">check_inputs</span><span class="p">(</span>  <span class="n">iknot</span><span class="p">,&amp;</span>
-                        <span class="n">iflag</span><span class="p">,&amp;</span>
-                        <span class="n">nx</span><span class="o">=</span><span class="n">nx</span><span class="p">,</span><span class="n">ny</span><span class="o">=</span><span class="n">ny</span><span class="p">,</span><span class="n">nz</span><span class="o">=</span><span class="n">nz</span><span class="p">,&amp;</span>
-                        <span class="n">kx</span><span class="o">=</span><span class="n">kx</span><span class="p">,</span><span class="n">ky</span><span class="o">=</span><span class="n">ky</span><span class="p">,</span><span class="n">kz</span><span class="o">=</span><span class="n">kz</span><span class="p">,&amp;</span>
-                        <span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="o">=</span><span class="n">z</span><span class="p">,&amp;</span>
-                        <span class="n">tx</span><span class="o">=</span><span class="n">tx</span><span class="p">,</span><span class="n">ty</span><span class="o">=</span><span class="n">ty</span><span class="p">,</span><span class="n">tz</span><span class="o">=</span><span class="n">tz</span><span class="p">,&amp;</span>
-                        <span class="n">f3</span><span class="o">=</span><span class="n">fcn</span><span class="p">,&amp;</span>
-                        <span class="n">bcoef3</span><span class="o">=</span><span class="n">bcoef</span><span class="p">,&amp;</span>
-                        <span class="n">status_ok</span><span class="o">=</span><span class="n">status_ok</span><span class="p">)</span>
-
-    <span class="k">if</span> <span class="p">(</span><span class="n">status_ok</span><span class="p">)</span> <span class="k">then</span>
-
-        <span class="c">! choose knots</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">iknot</span> <span class="o">==</span> <span class="mi">0_ip</span><span class="p">)</span> <span class="k">then</span>
-<span class="k">            call </span><span class="n">dbknot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">nx</span><span class="p">,</span><span class="n">kx</span><span class="p">,</span><span class="n">tx</span><span class="p">)</span>
-            <span class="k">call </span><span class="n">dbknot</span><span class="p">(</span><span class="n">y</span><span class="p">,</span><span class="n">ny</span><span class="p">,</span><span class="n">ky</span><span class="p">,</span><span class="n">ty</span><span class="p">)</span>
-            <span class="k">call </span><span class="n">dbknot</span><span class="p">(</span><span class="n">z</span><span class="p">,</span><span class="n">nz</span><span class="p">,</span><span class="n">kz</span><span class="p">,</span><span class="n">tz</span><span class="p">)</span>
-        <span class="k">end if</span>
-
-<span class="k">        allocate</span><span class="p">(</span><span class="n">temp</span><span class="p">(</span><span class="n">nx</span><span class="o">*</span><span class="n">ny</span><span class="o">*</span><span class="n">nz</span><span class="p">))</span>
-        <span class="k">allocate</span><span class="p">(</span><span class="n">work</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="mi">2_ip</span><span class="o">*</span><span class="n">kx</span><span class="o">*</span><span class="p">(</span><span class="n">nx</span><span class="o">+</span><span class="mi">1_ip</span><span class="p">),</span><span class="mi">2_ip</span><span class="o">*</span><span class="n">ky</span><span class="o">*</span><span class="p">(</span><span class="n">ny</span><span class="o">+</span><span class="mi">1_ip</span><span class="p">),</span><span class="mi">2_ip</span><span class="o">*</span><span class="n">kz</span><span class="o">*</span><span class="p">(</span><span class="n">nz</span><span class="o">+</span><span class="mi">1_ip</span><span class="p">))))</span>
-
-        <span class="c">! copy fcn to work in packed for dbtpcf</span>
-        <span class="c">!temp = reshape( fcn, [nx*ny*nz] )</span>
-        <span class="c">! replaced with loops to avoid stack</span>
-        <span class="c">! overflow for large data set:</span>
-        <span class="n">ii</span> <span class="o">=</span> <span class="mi">0_ip</span>
-        <span class="k">do </span><span class="n">k</span> <span class="o">=</span> <span class="mi">1_ip</span><span class="p">,</span> <span class="n">nz</span>
-            <span class="k">do </span><span class="n">j</span> <span class="o">=</span> <span class="mi">1_ip</span><span class="p">,</span> <span class="n">ny</span>
-                <span class="k">do </span><span class="n">i</span> <span class="o">=</span> <span class="mi">1_ip</span><span class="p">,</span> <span class="n">nx</span>
-                    <span class="n">ii</span> <span class="o">=</span> <span class="n">ii</span> <span class="o">+</span> <span class="mi">1_ip</span>
-                    <span class="n">temp</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span> <span class="o">=</span> <span class="n">fcn</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">,</span><span class="n">k</span><span class="p">)</span>
-                <span class="k">end do</span>
-<span class="k">            end do</span>
-<span class="k">        end do</span>
-
-        <span class="c">! construct b-spline coefficients</span>
-                         <span class="k">call </span><span class="n">dbtpcf</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">nx</span><span class="p">,</span><span class="n">temp</span><span class="p">,</span> <span class="n">nx</span><span class="p">,</span><span class="n">ny</span><span class="o">*</span><span class="n">nz</span><span class="p">,</span><span class="n">tx</span><span class="p">,</span><span class="n">kx</span><span class="p">,</span><span class="n">bcoef</span><span class="p">,</span><span class="n">work</span><span class="p">,</span><span class="n">iflag</span><span class="p">)</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">iflag</span><span class="o">==</span><span class="mi">0_ip</span><span class="p">)</span> <span class="k">call </span><span class="n">dbtpcf</span><span class="p">(</span><span class="n">y</span><span class="p">,</span><span class="n">ny</span><span class="p">,</span><span class="n">bcoef</span><span class="p">,</span><span class="n">ny</span><span class="p">,</span><span class="n">nx</span><span class="o">*</span><span class="n">nz</span><span class="p">,</span><span class="n">ty</span><span class="p">,</span><span class="n">ky</span><span class="p">,</span><span class="n">temp</span><span class="p">,</span> <span class="n">work</span><span class="p">,</span><span class="n">iflag</span><span class="p">)</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">iflag</span><span class="o">==</span><span class="mi">0_ip</span><span class="p">)</span> <span class="k">call </span><span class="n">dbtpcf</span><span class="p">(</span><span class="n">z</span><span class="p">,</span><span class="n">nz</span><span class="p">,</span><span class="n">temp</span><span class="p">,</span> <span class="n">nz</span><span class="p">,</span><span class="n">nx</span><span class="o">*</span><span class="n">ny</span><span class="p">,</span><span class="n">tz</span><span class="p">,</span><span class="n">kz</span><span class="p">,</span><span class="n">bcoef</span><span class="p">,</span><span class="n">work</span><span class="p">,</span><span class="n">iflag</span><span class="p">)</span>
-
-        <span class="k">deallocate</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>
-        <span class="k">deallocate</span><span class="p">(</span><span class="n">work</span><span class="p">)</span>
-
-    <span class="k">end if</span>
-
-<span class="k">    end subroutine </span><span class="n">db3ink</span>
-</pre></div>
+    <section>    
+      <h2>Variables</h2>
+    <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th><th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+<tbody>
+<tr>
+  <td><span class="anchor" id="variable-status_ok~6"></span>logical,</td>
+<td>private</td>  <td></td><td>::</td>
+  <td><strong>status_ok</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-temp~2"></span>real(kind=wp),</td>
+<td>private,</td>  <td>dimension(:), allocatable</td><td>::</td>
+  <td><strong>temp</strong></td><td></td><td></td><td><p>work array of length <code>nx*ny*nz</code></p></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-work~3"></span>real(kind=wp),</td>
+<td>private,</td>  <td>dimension(:), allocatable</td><td>::</td>
+  <td><strong>work</strong></td><td></td><td></td><td><p>work array of length <code>max(2*kx*(nx+1),
+2*ky*(ny+1),2*kz*(nz+1))</code></p></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-i~2"></span>integer(kind=ip),</td>
+<td>private</td>  <td></td><td>::</td>
+  <td><strong>i</strong></td><td></td><td></td><td><p>counter</p></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-j"></span>integer(kind=ip),</td>
+<td>private</td>  <td></td><td>::</td>
+  <td><strong>j</strong></td><td></td><td></td><td><p>counter</p></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-k~4"></span>integer(kind=ip),</td>
+<td>private</td>  <td></td><td>::</td>
+  <td><strong>k</strong></td><td></td><td></td><td><p>counter</p></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ii"></span>integer(kind=ip),</td>
+<td>private</td>  <td></td><td>::</td>
+  <td><strong>ii</strong></td><td></td><td></td><td><p>counter</p></td>
+</tr>
+</tbody>
+</table>
 
     </section>
     <br>
     
     
+
+    
+    
+
+
+    
+    
     </div>
   </div>
-
 
     <hr>    
     </div> <!-- /container -->
     <footer>
       <div class="container">
       <div class="row">
-        <div class="col-xs-6 col-md-6"><p>bspline-fortran was developed by Jacob Williams<br>&copy; 2021 
-                                          </p>
+        <div class="col-xs-6 col-md-6"><p>bspline-fortran was developed by Jacob Williams<br>&copy; 2022 
+</p>
         </div>
         <div class="col-xs-6 col-md-6">
           <p class="text-right">
             Documentation generated by 
             <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
-            
-            
           </p>
         </div>
       </div>
@@ -1207,14 +905,11 @@ public pure subroutine db3ink(x, nx, y, ny, z, nz, fcn, kx, ky, kz, iknot, tx, t
         extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
       });
     </script>
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
     
     <script src="../tipuesearch/tipuesearch_content.js"></script>
     <script src="../tipuesearch/tipuesearch_set.js"></script>
     <script src="../tipuesearch/tipuesearch.js"></script>
-    
     
   </body>
 </html>

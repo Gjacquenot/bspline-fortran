@@ -4,9 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
    <meta name="description" content="BSPLINE-FORTRAN -- Multidimensional B-Spline Interpolation of Data on a Regular Grid">
-    
     <meta name="author" content="Jacob Williams" >
     <link rel="icon" href="../favicon.png">
 
@@ -16,10 +14,7 @@
     <link href="../css/pygments.css" rel="stylesheet">
     <link href="../css/font-awesome.min.css" rel="stylesheet">
     <link href="../css/local.css" rel="stylesheet">
-    
     <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
-    
-    
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -48,58 +43,27 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-        
             <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
               <a href="#" class="dropdown-toggle"
               data-toggle="dropdown" role="button"
               aria-haspopup="true"
      aria-expanded="false">Contents <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          
-              
             <li><a href="../lists/files.html">Source Files</a></li>
-        
-        
-        
             <li><a href="../lists/modules.html">Modules</a></li>
-        
-            
-                                
             <li><a href="../lists/procedures.html">Procedures</a></li>
-        
-        
             <li><a href="../lists/absint.html">Abstract Interfaces</a></li>
-               
-            <li><a href="../lists/types.html">Derived Types</a></li>
-        
-               
-        
-        
+                   <li><a href="../lists/types.html">Derived Types</a></li>
+       
             </ul>
         
             </li>
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/files.html">Source Files</a></li>
-
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/modules.html">Modules</a></li>
-
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/absint.html">Abstract Interfaces</a></li>
-                             
-<li class="visible-xs hidden-sm visible-lg"><a href="../lists/types.html">Derived Types</a></li>
-
-
-
-
+                             <li class="visible-xs hidden-sm visible-lg"><a href="../lists/types.html">Derived Types</a></li>
           </ul>
-        
         <form action="../search.html" class="navbar-form navbar-right" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
@@ -108,51 +72,29 @@
         <button type="submit" class="btn btn-default">Submit</button>
 -->
         </form>
-        
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
     <div class="container">
-    
-  
   <div class="row">
     <h1>db1val_alt
       <small>Subroutine</small>
-    
     </h1>
-    
-<div class="row">
+    <div class="row">
   <div class="col-lg-12">
 <div class="well well-sm">
   <ul class="list-inline" style="margin-bottom:0px;display:inline">
-     
-     
-     
-     
-     
-    
-    
      <li><i class="fa fa-list-ol"></i>
        <a data-toggle="tooltip"
     data-placement="bottom" data-html="true"
     title=" 0.5% of total for procedures.">19 statements</a>
      </li> 
-     
-     
-     
     <li><i class="fa fa-code"></i><a href="../src/bspline_sub_module.f90"> Source File</a></li>
-     
-     
   </ul>
   <ol class="breadcrumb in-well text-right">
-  
-    
      <li><a href='../sourcefile/bspline_sub_module.f90.html'>bspline_sub_module.f90</a></li>
-    
      <li><a href='../module/bspline_sub_module.html'>bspline_sub_module</a></li>
-    
-  
      <li class="active">db1val_alt</li>
   </ol>
 </div>
@@ -168,207 +110,81 @@
   
   <div class="row">
     <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
-    
-<div id="sidebar">
-  
-<h3>Contents</h3>
+    <div id="sidebar">
+  <h3>Contents</h3>
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="panel panel-primary">
-  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
-  <div class="list-group">
-    <a class="list-group-item" href="../proc/db1val_alt.html#src">db1val_alt</a>
-  </div>
-</div>
-
-
+<em>None</em>
 
 </div>
 
     </div>
     
     <div class="col-md-9" id='text'>
-    <h2>
-private pure subroutine db1val_alt(xval, idx, tx, nx, n, kx, bcoef, f, iflag, inbvx, w0, extrap)
+    <h2>private pure subroutine db1val_alt(xval, idx, tx, nx, n, kx, bcoef, f, iflag, inbvx, w0, extrap)</h2>
     
-    
-   
-</h2>
-    
-  
 
-
-    
     <p>Alternate version of <a href="../proc/db1val_default.html">db1val_default</a> for use with <a href="../proc/db1ink_alt.html">db1ink_alt</a> and <a href="../proc/db1ink_alt_2.html">db1ink_alt_2</a>.</p>
-    
 
     <h3>Arguments</h3>
-    
-      
-<table class="table table-striped varlist">
-<thead><tr><th>Type</th>
-<th>Intent</th><th>Optional</th>
-<th>Attributes</th><th></th><th>Name</th><th></th></thead>
-
-
-
+      <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Intent</th><th>Optional</th><th>Attributes</th><th></th><th>Name</th><th></th></thead>
 <tbody>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-xval~2"></span>real(kind=wp),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-xval~8"></span>real(kind=wp),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>xval</strong></td><td><p>
 <script type="math/tex">x</script> coordinate of evaluation point.</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-idx~2"></span>integer(kind=ip),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-idx~9"></span>integer(kind=ip),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>idx</strong></td><td><p>
 <script type="math/tex">x</script> derivative of piecewise polynomial to evaluate.</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-tx~11"></span>real(kind=wp),</td>
-  <td>intent(in),</td>
-  <td></td>
-  
-  <td>dimension(n+kx)</td><td>::</td>
+  <td><span class="anchor" id="variable-tx~24"></span>real(kind=wp),</td>
+<td>intent(in),</td>
+  <td></td>  <td>dimension(n+kx)</td><td>::</td>
   <td><strong>tx</strong></td><td><p>sequence of knots defining the piecewise polynomial
- in the <script type="math/tex">x</script> direction.</p></td>
-  
+in the <script type="math/tex">x</script> direction.</p></td>
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-nx~11"></span>integer(kind=ip),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-nx~24"></span>integer(kind=ip),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>nx</strong></td><td><p>the number of interpolation points in <script type="math/tex">x</script>.</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-n"></span>integer(kind=ip),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-n~3"></span>integer(kind=ip),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>n</strong></td><td><p>length of <code>bcoef</code>: <code>nx+2</code></p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-kx~11"></span>integer(kind=ip),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-kx~36"></span>integer(kind=ip),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>kx</strong></td><td><p>order of polynomial pieces in <script type="math/tex">x</script>.
- (same as in last call to <a href="../interface/db1ink.html">db1ink</a>)</p></td>
-  
+(same as in last call to <a href="../interface/db1ink.html">db1ink</a>)</p></td>
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-bcoef~11"></span>real(kind=wp),</td>
-  <td>intent(in),</td>
-  <td></td>
-  
-  <td>dimension(n)</td><td>::</td>
+<td>intent(in),</td>
+  <td></td>  <td>dimension(n)</td><td>::</td>
   <td><strong>bcoef</strong></td><td><p>the b-spline coefficients computed by <a href="../interface/db1ink.html">db1ink</a>.</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-f~3"></span>real(kind=wp),</td>
-  <td>intent(out)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-f~11"></span>real(kind=wp),</td>
+<td>intent(out)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>f</strong></td><td><p>interpolated value</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-iflag~8"></span>integer(kind=ip),</td>
-  <td>intent(out)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-iflag~30"></span>integer(kind=ip),</td>
+<td>intent(out)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>iflag</strong></td><td><p>status flag:</p>
 <ul>
 <li>
@@ -376,66 +192,32 @@ private pure subroutine db1val_alt(xval, idx, tx, nx, n, kx, bcoef, f, iflag, in
 <li>
 <script type="math/tex"> \ne 0 </script> : error</li>
 </ul></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-inbvx~3"></span>integer(kind=ip),</td>
-  <td>intent(inout)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+<td>intent(inout)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>inbvx</strong></td><td><p>initialization parameter which must be set
- to 1 the first time this routine is called,
- and must not be changed by the user.</p></td>
-  
+to 1 the first time this routine is called,
+and must not be changed by the user.</p></td>
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-w0~2"></span>real(kind=wp),</td>
-  <td>intent(inout),</td>
-  <td></td>
-  
-  <td>dimension(3_ip*kx)</td><td>::</td>
+<td>intent(inout),</td>
+  <td></td>  <td>dimension(3_ip*kx)</td><td>::</td>
   <td><strong>w0</strong></td><td><p>work array</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-extrap~5"></span>logical,</td>
-  <td>intent(in),</td>
-  <td>optional</td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-extrap~30"></span>logical,</td>
+<td>intent(in),</td>
+  <td>optional</td>  <td></td><td>::</td>
   <td><strong>extrap</strong></td><td><p>if extrapolation is allowed
- (if not present, default is False)</p></td>
-  
+(if not present, default is False)</p></td>
 </tr>
-
 </tbody>
 </table>
 
-    
-    
-    
     <br>
-    
-    
     <div class="panel panel-default">
       <div class="panel-heading">
   <h3 class="panel-title">Calls</h3>
@@ -458,65 +240,65 @@ private pure subroutine db1val_alt(xval, idx, tx, nx, n, kx, bcoef, f, iflag, in
 <polygon fill="none" stroke="black" points="67,-45 0,-45 0,-21 67,-21 67,-45"/>
 <text text-anchor="middle" x="33.5" y="-30.6" font-family="Helvetica,sans-Serif" font-size="10.50">db1val_alt</text>
 </g>
-<!-- proc~dbvalu -->
-<g id="proc~~db1val_alt~~CallsGraph_node2" class="node">
-<title>proc~dbvalu</title>
-<g id="a_proc~~db1val_alt~~CallsGraph_node2"><a xlink:href=".././proc/dbvalu.html" xlink:title="dbvalu">
-<polygon fill="#d9534f" stroke="#d9534f" points="169.5,-66 115.5,-66 115.5,-42 169.5,-42 169.5,-66"/>
-<text text-anchor="middle" x="142.5" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dbvalu</text>
-</a>
-</g>
-</g>
-<!-- proc~db1val_alt&#45;&gt;proc~dbvalu -->
-<g id="proc~~db1val_alt~~CallsGraph_edge1" class="edge">
-<title>proc~db1val_alt&#45;&gt;proc~dbvalu</title>
-<path fill="none" stroke="#000000" d="M67.18,-39.41C79.28,-41.79 93.07,-44.49 105.45,-46.92"/>
-<polygon fill="#000000" stroke="#000000" points="104.97,-50.4 115.45,-48.89 106.31,-43.53 104.97,-50.4"/>
-</g>
 <!-- proc~check_value -->
-<g id="proc~~db1val_alt~~CallsGraph_node3" class="node">
+<g id="proc~~db1val_alt~~CallsGraph_node2" class="node">
 <title>proc~check_value</title>
-<g id="a_proc~~db1val_alt~~CallsGraph_node3"><a xlink:href=".././proc/check_value.html" xlink:title="check_value">
-<polygon fill="#d94e8f" stroke="#d94e8f" points="182,-24 103,-24 103,0 182,0 182,-24"/>
-<text text-anchor="middle" x="142.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">check_value</text>
+<g id="a_proc~~db1val_alt~~CallsGraph_node2"><a xlink:href=".././proc/check_value.html" xlink:title="check_value">
+<polygon fill="#d94e8f" stroke="#d94e8f" points="182,-66 103,-66 103,-42 182,-42 182,-66"/>
+<text text-anchor="middle" x="142.5" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">check_value</text>
 </a>
 </g>
 </g>
 <!-- proc~db1val_alt&#45;&gt;proc~check_value -->
-<g id="proc~~db1val_alt~~CallsGraph_edge2" class="edge">
+<g id="proc~~db1val_alt~~CallsGraph_edge1" class="edge">
 <title>proc~db1val_alt&#45;&gt;proc~check_value</title>
-<path fill="none" stroke="#000000" d="M67.18,-26.59C75.22,-25.01 84.01,-23.28 92.63,-21.59"/>
-<polygon fill="#000000" stroke="#000000" points="93.48,-24.99 102.62,-19.63 92.13,-18.12 93.48,-24.99"/>
+<path fill="none" stroke="#000000" d="M67.18,-39.41C75.22,-40.99 84.01,-42.72 92.63,-44.41"/>
+<polygon fill="#000000" stroke="#000000" points="92.13,-47.88 102.62,-46.37 93.48,-41.01 92.13,-47.88"/>
+</g>
+<!-- proc~dbvalu -->
+<g id="proc~~db1val_alt~~CallsGraph_node3" class="node">
+<title>proc~dbvalu</title>
+<g id="a_proc~~db1val_alt~~CallsGraph_node3"><a xlink:href=".././proc/dbvalu.html" xlink:title="dbvalu">
+<polygon fill="#d9534f" stroke="#d9534f" points="169.5,-24 115.5,-24 115.5,0 169.5,0 169.5,-24"/>
+<text text-anchor="middle" x="142.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dbvalu</text>
+</a>
+</g>
+</g>
+<!-- proc~db1val_alt&#45;&gt;proc~dbvalu -->
+<g id="proc~~db1val_alt~~CallsGraph_edge2" class="edge">
+<title>proc~db1val_alt&#45;&gt;proc~dbvalu</title>
+<path fill="none" stroke="#000000" d="M67.18,-26.59C79.28,-24.21 93.07,-21.51 105.45,-19.08"/>
+<polygon fill="#000000" stroke="#000000" points="106.31,-22.47 115.45,-17.11 104.97,-15.6 106.31,-22.47"/>
 </g>
 <!-- proc~dintrv -->
 <g id="proc~~db1val_alt~~CallsGraph_node4" class="node">
 <title>proc~dintrv</title>
 <g id="a_proc~~db1val_alt~~CallsGraph_node4"><a xlink:href=".././proc/dintrv.html" xlink:title="dintrv">
-<polygon fill="#d9534f" stroke="#d9534f" points="272,-66 218,-66 218,-42 272,-42 272,-66"/>
-<text text-anchor="middle" x="245" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dintrv</text>
+<polygon fill="#d9534f" stroke="#d9534f" points="272,-24 218,-24 218,0 272,0 272,-24"/>
+<text text-anchor="middle" x="245" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dintrv</text>
 </a>
 </g>
 </g>
 <!-- proc~dbvalu&#45;&gt;proc~dintrv -->
 <g id="proc~~db1val_alt~~CallsGraph_edge3" class="edge">
 <title>proc~dbvalu&#45;&gt;proc~dintrv</title>
-<path fill="none" stroke="#000000" d="M169.64,-54C181.27,-54 195.17,-54 207.77,-54"/>
-<polygon fill="#000000" stroke="#000000" points="207.99,-57.5 217.99,-54 207.99,-50.5 207.99,-57.5"/>
+<path fill="none" stroke="#000000" d="M169.64,-12C181.27,-12 195.17,-12 207.77,-12"/>
+<polygon fill="#000000" stroke="#000000" points="207.99,-15.5 217.99,-12 207.99,-8.5 207.99,-15.5"/>
 </g>
 <!-- proc~get_temp_x_for_extrap -->
 <g id="proc~~db1val_alt~~CallsGraph_node5" class="node">
 <title>proc~get_temp_x_for_extrap</title>
 <g id="a_proc~~db1val_alt~~CallsGraph_node5"><a xlink:href=".././proc/get_temp_x_for_extrap.html" xlink:title="get_temp_x_for_extrap">
-<polygon fill="#d94e8f" stroke="#d94e8f" points="441,-66 308,-66 308,-42 441,-42 441,-66"/>
-<text text-anchor="middle" x="374.5" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">get_temp_x_for_extrap</text>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="441,-24 308,-24 308,0 441,0 441,-24"/>
+<text text-anchor="middle" x="374.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">get_temp_x_for_extrap</text>
 </a>
 </g>
 </g>
 <!-- proc~dintrv&#45;&gt;proc~get_temp_x_for_extrap -->
 <g id="proc~~db1val_alt~~CallsGraph_edge4" class="edge">
 <title>proc~dintrv&#45;&gt;proc~get_temp_x_for_extrap</title>
-<path fill="none" stroke="#000000" d="M272.11,-54C279.81,-54 288.66,-54 297.85,-54"/>
-<polygon fill="#000000" stroke="#000000" points="297.92,-57.5 307.92,-54 297.92,-50.5 297.92,-57.5"/>
+<path fill="none" stroke="#000000" d="M272.11,-12C279.81,-12 288.66,-12 297.85,-12"/>
+<polygon fill="#000000" stroke="#000000" points="297.92,-15.5 307.92,-12 297.92,-8.5 297.92,-15.5"/>
 </g>
 </g>
 </svg>
@@ -581,8 +363,6 @@ private pure subroutine db1val_alt(xval, idx, tx, nx, n, kx, bcoef, f, iflag, in
     </div></div></div></div>
       </div>
     </div>
-     
-     
     <div class="panel panel-default">
       <div class="panel-heading">
   <h3 class="panel-title">Called by</h3>
@@ -698,122 +478,41 @@ private pure subroutine db1val_alt(xval, idx, tx, nx, n, kx, bcoef, f, iflag, in
     </div></div></div></div>
       </div>
     </div>
-     
     <br>
 
     <section class="visible-xs visible-sm hidden-md">
-      
-<h3>Contents</h3>
+      <h3>Contents</h3>
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="panel panel-primary">
-  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
-  <div class="list-group">
-    <a class="list-group-item" href="../proc/db1val_alt.html#src">db1val_alt</a>
-  </div>
-</div>
-
-
+<em>None</em>
 
     </section>
     <br class="visible-xs visible-sm hidden-md">
 
-    
 
-    
-    
-    
     
     
 
     
     
-    
-    
-    
 
 
-    
-    
-    
-    <section>
-    <h2><span class="anchor" id="src"></span>Source Code</h2>
-    <div class="highlight"><pre><span></span>    <span class="k">pure subroutine </span><span class="n">db1val_alt</span><span class="p">(</span><span class="n">xval</span><span class="p">,</span><span class="n">idx</span><span class="p">,</span><span class="n">tx</span><span class="p">,</span><span class="n">nx</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="n">kx</span><span class="p">,</span><span class="n">bcoef</span><span class="p">,</span><span class="n">f</span><span class="p">,</span><span class="n">iflag</span><span class="p">,</span><span class="n">inbvx</span><span class="p">,</span><span class="n">w0</span><span class="p">,</span><span class="n">extrap</span><span class="p">)</span>
-
-    <span class="k">implicit none</span>
-
-<span class="k">    </span><span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>                  <span class="kd">::</span> <span class="n">xval</span>     <span class="c">!! \(x\) coordinate of evaluation point.</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>               <span class="kd">::</span> <span class="n">idx</span>      <span class="c">!! \(x\) derivative of piecewise polynomial to evaluate.</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>               <span class="kd">::</span> <span class="n">nx</span>       <span class="c">!! the number of interpolation points in \(x\).</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>               <span class="kd">::</span> <span class="n">n</span>        <span class="c">!! length of `bcoef`: `nx+2`</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>               <span class="kd">::</span> <span class="n">kx</span>       <span class="c">!! order of polynomial pieces in \(x\).</span>
-                                                     <span class="c">!! (same as in last call to [[db1ink]])</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="n">kx</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>  <span class="kd">::</span> <span class="n">tx</span>       <span class="c">!! sequence of knots defining the piecewise polynomial</span>
-                                                     <span class="c">!! in the \(x\) direction.</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(</span><span class="n">n</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>     <span class="kd">::</span> <span class="n">bcoef</span>    <span class="c">!! the b-spline coefficients computed by [[db1ink]].</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">out</span><span class="p">)</span>                 <span class="kd">::</span> <span class="n">f</span>        <span class="c">!! interpolated value</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">out</span><span class="p">)</span>              <span class="kd">::</span> <span class="n">iflag</span>    <span class="c">!! status flag:</span>
-                                                     <span class="c">!!</span>
-                                                     <span class="c">!! * \( = 0 \)   : no errors</span>
-                                                     <span class="c">!! * \( \ne 0 \) : error</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">inout</span><span class="p">)</span>            <span class="kd">::</span> <span class="n">inbvx</span>    <span class="c">!! initialization parameter which must be set</span>
-                                                     <span class="c">!! to 1 the first time this routine is called,</span>
-                                                     <span class="c">!! and must not be changed by the user.</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(</span><span class="mi">3_ip</span><span class="o">*</span><span class="n">kx</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">inout</span><span class="p">)</span> <span class="kd">::</span> <span class="n">w0</span>  <span class="c">!! work array</span>
-    <span class="kt">logical</span><span class="p">,</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">),</span><span class="k">optional</span>          <span class="kd">::</span> <span class="n">extrap</span>   <span class="c">!! if extrapolation is allowed</span>
-                                                     <span class="c">!! (if not present, default is False)</span>
-
-    <span class="n">f</span> <span class="o">=</span> <span class="mf">0.0_wp</span>
-
-    <span class="n">iflag</span> <span class="o">=</span> <span class="n">check_value</span><span class="p">(</span><span class="n">xval</span><span class="p">,</span><span class="n">tx</span><span class="p">,</span><span class="mi">1_ip</span><span class="p">,</span><span class="n">extrap</span><span class="p">);</span> <span class="k">if</span> <span class="p">(</span><span class="n">iflag</span><span class="o">/=</span><span class="mi">0_ip</span><span class="p">)</span> <span class="k">return</span>
-
-<span class="k">    call </span><span class="n">dbvalu</span><span class="p">(</span><span class="n">tx</span><span class="p">,</span><span class="n">bcoef</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="n">kx</span><span class="p">,</span><span class="n">idx</span><span class="p">,</span><span class="n">xval</span><span class="p">,</span><span class="n">inbvx</span><span class="p">,</span><span class="n">w0</span><span class="p">,</span><span class="n">iflag</span><span class="p">,</span><span class="n">f</span><span class="p">,</span><span class="n">extrap</span><span class="p">)</span>
-
-    <span class="k">end subroutine </span><span class="n">db1val_alt</span>
-</pre></div>
-
-    </section>
-    <br>
     
     
     </div>
   </div>
-
 
     <hr>    
     </div> <!-- /container -->
     <footer>
       <div class="container">
       <div class="row">
-        <div class="col-xs-6 col-md-6"><p>bspline-fortran was developed by Jacob Williams<br>&copy; 2021 
-                                          </p>
+        <div class="col-xs-6 col-md-6"><p>bspline-fortran was developed by Jacob Williams<br>&copy; 2022 
+</p>
         </div>
         <div class="col-xs-6 col-md-6">
           <p class="text-right">
             Documentation generated by 
             <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
-            
-            
           </p>
         </div>
       </div>
@@ -841,14 +540,11 @@ private pure subroutine db1val_alt(xval, idx, tx, nx, n, kx, bcoef, f, iflag, in
         extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
       });
     </script>
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
     
     <script src="../tipuesearch/tipuesearch_content.js"></script>
     <script src="../tipuesearch/tipuesearch_set.js"></script>
     <script src="../tipuesearch/tipuesearch.js"></script>
-    
     
   </body>
 </html>

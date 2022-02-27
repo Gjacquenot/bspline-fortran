@@ -4,9 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
    <meta name="description" content="BSPLINE-FORTRAN -- Multidimensional B-Spline Interpolation of Data on a Regular Grid">
-    
     <meta name="author" content="Jacob Williams" >
     <link rel="icon" href="../favicon.png">
 
@@ -16,10 +14,7 @@
     <link href="../css/pygments.css" rel="stylesheet">
     <link href="../css/font-awesome.min.css" rel="stylesheet">
     <link href="../css/local.css" rel="stylesheet">
-    
     <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
-    
-    
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -48,58 +43,27 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-        
             <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
               <a href="#" class="dropdown-toggle"
               data-toggle="dropdown" role="button"
               aria-haspopup="true"
      aria-expanded="false">Contents <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          
-              
             <li><a href="../lists/files.html">Source Files</a></li>
-        
-        
-        
             <li><a href="../lists/modules.html">Modules</a></li>
-        
-            
-                                
             <li><a href="../lists/procedures.html">Procedures</a></li>
-        
-        
             <li><a href="../lists/absint.html">Abstract Interfaces</a></li>
-               
-            <li><a href="../lists/types.html">Derived Types</a></li>
-        
-               
-        
-        
+                   <li><a href="../lists/types.html">Derived Types</a></li>
+       
             </ul>
         
             </li>
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/files.html">Source Files</a></li>
-
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/modules.html">Modules</a></li>
-
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/absint.html">Abstract Interfaces</a></li>
-                             
-<li class="visible-xs hidden-sm visible-lg"><a href="../lists/types.html">Derived Types</a></li>
-
-
-
-
+                             <li class="visible-xs hidden-sm visible-lg"><a href="../lists/types.html">Derived Types</a></li>
           </ul>
-        
         <form action="../search.html" class="navbar-form navbar-right" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
@@ -108,51 +72,29 @@
         <button type="submit" class="btn btn-default">Submit</button>
 -->
         </form>
-        
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
     <div class="container">
-    
-  
   <div class="row">
     <h1>evaluate_6d
       <small>Subroutine</small>
-    
     </h1>
-    
-<div class="row">
+    <div class="row">
   <div class="col-lg-12">
 <div class="well well-sm">
   <ul class="list-inline" style="margin-bottom:0px;display:inline">
-     
-     
-     
-     
-     
-    
-    
      <li><i class="fa fa-list-ol"></i>
        <a data-toggle="tooltip"
     data-placement="bottom" data-html="true"
     title=" 0.6% of total for procedures.">24 statements</a>
      </li> 
-     
-     
-     
     <li><i class="fa fa-code"></i><a href="../src/bspline_oo_module.f90"> Source File</a></li>
-     
-     
   </ul>
   <ol class="breadcrumb in-well text-right">
-  
-    
      <li><a href='../sourcefile/bspline_oo_module.f90.html'>bspline_oo_module.f90</a></li>
-    
      <li><a href='../module/bspline_oo_module.html'>bspline_oo_module</a></li>
-    
-  
      <li class="active">evaluate_6d</li>
   </ol>
 </div>
@@ -168,318 +110,131 @@
   
   <div class="row">
     <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
-    
-<div id="sidebar">
-  
-<h3>Contents</h3>
+    <div id="sidebar">
+  <h3>Contents</h3>
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="panel panel-primary">
-  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
-  <div class="list-group">
-    <a class="list-group-item" href="../proc/evaluate_6d.html#src">evaluate_6d</a>
-  </div>
-</div>
-
-
+<em>None</em>
 
 </div>
 
     </div>
     
     <div class="col-md-9" id='text'>
-    <h2>
-private pure subroutine evaluate_6d(me, xval, yval, zval, qval, rval, sval, idx, idy, idz, idq, idr, ids, f, iflag)
+    <h2>private pure subroutine evaluate_6d(me, xval, yval, zval, qval, rval, sval, idx, idy, idz, idq, idr, ids, f, iflag)</h2>
     
-    
-   
-</h2>
-    
-  
 
-
-    
     <p>Evaluate a <a href="../type/bspline_6d.html">bspline_6d</a> interpolate.  This is a wrapper for <a href="../proc/db6val.html">db6val</a>.</p>
-    
 
     <h3>Arguments</h3>
-    
-      
-<table class="table table-striped varlist">
-<thead><tr><th>Type</th>
-<th>Intent</th><th>Optional</th>
-<th>Attributes</th><th></th><th>Name</th><th></th></thead>
-
-
-
+      <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Intent</th><th>Optional</th><th>Attributes</th><th></th><th>Name</th><th></th></thead>
 <tbody>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-me~63"></span>class(<a href='../type/bspline_6d.html'>bspline_6d</a>),</td>
-  <td>intent(inout)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+<td>intent(inout)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>me</strong></td><td></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-xval~13"></span>real(kind=wp),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-xval~6"></span>real(kind=wp),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>xval</strong></td><td><p>
 <script type="math/tex">x</script> coordinate of evaluation point.</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-yval~10"></span>real(kind=wp),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-yval~5"></span>real(kind=wp),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>yval</strong></td><td><p>
 <script type="math/tex">y</script> coordinate of evaluation point.</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-zval~8"></span>real(kind=wp),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-zval~4"></span>real(kind=wp),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>zval</strong></td><td><p>
 <script type="math/tex">z</script> coordinate of evaluation point.</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-qval~6"></span>real(kind=wp),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-qval~3"></span>real(kind=wp),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>qval</strong></td><td><p>
 <script type="math/tex">q</script> coordinate of evaluation point.</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-rval~4"></span>real(kind=wp),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-rval~2"></span>real(kind=wp),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>rval</strong></td><td><p>
 <script type="math/tex">r</script> coordinate of evaluation point.</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-sval~2"></span>real(kind=wp),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-sval"></span>real(kind=wp),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>sval</strong></td><td><p>
 <script type="math/tex">s</script> coordinate of evaluation point.</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-idx~15"></span>integer(kind=ip),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-idx~7"></span>integer(kind=ip),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>idx</strong></td><td><p>
 <script type="math/tex">x</script> derivative of piecewise polynomial to evaluate.</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-idy~10"></span>integer(kind=ip),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-idy~5"></span>integer(kind=ip),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>idy</strong></td><td><p>
 <script type="math/tex">y</script> derivative of piecewise polynomial to evaluate.</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-idz~8"></span>integer(kind=ip),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-idz~4"></span>integer(kind=ip),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>idz</strong></td><td><p>
 <script type="math/tex">z</script> derivative of piecewise polynomial to evaluate.</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-idq~6"></span>integer(kind=ip),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-idq~3"></span>integer(kind=ip),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>idq</strong></td><td><p>
 <script type="math/tex">q</script> derivative of piecewise polynomial to evaluate.</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-idr~4"></span>integer(kind=ip),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-idr~2"></span>integer(kind=ip),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>idr</strong></td><td><p>
 <script type="math/tex">r</script> derivative of piecewise polynomial to evaluate.</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-ids~2"></span>integer(kind=ip),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-ids"></span>integer(kind=ip),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>ids</strong></td><td><p>
 <script type="math/tex">s</script> derivative of piecewise polynomial to evaluate.</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-f~19"></span>real(kind=wp),</td>
-  <td>intent(out)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-f~9"></span>real(kind=wp),</td>
+<td>intent(out)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>f</strong></td><td><p>interpolated value</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-iflag~52"></span>integer(kind=ip),</td>
-  <td>intent(out)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-iflag~22"></span>integer(kind=ip),</td>
+<td>intent(out)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>iflag</strong></td><td><p>status flag (see <a href="../proc/db6val.html">db6val</a>)</p></td>
-  
 </tr>
-
 </tbody>
 </table>
 
-    
-    
-    
     <br>
-    
-    
     <div class="panel panel-default">
       <div class="panel-heading">
   <h3 class="panel-title">Calls</h3>
@@ -517,71 +272,71 @@ private pure subroutine evaluate_6d(me, xval, yval, zval, qval, rval, sval, idx,
 <path fill="none" stroke="#000000" d="M78.09,-52C86.47,-52 95.33,-52 103.64,-52"/>
 <polygon fill="#000000" stroke="#000000" points="103.8,-55.5 113.8,-52 103.8,-48.5 103.8,-55.5"/>
 </g>
-<!-- proc~dbvalu -->
+<!-- proc~check_value -->
 <g id="proc~~evaluate_6d~~CallsGraph_node3" class="node">
-<title>proc~dbvalu</title>
-<g id="a_proc~~evaluate_6d~~CallsGraph_node3"><a xlink:href=".././proc/dbvalu.html" xlink:title="dbvalu">
-<polygon fill="#d9534f" stroke="#d9534f" points="270.5,-104 216.5,-104 216.5,-80 270.5,-80 270.5,-104"/>
-<text text-anchor="middle" x="243.5" y="-89.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dbvalu</text>
+<title>proc~check_value</title>
+<g id="a_proc~~evaluate_6d~~CallsGraph_node3"><a xlink:href=".././proc/check_value.html" xlink:title="check_value">
+<polygon fill="#d94e8f" stroke="#d94e8f" points="283,-104 204,-104 204,-80 283,-80 283,-104"/>
+<text text-anchor="middle" x="243.5" y="-89.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">check_value</text>
 </a>
 </g>
 </g>
-<!-- proc~db6val&#45;&gt;proc~dbvalu -->
+<!-- proc~db6val&#45;&gt;proc~check_value -->
 <g id="proc~~evaluate_6d~~CallsGraph_edge2" class="edge">
-<title>proc~db6val&#45;&gt;proc~dbvalu</title>
-<path fill="none" stroke="#000000" d="M168.14,-62.41C180.01,-67.13 194.22,-72.78 207.03,-77.88"/>
-<polygon fill="#000000" stroke="#000000" points="205.9,-81.2 216.49,-81.65 208.49,-74.7 205.9,-81.2"/>
+<title>proc~db6val&#45;&gt;proc~check_value</title>
+<path fill="none" stroke="#000000" d="M168.14,-62.41C178.68,-66.6 191.08,-71.53 202.7,-76.16"/>
+<polygon fill="#000000" stroke="#000000" points="201.63,-79.5 212.21,-79.95 204.22,-73 201.63,-79.5"/>
 </g>
 <!-- proc~dintrv -->
 <g id="proc~~evaluate_6d~~CallsGraph_node4" class="node">
 <title>proc~dintrv</title>
 <g id="a_proc~~evaluate_6d~~CallsGraph_node4"><a xlink:href=".././proc/dintrv.html" xlink:title="dintrv">
-<polygon fill="#d9534f" stroke="#d9534f" points="373,-84 319,-84 319,-60 373,-60 373,-84"/>
-<text text-anchor="middle" x="346" y="-69.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dintrv</text>
+<polygon fill="#d9534f" stroke="#d9534f" points="373,-44 319,-44 319,-20 373,-20 373,-44"/>
+<text text-anchor="middle" x="346" y="-29.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dintrv</text>
 </a>
 </g>
 </g>
 <!-- proc~db6val&#45;&gt;proc~dintrv -->
 <g id="proc~~evaluate_6d~~CallsGraph_edge3" class="edge">
 <title>proc~db6val&#45;&gt;proc~dintrv</title>
-<path fill="none" stroke="#000000" d="M168.12,-54.57C203.98,-58.11 268.59,-64.47 309.01,-68.45"/>
-<polygon fill="#000000" stroke="#000000" points="308.68,-71.94 318.98,-69.44 309.37,-64.97 308.68,-71.94"/>
+<path fill="none" stroke="#000000" d="M168.12,-49.43C203.98,-45.89 268.59,-39.53 309.01,-35.55"/>
+<polygon fill="#000000" stroke="#000000" points="309.37,-39.03 318.98,-34.56 308.68,-32.06 309.37,-39.03"/>
 </g>
-<!-- proc~check_value -->
+<!-- proc~dbvalu -->
 <g id="proc~~evaluate_6d~~CallsGraph_node5" class="node">
-<title>proc~check_value</title>
-<g id="a_proc~~evaluate_6d~~CallsGraph_node5"><a xlink:href=".././proc/check_value.html" xlink:title="check_value">
-<polygon fill="#d94e8f" stroke="#d94e8f" points="283,-24 204,-24 204,0 283,0 283,-24"/>
-<text text-anchor="middle" x="243.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">check_value</text>
+<title>proc~dbvalu</title>
+<g id="a_proc~~evaluate_6d~~CallsGraph_node5"><a xlink:href=".././proc/dbvalu.html" xlink:title="dbvalu">
+<polygon fill="#d9534f" stroke="#d9534f" points="270.5,-24 216.5,-24 216.5,0 270.5,0 270.5,-24"/>
+<text text-anchor="middle" x="243.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dbvalu</text>
 </a>
 </g>
 </g>
-<!-- proc~db6val&#45;&gt;proc~check_value -->
+<!-- proc~db6val&#45;&gt;proc~dbvalu -->
 <g id="proc~~evaluate_6d~~CallsGraph_edge4" class="edge">
-<title>proc~db6val&#45;&gt;proc~check_value</title>
-<path fill="none" stroke="#000000" d="M168.14,-41.59C178.68,-37.4 191.08,-32.47 202.7,-27.84"/>
-<polygon fill="#000000" stroke="#000000" points="204.22,-31 212.21,-24.05 201.63,-24.5 204.22,-31"/>
-</g>
-<!-- proc~dbvalu&#45;&gt;proc~dintrv -->
-<g id="proc~~evaluate_6d~~CallsGraph_edge5" class="edge">
-<title>proc~dbvalu&#45;&gt;proc~dintrv</title>
-<path fill="none" stroke="#000000" d="M270.64,-86.8C282.39,-84.46 296.44,-81.66 309.15,-79.13"/>
-<polygon fill="#000000" stroke="#000000" points="309.86,-82.56 318.99,-77.18 308.5,-75.7 309.86,-82.56"/>
+<title>proc~db6val&#45;&gt;proc~dbvalu</title>
+<path fill="none" stroke="#000000" d="M168.14,-41.59C180.01,-36.87 194.22,-31.22 207.03,-26.12"/>
+<polygon fill="#000000" stroke="#000000" points="208.49,-29.3 216.49,-22.35 205.9,-22.8 208.49,-29.3"/>
 </g>
 <!-- proc~get_temp_x_for_extrap -->
 <g id="proc~~evaluate_6d~~CallsGraph_node6" class="node">
 <title>proc~get_temp_x_for_extrap</title>
 <g id="a_proc~~evaluate_6d~~CallsGraph_node6"><a xlink:href=".././proc/get_temp_x_for_extrap.html" xlink:title="get_temp_x_for_extrap">
-<polygon fill="#d94e8f" stroke="#d94e8f" points="542,-84 409,-84 409,-60 542,-60 542,-84"/>
-<text text-anchor="middle" x="475.5" y="-69.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">get_temp_x_for_extrap</text>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="542,-44 409,-44 409,-20 542,-20 542,-44"/>
+<text text-anchor="middle" x="475.5" y="-29.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">get_temp_x_for_extrap</text>
 </a>
 </g>
 </g>
 <!-- proc~dintrv&#45;&gt;proc~get_temp_x_for_extrap -->
-<g id="proc~~evaluate_6d~~CallsGraph_edge6" class="edge">
+<g id="proc~~evaluate_6d~~CallsGraph_edge5" class="edge">
 <title>proc~dintrv&#45;&gt;proc~get_temp_x_for_extrap</title>
-<path fill="none" stroke="#000000" d="M373.11,-72C380.81,-72 389.66,-72 398.85,-72"/>
-<polygon fill="#000000" stroke="#000000" points="398.92,-75.5 408.92,-72 398.92,-68.5 398.92,-75.5"/>
+<path fill="none" stroke="#000000" d="M373.11,-32C380.81,-32 389.66,-32 398.85,-32"/>
+<polygon fill="#000000" stroke="#000000" points="398.92,-35.5 408.92,-32 398.92,-28.5 398.92,-35.5"/>
+</g>
+<!-- proc~dbvalu&#45;&gt;proc~dintrv -->
+<g id="proc~~evaluate_6d~~CallsGraph_edge6" class="edge">
+<title>proc~dbvalu&#45;&gt;proc~dintrv</title>
+<path fill="none" stroke="#000000" d="M270.64,-17.2C282.39,-19.54 296.44,-22.34 309.15,-24.87"/>
+<polygon fill="#000000" stroke="#000000" points="308.5,-28.3 318.99,-26.82 309.86,-21.44 308.5,-28.3"/>
 </g>
 </g>
 </svg>
@@ -646,129 +401,41 @@ private pure subroutine evaluate_6d(me, xval, yval, zval, qval, rval, sval, idx,
     </div></div></div></div>
       </div>
     </div>
-     
-     
     <br>
 
     <section class="visible-xs visible-sm hidden-md">
-      
-<h3>Contents</h3>
+      <h3>Contents</h3>
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="panel panel-primary">
-  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
-  <div class="list-group">
-    <a class="list-group-item" href="../proc/evaluate_6d.html#src">evaluate_6d</a>
-  </div>
-</div>
-
-
+<em>None</em>
 
     </section>
     <br class="visible-xs visible-sm hidden-md">
 
-    
 
-    
-    
-    
     
     
 
     
     
-    
-    
-    
 
 
-    
-    
-    
-    <section>
-    <h2><span class="anchor" id="src"></span>Source Code</h2>
-    <div class="highlight"><pre><span></span>    <span class="k">pure subroutine </span><span class="n">evaluate_6d</span><span class="p">(</span><span class="n">me</span><span class="p">,</span><span class="n">xval</span><span class="p">,</span><span class="n">yval</span><span class="p">,</span><span class="n">zval</span><span class="p">,</span><span class="n">qval</span><span class="p">,</span><span class="n">rval</span><span class="p">,</span><span class="n">sval</span><span class="p">,</span><span class="n">idx</span><span class="p">,</span><span class="n">idy</span><span class="p">,</span><span class="n">idz</span><span class="p">,</span><span class="n">idq</span><span class="p">,</span><span class="n">idr</span><span class="p">,</span><span class="n">ids</span><span class="p">,</span><span class="n">f</span><span class="p">,</span><span class="n">iflag</span><span class="p">)</span>
-
-    <span class="k">implicit none</span>
-
-<span class="k">    class</span><span class="p">(</span><span class="n">bspline_6d</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">inout</span><span class="p">)</span> <span class="kd">::</span> <span class="n">me</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>             <span class="kd">::</span> <span class="n">xval</span>  <span class="c">!! \(x\) coordinate of evaluation point.</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>             <span class="kd">::</span> <span class="n">yval</span>  <span class="c">!! \(y\) coordinate of evaluation point.</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>             <span class="kd">::</span> <span class="n">zval</span>  <span class="c">!! \(z\) coordinate of evaluation point.</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>             <span class="kd">::</span> <span class="n">qval</span>  <span class="c">!! \(q\) coordinate of evaluation point.</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>             <span class="kd">::</span> <span class="n">rval</span>  <span class="c">!! \(r\) coordinate of evaluation point.</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>             <span class="kd">::</span> <span class="n">sval</span>  <span class="c">!! \(s\) coordinate of evaluation point.</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>          <span class="kd">::</span> <span class="n">idx</span>   <span class="c">!! \(x\) derivative of piecewise polynomial to evaluate.</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>          <span class="kd">::</span> <span class="n">idy</span>   <span class="c">!! \(y\) derivative of piecewise polynomial to evaluate.</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>          <span class="kd">::</span> <span class="n">idz</span>   <span class="c">!! \(z\) derivative of piecewise polynomial to evaluate.</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>          <span class="kd">::</span> <span class="n">idq</span>   <span class="c">!! \(q\) derivative of piecewise polynomial to evaluate.</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>          <span class="kd">::</span> <span class="n">idr</span>   <span class="c">!! \(r\) derivative of piecewise polynomial to evaluate.</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>          <span class="kd">::</span> <span class="n">ids</span>   <span class="c">!! \(s\) derivative of piecewise polynomial to evaluate.</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">out</span><span class="p">)</span>            <span class="kd">::</span> <span class="n">f</span>     <span class="c">!! interpolated value</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">out</span><span class="p">)</span>         <span class="kd">::</span> <span class="n">iflag</span> <span class="c">!! status flag (see [[db6val]])</span>
-
-    <span class="k">if</span> <span class="p">(</span><span class="n">me</span><span class="p">%</span><span class="n">initialized</span><span class="p">)</span> <span class="k">then</span>
-<span class="k">        call </span><span class="n">db6val</span><span class="p">(</span><span class="n">xval</span><span class="p">,</span><span class="n">yval</span><span class="p">,</span><span class="n">zval</span><span class="p">,</span><span class="n">qval</span><span class="p">,</span><span class="n">rval</span><span class="p">,</span><span class="n">sval</span><span class="p">,&amp;</span>
-                    <span class="n">idx</span><span class="p">,</span><span class="n">idy</span><span class="p">,</span><span class="n">idz</span><span class="p">,</span><span class="n">idq</span><span class="p">,</span><span class="n">idr</span><span class="p">,</span><span class="n">ids</span><span class="p">,&amp;</span>
-                    <span class="n">me</span><span class="p">%</span><span class="n">tx</span><span class="p">,</span><span class="n">me</span><span class="p">%</span><span class="n">ty</span><span class="p">,</span><span class="n">me</span><span class="p">%</span><span class="n">tz</span><span class="p">,</span><span class="n">me</span><span class="p">%</span><span class="n">tq</span><span class="p">,</span><span class="n">me</span><span class="p">%</span><span class="n">tr</span><span class="p">,</span><span class="n">me</span><span class="p">%</span><span class="n">ts</span><span class="p">,&amp;</span>
-                    <span class="n">me</span><span class="p">%</span><span class="n">nx</span><span class="p">,</span><span class="n">me</span><span class="p">%</span><span class="n">ny</span><span class="p">,</span><span class="n">me</span><span class="p">%</span><span class="n">nz</span><span class="p">,</span><span class="n">me</span><span class="p">%</span><span class="n">nq</span><span class="p">,</span><span class="n">me</span><span class="p">%</span><span class="n">nr</span><span class="p">,</span><span class="n">me</span><span class="p">%</span><span class="n">ns</span><span class="p">,&amp;</span>
-                    <span class="n">me</span><span class="p">%</span><span class="n">kx</span><span class="p">,</span><span class="n">me</span><span class="p">%</span><span class="n">ky</span><span class="p">,</span><span class="n">me</span><span class="p">%</span><span class="n">kz</span><span class="p">,</span><span class="n">me</span><span class="p">%</span><span class="n">kq</span><span class="p">,</span><span class="n">me</span><span class="p">%</span><span class="n">kr</span><span class="p">,</span><span class="n">me</span><span class="p">%</span><span class="n">ks</span><span class="p">,&amp;</span>
-                    <span class="n">me</span><span class="p">%</span><span class="n">bcoef</span><span class="p">,</span><span class="n">f</span><span class="p">,</span><span class="n">iflag</span><span class="p">,&amp;</span>
-                    <span class="n">me</span><span class="p">%</span><span class="n">inbvx</span><span class="p">,</span><span class="n">me</span><span class="p">%</span><span class="n">inbvy</span><span class="p">,</span><span class="n">me</span><span class="p">%</span><span class="n">inbvz</span><span class="p">,</span><span class="n">me</span><span class="p">%</span><span class="n">inbvq</span><span class="p">,</span><span class="n">me</span><span class="p">%</span><span class="n">inbvr</span><span class="p">,</span><span class="n">me</span><span class="p">%</span><span class="n">inbvs</span><span class="p">,&amp;</span>
-                    <span class="n">me</span><span class="p">%</span><span class="n">iloy</span><span class="p">,</span><span class="n">me</span><span class="p">%</span><span class="n">iloz</span><span class="p">,</span><span class="n">me</span><span class="p">%</span><span class="n">iloq</span><span class="p">,</span><span class="n">me</span><span class="p">%</span><span class="n">ilor</span><span class="p">,</span><span class="n">me</span><span class="p">%</span><span class="n">ilos</span><span class="p">,&amp;</span>
-                    <span class="n">me</span><span class="p">%</span><span class="n">work_val_1</span><span class="p">,</span><span class="n">me</span><span class="p">%</span><span class="n">work_val_2</span><span class="p">,</span><span class="n">me</span><span class="p">%</span><span class="n">work_val_3</span><span class="p">,</span><span class="n">me</span><span class="p">%</span><span class="n">work_val_4</span><span class="p">,</span><span class="n">me</span><span class="p">%</span><span class="n">work_val_5</span><span class="p">,</span><span class="n">me</span><span class="p">%</span><span class="n">work_val_6</span><span class="p">,&amp;</span>
-                    <span class="n">extrap</span><span class="o">=</span><span class="n">me</span><span class="p">%</span><span class="n">extrap</span><span class="p">)</span>
-    <span class="k">else</span>
-<span class="k">        </span><span class="n">iflag</span> <span class="o">=</span> <span class="mi">1_ip</span>
-    <span class="k">end if</span>
-
-<span class="k">    </span><span class="n">me</span><span class="p">%</span><span class="n">iflag</span> <span class="o">=</span> <span class="n">iflag</span>
-
-    <span class="k">end subroutine </span><span class="n">evaluate_6d</span>
-</pre></div>
-
-    </section>
-    <br>
     
     
     </div>
   </div>
-
 
     <hr>    
     </div> <!-- /container -->
     <footer>
       <div class="container">
       <div class="row">
-        <div class="col-xs-6 col-md-6"><p>bspline-fortran was developed by Jacob Williams<br>&copy; 2021 
-                                          </p>
+        <div class="col-xs-6 col-md-6"><p>bspline-fortran was developed by Jacob Williams<br>&copy; 2022 
+</p>
         </div>
         <div class="col-xs-6 col-md-6">
           <p class="text-right">
             Documentation generated by 
             <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
-            
-            
           </p>
         </div>
       </div>
@@ -796,14 +463,11 @@ private pure subroutine evaluate_6d(me, xval, yval, zval, qval, rval, sval, idx,
         extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
       });
     </script>
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
     
     <script src="../tipuesearch/tipuesearch_content.js"></script>
     <script src="../tipuesearch/tipuesearch_set.js"></script>
     <script src="../tipuesearch/tipuesearch.js"></script>
-    
     
   </body>
 </html>

@@ -4,9 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
    <meta name="description" content="BSPLINE-FORTRAN -- Multidimensional B-Spline Interpolation of Data on a Regular Grid">
-    
     <meta name="author" content="Jacob Williams" >
     <link rel="icon" href="../favicon.png">
 
@@ -16,10 +14,7 @@
     <link href="../css/pygments.css" rel="stylesheet">
     <link href="../css/font-awesome.min.css" rel="stylesheet">
     <link href="../css/local.css" rel="stylesheet">
-    
     <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
-    
-    
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -48,58 +43,27 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-        
             <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
               <a href="#" class="dropdown-toggle"
               data-toggle="dropdown" role="button"
               aria-haspopup="true"
      aria-expanded="false">Contents <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          
-              
             <li><a href="../lists/files.html">Source Files</a></li>
-        
-        
-        
             <li><a href="../lists/modules.html">Modules</a></li>
-        
-            
-                                
             <li><a href="../lists/procedures.html">Procedures</a></li>
-        
-        
             <li><a href="../lists/absint.html">Abstract Interfaces</a></li>
-               
-            <li><a href="../lists/types.html">Derived Types</a></li>
-        
-               
-        
-        
+                   <li><a href="../lists/types.html">Derived Types</a></li>
+       
             </ul>
         
             </li>
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/files.html">Source Files</a></li>
-
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/modules.html">Modules</a></li>
-
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/absint.html">Abstract Interfaces</a></li>
-                             
-<li class="visible-xs hidden-sm visible-lg"><a href="../lists/types.html">Derived Types</a></li>
-
-
-
-
+                             <li class="visible-xs hidden-sm visible-lg"><a href="../lists/types.html">Derived Types</a></li>
           </ul>
-        
         <form action="../search.html" class="navbar-form navbar-right" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
@@ -108,51 +72,29 @@
         <button type="submit" class="btn btn-default">Submit</button>
 -->
         </form>
-        
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
     <div class="container">
-    
-  
   <div class="row">
     <h1>db2val
       <small>Subroutine</small>
-    
     </h1>
-    
-<div class="row">
+    <div class="row">
   <div class="col-lg-12">
 <div class="well well-sm">
   <ul class="list-inline" style="margin-bottom:0px;display:inline">
-     
-     
-     
-     
-     
-    
-    
      <li><i class="fa fa-list-ol"></i>
        <a data-toggle="tooltip"
     data-placement="bottom" data-html="true"
     title=" 1.0% of total for procedures.">38 statements</a>
      </li> 
-     
-     
-     
     <li><i class="fa fa-code"></i><a href="../src/bspline_sub_module.f90"> Source File</a></li>
-     
-     
   </ul>
   <ol class="breadcrumb in-well text-right">
-  
-    
      <li><a href='../sourcefile/bspline_sub_module.f90.html'>bspline_sub_module.f90</a></li>
-    
      <li><a href='../module/bspline_sub_module.html'>bspline_sub_module</a></li>
-    
-  
      <li class="active">db2val</li>
   </ol>
 </div>
@@ -168,57 +110,28 @@
   
   <div class="row">
     <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
-    
-<div id="sidebar">
-  
-<h3>Contents</h3>
+    <div id="sidebar">
+  <h3>Contents</h3>
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="panel panel-primary">
-  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
-  <div class="list-group">
-    <a class="list-group-item" href="../proc/db2val.html#src">db2val</a>
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-0">Variables</a></h3></div>
+  <div id="vars-0" class="panel-collapse collapse">
+    <div class="list-group">
+      <a class="list-group-item" href="../proc/db2val.html#variable-k~3">k</a>
+      <a class="list-group-item" href="../proc/db2val.html#variable-lefty">lefty</a>
+      <a class="list-group-item" href="../proc/db2val.html#variable-kcol">kcol</a>
+    </div>
   </div>
 </div>
-
-
 
 </div>
 
     </div>
     
     <div class="col-md-9" id='text'>
-    <h2>
-public pure subroutine db2val(xval, yval, idx, idy, tx, ty, nx, ny, kx, ky, bcoef, f, iflag, inbvx, inbvy, iloy, w1, w0, extrap)
+    <h2>public pure subroutine db2val(xval, yval, idx, idy, tx, ty, nx, ny, kx, ky, bcoef, f, iflag, inbvx, inbvy, iloy, w1, w0, extrap)</h2>
     
-    
-   
-</h2>
-    
-  
 
-
-    
     <p>Evaluates the tensor product piecewise polynomial
   interpolant constructed by the routine <a href="../proc/db2ink.html">db2ink</a> or one of its
   derivatives at the point (<code>xval</code>,<code>yval</code>).</p>
@@ -226,18 +139,18 @@ public pure subroutine db2val(xval, yval, idx, idy, tx, ty, nx, ny, kx, ky, bcoe
   itself, set <code>idx=idy=0</code>, to evaluate the first partial with respect
   to <code>x</code>, set <code>idx=1,idy=0</code>, and so on.</p>
 <p><a href="../proc/db2val.html">db2val</a> returns 0.0 if <code>(xval,yval)</code> is out of range. that is, if</p>
-<div class="codehilite"><pre><span></span><code>   <span class="n">xval</span> <span class="o">&lt;</span> <span class="n">tx</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">.</span><span class="nb">or</span><span class="p">.</span> <span class="n">xval</span> <span class="o">&gt;</span> <span class="n">tx</span><span class="p">(</span><span class="n">nx</span><span class="o">+</span><span class="n">kx</span><span class="p">)</span> <span class="p">.</span><span class="nb">or</span><span class="p">.</span>
-   <span class="n">yval</span> <span class="o">&lt;</span> <span class="n">ty</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">.</span><span class="nb">or</span><span class="p">.</span> <span class="n">yval</span> <span class="o">&gt;</span> <span class="n">ty</span><span class="p">(</span><span class="n">ny</span><span class="o">+</span><span class="n">ky</span><span class="p">)</span>
+<div class="codehilite"><pre><span></span><code><span class="w">   </span><span class="n">xval</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">tx</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">.</span><span class="nb">or</span><span class="p">.</span><span class="w"> </span><span class="n">xval</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">tx</span><span class="p">(</span><span class="n">nx</span><span class="o">+</span><span class="n">kx</span><span class="p">)</span><span class="w"> </span><span class="p">.</span><span class="nb">or</span><span class="p">.</span><span class="w"></span>
+<span class="w">   </span><span class="n">yval</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">ty</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">.</span><span class="nb">or</span><span class="p">.</span><span class="w"> </span><span class="n">yval</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">ty</span><span class="p">(</span><span class="n">ny</span><span class="o">+</span><span class="n">ky</span><span class="p">)</span><span class="w"></span>
 </code></pre></div>
 
 <p>if the knots tx and ty were chosen by <a href="../proc/db2ink.html">db2ink</a>, then this is equivalent to:</p>
-<div class="codehilite"><pre><span></span><code>   <span class="n">xval</span> <span class="o">&lt;</span> <span class="n">x</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">.</span><span class="nb">or</span><span class="p">.</span> <span class="n">xval</span> <span class="o">&gt;</span> <span class="n">x</span><span class="p">(</span><span class="n">nx</span><span class="p">)</span><span class="o">+</span><span class="n">epsx</span> <span class="p">.</span><span class="nb">or</span><span class="p">.</span>
-   <span class="n">yval</span> <span class="o">&lt;</span> <span class="n">y</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">.</span><span class="nb">or</span><span class="p">.</span> <span class="n">yval</span> <span class="o">&gt;</span> <span class="n">y</span><span class="p">(</span><span class="n">ny</span><span class="p">)</span><span class="o">+</span><span class="n">epsy</span>
+<div class="codehilite"><pre><span></span><code><span class="w">   </span><span class="n">xval</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">x</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">.</span><span class="nb">or</span><span class="p">.</span><span class="w"> </span><span class="n">xval</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">x</span><span class="p">(</span><span class="n">nx</span><span class="p">)</span><span class="o">+</span><span class="n">epsx</span><span class="w"> </span><span class="p">.</span><span class="nb">or</span><span class="p">.</span><span class="w"></span>
+<span class="w">   </span><span class="n">yval</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">y</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">.</span><span class="nb">or</span><span class="p">.</span><span class="w"> </span><span class="n">yval</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">y</span><span class="p">(</span><span class="n">ny</span><span class="p">)</span><span class="o">+</span><span class="n">epsy</span><span class="w"></span>
 </code></pre></div>
 
 <p>where</p>
-<div class="codehilite"><pre><span></span><code>   <span class="n">epsx</span> <span class="o">=</span> <span class="mf">0.1</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="p">(</span><span class="n">nx</span><span class="p">)</span><span class="o">-</span><span class="n">x</span><span class="p">(</span><span class="n">nx</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
-   <span class="n">epsy</span> <span class="o">=</span> <span class="mf">0.1</span><span class="o">*</span><span class="p">(</span><span class="n">y</span><span class="p">(</span><span class="n">ny</span><span class="p">)</span><span class="o">-</span><span class="n">y</span><span class="p">(</span><span class="n">ny</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+<div class="codehilite"><pre><span></span><code><span class="w">   </span><span class="n">epsx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.1</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="p">(</span><span class="n">nx</span><span class="p">)</span><span class="o">-</span><span class="n">x</span><span class="p">(</span><span class="n">nx</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span><span class="w"></span>
+<span class="w">   </span><span class="n">epsy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.1</span><span class="o">*</span><span class="p">(</span><span class="n">y</span><span class="p">(</span><span class="n">ny</span><span class="p">)</span><span class="o">-</span><span class="n">y</span><span class="p">(</span><span class="n">ny</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span><span class="w"></span>
 </code></pre></div>
 
 <p>The input quantities <code>tx</code>, <code>ty</code>, <code>nx</code>, <code>ny</code>, <code>kx</code>, <code>ky</code>, and <code>bcoef</code> should be
@@ -248,223 +161,99 @@ public pure subroutine db2val(xval, yval, idx, idy, tx, ty, nx, ny, kx, ky, bcoe
 <li>JEC : 000330 modified array declarations.</li>
 <li>Jacob Williams, 2/24/2015 : extensive refactoring of CMLIB routine.</li>
 </ul>
-    
 
     <h3>Arguments</h3>
-    
-      
-<table class="table table-striped varlist">
-<thead><tr><th>Type</th>
-<th>Intent</th><th>Optional</th>
-<th>Attributes</th><th></th><th>Name</th><th></th></thead>
-
-
-
+      <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Intent</th><th>Optional</th><th>Attributes</th><th></th><th>Name</th><th></th></thead>
 <tbody>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-xval~3"></span>real(kind=wp),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-xval~9"></span>real(kind=wp),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>xval</strong></td><td><p>
 <script type="math/tex">x</script> coordinate of evaluation point.</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-yval"></span>real(kind=wp),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-yval~6"></span>real(kind=wp),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>yval</strong></td><td><p>
 <script type="math/tex">y</script> coordinate of evaluation point.</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-idx~4"></span>integer(kind=ip),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-idx~11"></span>integer(kind=ip),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>idx</strong></td><td><p>
 <script type="math/tex">x</script> derivative of piecewise polynomial to evaluate.</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-idy"></span>integer(kind=ip),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-idy~6"></span>integer(kind=ip),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>idy</strong></td><td><p>
 <script type="math/tex">y</script> derivative of piecewise polynomial to evaluate.</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-tx~15"></span>real(kind=wp),</td>
-  <td>intent(in),</td>
-  <td></td>
-  
-  <td>dimension(nx+kx)</td><td>::</td>
+  <td><span class="anchor" id="variable-tx~28"></span>real(kind=wp),</td>
+<td>intent(in),</td>
+  <td></td>  <td>dimension(nx+kx)</td><td>::</td>
   <td><strong>tx</strong></td><td><p>sequence of knots defining the piecewise polynomial
- in the <script type="math/tex">x</script> direction.
- (same as in last call to <a href="../proc/db2ink.html">db2ink</a>)</p></td>
-  
+in the <script type="math/tex">x</script> direction.
+(same as in last call to <a href="../proc/db2ink.html">db2ink</a>)</p></td>
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-ty~7"></span>real(kind=wp),</td>
-  <td>intent(in),</td>
-  <td></td>
-  
-  <td>dimension(ny+ky)</td><td>::</td>
+  <td><span class="anchor" id="variable-ty~18"></span>real(kind=wp),</td>
+<td>intent(in),</td>
+  <td></td>  <td>dimension(ny+ky)</td><td>::</td>
   <td><strong>ty</strong></td><td><p>sequence of knots defining the piecewise
- polynomial in the <script type="math/tex">y</script> direction.
- (same as in last call to <a href="../proc/db2ink.html">db2ink</a>)</p></td>
-  
+polynomial in the <script type="math/tex">y</script> direction.
+(same as in last call to <a href="../proc/db2ink.html">db2ink</a>)</p></td>
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-nx~15"></span>integer(kind=ip),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-nx~28"></span>integer(kind=ip),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>nx</strong></td><td><p>the number of interpolation points in <script type="math/tex">x</script>.
- (same as in last call to <a href="../proc/db2ink.html">db2ink</a>)</p></td>
-  
+(same as in last call to <a href="../proc/db2ink.html">db2ink</a>)</p></td>
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-ny~7"></span>integer(kind=ip),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-ny~18"></span>integer(kind=ip),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>ny</strong></td><td><p>the number of interpolation points in <script type="math/tex">y</script>.
- (same as in last call to <a href="../proc/db2ink.html">db2ink</a>)</p></td>
-  
+(same as in last call to <a href="../proc/db2ink.html">db2ink</a>)</p></td>
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-kx~15"></span>integer(kind=ip),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-kx~40"></span>integer(kind=ip),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>kx</strong></td><td><p>order of polynomial pieces in <script type="math/tex">x</script>.
- (same as in last call to <a href="../proc/db2ink.html">db2ink</a>)</p></td>
-  
+(same as in last call to <a href="../proc/db2ink.html">db2ink</a>)</p></td>
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-ky~7"></span>integer(kind=ip),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-ky~28"></span>integer(kind=ip),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>ky</strong></td><td><p>order of polynomial pieces in <script type="math/tex">y</script>.
- (same as in last call to <a href="../proc/db2ink.html">db2ink</a>)</p></td>
-  
+(same as in last call to <a href="../proc/db2ink.html">db2ink</a>)</p></td>
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-bcoef~15"></span>real(kind=wp),</td>
-  <td>intent(in),</td>
-  <td></td>
-  
-  <td>dimension(nx,ny)</td><td>::</td>
+<td>intent(in),</td>
+  <td></td>  <td>dimension(nx,ny)</td><td>::</td>
   <td><strong>bcoef</strong></td><td><p>the b-spline coefficients computed by <a href="../proc/db2ink.html">db2ink</a>.</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-f~6"></span>real(kind=wp),</td>
-  <td>intent(out)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-f~14"></span>real(kind=wp),</td>
+<td>intent(out)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>f</strong></td><td><p>interpolated value</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-iflag~12"></span>integer(kind=ip),</td>
-  <td>intent(out)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-iflag~34"></span>integer(kind=ip),</td>
+<td>intent(out)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>iflag</strong></td><td><p>status flag:</p>
 <ul>
 <li>
@@ -472,115 +261,54 @@ public pure subroutine db2val(xval, yval, idx, idy, tx, ty, nx, ny, kx, ky, bcoe
 <li>
 <script type="math/tex"> \ne 0 </script> : error</li>
 </ul></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-inbvx~4"></span>integer(kind=ip),</td>
-  <td>intent(inout)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+<td>intent(inout)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>inbvx</strong></td><td><p>initialization parameter which must be set to 1
- the first time this routine is called,
- and must not be changed by the user.</p></td>
-  
+the first time this routine is called,
+and must not be changed by the user.</p></td>
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-inbvy~6"></span>integer(kind=ip),</td>
-  <td>intent(inout)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+<td>intent(inout)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>inbvy</strong></td><td><p>initialization parameter which must be set to 1
- the first time this routine is called,
- and must not be changed by the user.</p></td>
-  
+the first time this routine is called,
+and must not be changed by the user.</p></td>
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-iloy~6"></span>integer(kind=ip),</td>
-  <td>intent(inout)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+<td>intent(inout)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>iloy</strong></td><td><p>initialization parameter which must be set to 1
- the first time this routine is called,
- and must not be changed by the user.</p></td>
-  
+the first time this routine is called,
+and must not be changed by the user.</p></td>
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-w1"></span>real(kind=wp),</td>
-  <td>intent(inout),</td>
-  <td></td>
-  
-  <td>dimension(ky)</td><td>::</td>
+<td>intent(inout),</td>
+  <td></td>  <td>dimension(ky)</td><td>::</td>
   <td><strong>w1</strong></td><td><p>work array</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" id="variable-w0~5"></span>real(kind=wp),</td>
-  <td>intent(inout),</td>
-  <td></td>
-  
-  <td>dimension(3_ip*max(kx,ky))</td><td>::</td>
+<td>intent(inout),</td>
+  <td></td>  <td>dimension(3_ip*max(kx,ky))</td><td>::</td>
   <td><strong>w0</strong></td><td><p>work array</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-extrap~6"></span>logical,</td>
-  <td>intent(in),</td>
-  <td>optional</td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-extrap~31"></span>logical,</td>
+<td>intent(in),</td>
+  <td>optional</td>  <td></td><td>::</td>
   <td><strong>extrap</strong></td><td><p>if extrapolation is allowed
- (if not present, default is False)</p></td>
-  
+(if not present, default is False)</p></td>
 </tr>
-
 </tbody>
 </table>
 
-    
-    
-    
     <br>
-    
-    
     <div class="panel panel-default">
       <div class="panel-heading">
   <h3 class="panel-title">Calls</h3>
@@ -603,71 +331,71 @@ public pure subroutine db2val(xval, yval, idx, idy, tx, ty, nx, ny, kx, ky, bcoe
 <polygon fill="none" stroke="black" points="54,-64 0,-64 0,-40 54,-40 54,-64"/>
 <text text-anchor="middle" x="27" y="-49.6" font-family="Helvetica,sans-Serif" font-size="10.50">db2val</text>
 </g>
-<!-- proc~dbvalu -->
+<!-- proc~check_value -->
 <g id="proc~~db2val~~CallsGraph_node2" class="node">
-<title>proc~dbvalu</title>
-<g id="a_proc~~db2val~~CallsGraph_node2"><a xlink:href=".././proc/dbvalu.html" xlink:title="dbvalu">
-<polygon fill="#d9534f" stroke="#d9534f" points="156.5,-104 102.5,-104 102.5,-80 156.5,-80 156.5,-104"/>
-<text text-anchor="middle" x="129.5" y="-89.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dbvalu</text>
+<title>proc~check_value</title>
+<g id="a_proc~~db2val~~CallsGraph_node2"><a xlink:href=".././proc/check_value.html" xlink:title="check_value">
+<polygon fill="#d94e8f" stroke="#d94e8f" points="169,-104 90,-104 90,-80 169,-80 169,-104"/>
+<text text-anchor="middle" x="129.5" y="-89.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">check_value</text>
 </a>
 </g>
 </g>
-<!-- proc~db2val&#45;&gt;proc~dbvalu -->
+<!-- proc~db2val&#45;&gt;proc~check_value -->
 <g id="proc~~db2val~~CallsGraph_edge1" class="edge">
-<title>proc~db2val&#45;&gt;proc~dbvalu</title>
-<path fill="none" stroke="#000000" d="M54.14,-62.41C66.01,-67.13 80.22,-72.78 93.03,-77.88"/>
-<polygon fill="#000000" stroke="#000000" points="91.9,-81.2 102.49,-81.65 94.49,-74.7 91.9,-81.2"/>
+<title>proc~db2val&#45;&gt;proc~check_value</title>
+<path fill="none" stroke="#000000" d="M54.14,-62.41C64.68,-66.6 77.08,-71.53 88.7,-76.16"/>
+<polygon fill="#000000" stroke="#000000" points="87.63,-79.5 98.21,-79.95 90.22,-73 87.63,-79.5"/>
 </g>
 <!-- proc~dintrv -->
 <g id="proc~~db2val~~CallsGraph_node3" class="node">
 <title>proc~dintrv</title>
 <g id="a_proc~~db2val~~CallsGraph_node3"><a xlink:href=".././proc/dintrv.html" xlink:title="dintrv">
-<polygon fill="#d9534f" stroke="#d9534f" points="259,-84 205,-84 205,-60 259,-60 259,-84"/>
-<text text-anchor="middle" x="232" y="-69.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dintrv</text>
+<polygon fill="#d9534f" stroke="#d9534f" points="259,-44 205,-44 205,-20 259,-20 259,-44"/>
+<text text-anchor="middle" x="232" y="-29.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dintrv</text>
 </a>
 </g>
 </g>
 <!-- proc~db2val&#45;&gt;proc~dintrv -->
 <g id="proc~~db2val~~CallsGraph_edge2" class="edge">
 <title>proc~db2val&#45;&gt;proc~dintrv</title>
-<path fill="none" stroke="#000000" d="M54.12,-54.57C89.98,-58.11 154.59,-64.47 195.01,-68.45"/>
-<polygon fill="#000000" stroke="#000000" points="194.68,-71.94 204.98,-69.44 195.37,-64.97 194.68,-71.94"/>
+<path fill="none" stroke="#000000" d="M54.12,-49.43C89.98,-45.89 154.59,-39.53 195.01,-35.55"/>
+<polygon fill="#000000" stroke="#000000" points="195.37,-39.03 204.98,-34.56 194.68,-32.06 195.37,-39.03"/>
 </g>
-<!-- proc~check_value -->
+<!-- proc~dbvalu -->
 <g id="proc~~db2val~~CallsGraph_node4" class="node">
-<title>proc~check_value</title>
-<g id="a_proc~~db2val~~CallsGraph_node4"><a xlink:href=".././proc/check_value.html" xlink:title="check_value">
-<polygon fill="#d94e8f" stroke="#d94e8f" points="169,-24 90,-24 90,0 169,0 169,-24"/>
-<text text-anchor="middle" x="129.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">check_value</text>
+<title>proc~dbvalu</title>
+<g id="a_proc~~db2val~~CallsGraph_node4"><a xlink:href=".././proc/dbvalu.html" xlink:title="dbvalu">
+<polygon fill="#d9534f" stroke="#d9534f" points="156.5,-24 102.5,-24 102.5,0 156.5,0 156.5,-24"/>
+<text text-anchor="middle" x="129.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dbvalu</text>
 </a>
 </g>
 </g>
-<!-- proc~db2val&#45;&gt;proc~check_value -->
+<!-- proc~db2val&#45;&gt;proc~dbvalu -->
 <g id="proc~~db2val~~CallsGraph_edge3" class="edge">
-<title>proc~db2val&#45;&gt;proc~check_value</title>
-<path fill="none" stroke="#000000" d="M54.14,-41.59C64.68,-37.4 77.08,-32.47 88.7,-27.84"/>
-<polygon fill="#000000" stroke="#000000" points="90.22,-31 98.21,-24.05 87.63,-24.5 90.22,-31"/>
-</g>
-<!-- proc~dbvalu&#45;&gt;proc~dintrv -->
-<g id="proc~~db2val~~CallsGraph_edge4" class="edge">
-<title>proc~dbvalu&#45;&gt;proc~dintrv</title>
-<path fill="none" stroke="#000000" d="M156.64,-86.8C168.39,-84.46 182.44,-81.66 195.15,-79.13"/>
-<polygon fill="#000000" stroke="#000000" points="195.86,-82.56 204.99,-77.18 194.5,-75.7 195.86,-82.56"/>
+<title>proc~db2val&#45;&gt;proc~dbvalu</title>
+<path fill="none" stroke="#000000" d="M54.14,-41.59C66.01,-36.87 80.22,-31.22 93.03,-26.12"/>
+<polygon fill="#000000" stroke="#000000" points="94.49,-29.3 102.49,-22.35 91.9,-22.8 94.49,-29.3"/>
 </g>
 <!-- proc~get_temp_x_for_extrap -->
 <g id="proc~~db2val~~CallsGraph_node5" class="node">
 <title>proc~get_temp_x_for_extrap</title>
 <g id="a_proc~~db2val~~CallsGraph_node5"><a xlink:href=".././proc/get_temp_x_for_extrap.html" xlink:title="get_temp_x_for_extrap">
-<polygon fill="#d94e8f" stroke="#d94e8f" points="428,-84 295,-84 295,-60 428,-60 428,-84"/>
-<text text-anchor="middle" x="361.5" y="-69.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">get_temp_x_for_extrap</text>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="428,-44 295,-44 295,-20 428,-20 428,-44"/>
+<text text-anchor="middle" x="361.5" y="-29.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">get_temp_x_for_extrap</text>
 </a>
 </g>
 </g>
 <!-- proc~dintrv&#45;&gt;proc~get_temp_x_for_extrap -->
-<g id="proc~~db2val~~CallsGraph_edge5" class="edge">
+<g id="proc~~db2val~~CallsGraph_edge4" class="edge">
 <title>proc~dintrv&#45;&gt;proc~get_temp_x_for_extrap</title>
-<path fill="none" stroke="#000000" d="M259.11,-72C266.81,-72 275.66,-72 284.85,-72"/>
-<polygon fill="#000000" stroke="#000000" points="284.92,-75.5 294.92,-72 284.92,-68.5 284.92,-75.5"/>
+<path fill="none" stroke="#000000" d="M259.11,-32C266.81,-32 275.66,-32 284.85,-32"/>
+<polygon fill="#000000" stroke="#000000" points="284.92,-35.5 294.92,-32 284.92,-28.5 284.92,-35.5"/>
+</g>
+<!-- proc~dbvalu&#45;&gt;proc~dintrv -->
+<g id="proc~~db2val~~CallsGraph_edge5" class="edge">
+<title>proc~dbvalu&#45;&gt;proc~dintrv</title>
+<path fill="none" stroke="#000000" d="M156.64,-17.2C168.39,-19.54 182.44,-22.34 195.15,-24.87"/>
+<polygon fill="#000000" stroke="#000000" points="194.5,-28.3 204.99,-26.82 195.86,-21.44 194.5,-28.3"/>
 </g>
 </g>
 </svg>
@@ -732,8 +460,6 @@ public pure subroutine db2val(xval, yval, idx, idy, tx, ty, nx, ny, kx, ky, bcoe
     </div></div></div></div>
       </div>
     </div>
-     
-     
     <div class="panel panel-default">
       <div class="panel-heading">
   <h3 class="panel-title">Called by</h3>
@@ -834,152 +560,75 @@ public pure subroutine db2val(xval, yval, idx, idy, tx, ty, nx, ny, kx, ky, bcoe
     </div></div></div></div>
       </div>
     </div>
-     
     <br>
 
     <section class="visible-xs visible-sm hidden-md">
-      
-<h3>Contents</h3>
+      <h3>Contents</h3>
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="panel panel-primary">
-  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
-  <div class="list-group">
-    <a class="list-group-item" href="../proc/db2val.html#src">db2val</a>
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-1">Variables</a></h3></div>
+  <div id="vars-1" class="panel-collapse collapse">
+    <div class="list-group">
+      <a class="list-group-item" href="../proc/db2val.html#variable-k~3">k</a>
+      <a class="list-group-item" href="../proc/db2val.html#variable-lefty">lefty</a>
+      <a class="list-group-item" href="../proc/db2val.html#variable-kcol">kcol</a>
+    </div>
   </div>
 </div>
-
-
 
     </section>
     <br class="visible-xs visible-sm hidden-md">
 
-    
 
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-
-
-    
-    
-    
-    <section>
-    <h2><span class="anchor" id="src"></span>Source Code</h2>
-    <div class="highlight"><pre><span></span>    <span class="k">pure subroutine </span><span class="n">db2val</span><span class="p">(</span><span class="n">xval</span><span class="p">,</span><span class="n">yval</span><span class="p">,</span><span class="n">idx</span><span class="p">,</span><span class="n">idy</span><span class="p">,</span><span class="n">tx</span><span class="p">,</span><span class="n">ty</span><span class="p">,</span><span class="n">nx</span><span class="p">,</span><span class="n">ny</span><span class="p">,</span><span class="n">kx</span><span class="p">,</span><span class="n">ky</span><span class="p">,</span><span class="n">bcoef</span><span class="p">,</span><span class="n">f</span><span class="p">,</span><span class="n">iflag</span><span class="p">,</span><span class="n">inbvx</span><span class="p">,</span><span class="n">inbvy</span><span class="p">,</span><span class="n">iloy</span><span class="p">,</span><span class="n">w1</span><span class="p">,</span><span class="n">w0</span><span class="p">,</span><span class="n">extrap</span><span class="p">)</span>
-
-    <span class="k">implicit none</span>
-
-<span class="k">    </span><span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>               <span class="kd">::</span> <span class="n">idx</span>      <span class="c">!! \(x\) derivative of piecewise polynomial to evaluate.</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>               <span class="kd">::</span> <span class="n">idy</span>      <span class="c">!! \(y\) derivative of piecewise polynomial to evaluate.</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>               <span class="kd">::</span> <span class="n">nx</span>       <span class="c">!! the number of interpolation points in \(x\).</span>
-                                                     <span class="c">!! (same as in last call to [[db2ink]])</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>               <span class="kd">::</span> <span class="n">ny</span>       <span class="c">!! the number of interpolation points in \(y\).</span>
-                                                     <span class="c">!! (same as in last call to [[db2ink]])</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>               <span class="kd">::</span> <span class="n">kx</span>       <span class="c">!! order of polynomial pieces in \(x\).</span>
-                                                     <span class="c">!! (same as in last call to [[db2ink]])</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>               <span class="kd">::</span> <span class="n">ky</span>       <span class="c">!! order of polynomial pieces in \(y\).</span>
-                                                     <span class="c">!! (same as in last call to [[db2ink]])</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>                  <span class="kd">::</span> <span class="n">xval</span>     <span class="c">!! \(x\) coordinate of evaluation point.</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>                  <span class="kd">::</span> <span class="n">yval</span>     <span class="c">!! \(y\) coordinate of evaluation point.</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(</span><span class="n">nx</span><span class="o">+</span><span class="n">kx</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span> <span class="kd">::</span> <span class="n">tx</span>       <span class="c">!! sequence of knots defining the piecewise polynomial</span>
-                                                     <span class="c">!! in the \(x\) direction.</span>
-                                                     <span class="c">!! (same as in last call to [[db2ink]])</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(</span><span class="n">ny</span><span class="o">+</span><span class="n">ky</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span> <span class="kd">::</span> <span class="n">ty</span>       <span class="c">!! sequence of knots defining the piecewise</span>
-                                                     <span class="c">!! polynomial in the \(y\) direction.</span>
-                                                     <span class="c">!! (same as in last call to [[db2ink]])</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">ny</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span> <span class="kd">::</span> <span class="n">bcoef</span>    <span class="c">!! the b-spline coefficients computed by [[db2ink]].</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">out</span><span class="p">)</span>                 <span class="kd">::</span> <span class="n">f</span>        <span class="c">!! interpolated value</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">out</span><span class="p">)</span>              <span class="kd">::</span> <span class="n">iflag</span>    <span class="c">!! status flag:</span>
-                                                     <span class="c">!!</span>
-                                                     <span class="c">!! * \( = 0 \)   : no errors</span>
-                                                     <span class="c">!! * \( \ne 0 \) : error</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">inout</span><span class="p">)</span>            <span class="kd">::</span> <span class="n">inbvx</span>    <span class="c">!! initialization parameter which must be set to 1</span>
-                                                     <span class="c">!! the first time this routine is called,</span>
-                                                     <span class="c">!! and must not be changed by the user.</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">inout</span><span class="p">)</span>            <span class="kd">::</span> <span class="n">inbvy</span>    <span class="c">!! initialization parameter which must be set to 1</span>
-                                                     <span class="c">!! the first time this routine is called,</span>
-                                                     <span class="c">!! and must not be changed by the user.</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">inout</span><span class="p">)</span>            <span class="kd">::</span> <span class="n">iloy</span>     <span class="c">!! initialization parameter which must be set to 1</span>
-                                                     <span class="c">!! the first time this routine is called,</span>
-                                                     <span class="c">!! and must not be changed by the user.</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(</span><span class="n">ky</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">inout</span><span class="p">)</span>              <span class="kd">::</span> <span class="n">w1</span> <span class="c">!! work array</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(</span><span class="mi">3_ip</span><span class="o">*</span><span class="nb">max</span><span class="p">(</span><span class="n">kx</span><span class="p">,</span><span class="n">ky</span><span class="p">)),</span><span class="k">intent</span><span class="p">(</span><span class="n">inout</span><span class="p">)</span> <span class="kd">::</span> <span class="n">w0</span> <span class="c">!! work array</span>
-    <span class="kt">logical</span><span class="p">,</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">),</span><span class="k">optional</span>          <span class="kd">::</span> <span class="n">extrap</span>   <span class="c">!! if extrapolation is allowed</span>
-                                                     <span class="c">!! (if not present, default is False)</span>
-
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">)</span> <span class="kd">::</span> <span class="n">k</span><span class="p">,</span> <span class="n">lefty</span><span class="p">,</span> <span class="n">kcol</span>
-
-    <span class="n">f</span> <span class="o">=</span> <span class="mf">0.0_wp</span>
-
-    <span class="n">iflag</span> <span class="o">=</span> <span class="n">check_value</span><span class="p">(</span><span class="n">xval</span><span class="p">,</span><span class="n">tx</span><span class="p">,</span><span class="mi">1_ip</span><span class="p">,</span><span class="n">extrap</span><span class="p">);</span> <span class="k">if</span> <span class="p">(</span><span class="n">iflag</span><span class="o">/=</span><span class="mi">0_ip</span><span class="p">)</span> <span class="k">return</span>
-<span class="k">    </span><span class="n">iflag</span> <span class="o">=</span> <span class="n">check_value</span><span class="p">(</span><span class="n">yval</span><span class="p">,</span><span class="n">ty</span><span class="p">,</span><span class="mi">2_ip</span><span class="p">,</span><span class="n">extrap</span><span class="p">);</span> <span class="k">if</span> <span class="p">(</span><span class="n">iflag</span><span class="o">/=</span><span class="mi">0_ip</span><span class="p">)</span> <span class="k">return</span>
-
-<span class="k">    call </span><span class="n">dintrv</span><span class="p">(</span><span class="n">ty</span><span class="p">,</span><span class="n">ny</span><span class="o">+</span><span class="n">ky</span><span class="p">,</span><span class="n">yval</span><span class="p">,</span><span class="n">iloy</span><span class="p">,</span><span class="n">lefty</span><span class="p">,</span><span class="n">iflag</span><span class="p">,</span><span class="n">extrap</span><span class="p">);</span> <span class="k">if</span> <span class="p">(</span><span class="n">iflag</span><span class="o">/=</span><span class="mi">0_ip</span><span class="p">)</span> <span class="k">return</span>
-
-<span class="k">    </span><span class="n">kcol</span> <span class="o">=</span> <span class="n">lefty</span> <span class="o">-</span> <span class="n">ky</span>
-    <span class="k">do </span><span class="n">k</span><span class="o">=</span><span class="mi">1_ip</span><span class="p">,</span><span class="n">ky</span>
-        <span class="n">kcol</span> <span class="o">=</span> <span class="n">kcol</span> <span class="o">+</span> <span class="mi">1_ip</span>
-        <span class="k">call </span><span class="n">dbvalu</span><span class="p">(</span><span class="n">tx</span><span class="p">,</span><span class="n">bcoef</span><span class="p">(:,</span><span class="n">kcol</span><span class="p">),</span><span class="n">nx</span><span class="p">,</span><span class="n">kx</span><span class="p">,</span><span class="n">idx</span><span class="p">,</span><span class="n">xval</span><span class="p">,</span><span class="n">inbvx</span><span class="p">,</span><span class="n">w0</span><span class="p">,</span><span class="n">iflag</span><span class="p">,</span><span class="n">w1</span><span class="p">(</span><span class="n">k</span><span class="p">),</span><span class="n">extrap</span><span class="p">)</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">iflag</span><span class="o">/=</span><span class="mi">0_ip</span><span class="p">)</span> <span class="k">return</span> <span class="c">!error</span>
-    <span class="k">end do</span>
-
-<span class="k">    </span><span class="n">kcol</span> <span class="o">=</span> <span class="n">lefty</span> <span class="o">-</span> <span class="n">ky</span> <span class="o">+</span> <span class="mi">1_ip</span>
-    <span class="k">call </span><span class="n">dbvalu</span><span class="p">(</span><span class="n">ty</span><span class="p">(</span><span class="n">kcol</span><span class="p">:),</span><span class="n">w1</span><span class="p">,</span><span class="n">ky</span><span class="p">,</span><span class="n">ky</span><span class="p">,</span><span class="n">idy</span><span class="p">,</span><span class="n">yval</span><span class="p">,</span><span class="n">inbvy</span><span class="p">,</span><span class="n">w0</span><span class="p">,</span><span class="n">iflag</span><span class="p">,</span><span class="n">f</span><span class="p">,</span><span class="n">extrap</span><span class="p">)</span>
-
-    <span class="k">end subroutine </span><span class="n">db2val</span>
-</pre></div>
+    <section>    
+      <h2>Variables</h2>
+    <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th><th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+<tbody>
+<tr>
+  <td><span class="anchor" id="variable-k~3"></span>integer(kind=ip),</td>
+<td>private</td>  <td></td><td>::</td>
+  <td><strong>k</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-lefty"></span>integer(kind=ip),</td>
+<td>private</td>  <td></td><td>::</td>
+  <td><strong>lefty</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-kcol"></span>integer(kind=ip),</td>
+<td>private</td>  <td></td><td>::</td>
+  <td><strong>kcol</strong></td><td></td><td></td><td></td>
+</tr>
+</tbody>
+</table>
 
     </section>
     <br>
     
     
+
+    
+    
+
+
+    
+    
     </div>
   </div>
-
 
     <hr>    
     </div> <!-- /container -->
     <footer>
       <div class="container">
       <div class="row">
-        <div class="col-xs-6 col-md-6"><p>bspline-fortran was developed by Jacob Williams<br>&copy; 2021 
-                                          </p>
+        <div class="col-xs-6 col-md-6"><p>bspline-fortran was developed by Jacob Williams<br>&copy; 2022 
+</p>
         </div>
         <div class="col-xs-6 col-md-6">
           <p class="text-right">
             Documentation generated by 
             <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
-            
-            
           </p>
         </div>
       </div>
@@ -1007,14 +656,11 @@ public pure subroutine db2val(xval, yval, idx, idy, tx, ty, nx, ny, kx, ky, bcoe
         extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
       });
     </script>
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
     
     <script src="../tipuesearch/tipuesearch_content.js"></script>
     <script src="../tipuesearch/tipuesearch_set.js"></script>
     <script src="../tipuesearch/tipuesearch.js"></script>
-    
     
   </body>
 </html>

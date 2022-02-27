@@ -4,9 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
    <meta name="description" content="BSPLINE-FORTRAN -- Multidimensional B-Spline Interpolation of Data on a Regular Grid">
-    
     <meta name="author" content="Jacob Williams" >
     <link rel="icon" href="../favicon.png">
 
@@ -16,10 +14,7 @@
     <link href="../css/pygments.css" rel="stylesheet">
     <link href="../css/font-awesome.min.css" rel="stylesheet">
     <link href="../css/local.css" rel="stylesheet">
-    
     <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
-    
-    
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -48,58 +43,27 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-        
             <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
               <a href="#" class="dropdown-toggle"
               data-toggle="dropdown" role="button"
               aria-haspopup="true"
      aria-expanded="false">Contents <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          
-              
             <li><a href="../lists/files.html">Source Files</a></li>
-        
-        
-        
             <li><a href="../lists/modules.html">Modules</a></li>
-        
-            
-                                
             <li><a href="../lists/procedures.html">Procedures</a></li>
-        
-        
             <li><a href="../lists/absint.html">Abstract Interfaces</a></li>
-               
-            <li><a href="../lists/types.html">Derived Types</a></li>
-        
-               
-        
-        
+                   <li><a href="../lists/types.html">Derived Types</a></li>
+       
             </ul>
         
             </li>
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/files.html">Source Files</a></li>
-
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/modules.html">Modules</a></li>
-
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/absint.html">Abstract Interfaces</a></li>
-                             
-<li class="visible-xs hidden-sm visible-lg"><a href="../lists/types.html">Derived Types</a></li>
-
-
-
-
+                             <li class="visible-xs hidden-sm visible-lg"><a href="../lists/types.html">Derived Types</a></li>
           </ul>
-        
         <form action="../search.html" class="navbar-form navbar-right" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
@@ -108,51 +72,29 @@
         <button type="submit" class="btn btn-default">Submit</button>
 -->
         </form>
-        
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
     <div class="container">
-    
-  
   <div class="row">
     <h1>bspline_4d_constructor_specify_knots
       <small>Function</small>
-    
     </h1>
-    
-<div class="row">
+    <div class="row">
   <div class="col-lg-12">
 <div class="well well-sm">
   <ul class="list-inline" style="margin-bottom:0px;display:inline">
-     
-     
-     
-     
-     
-    
-    
      <li><i class="fa fa-list-ol"></i>
        <a data-toggle="tooltip"
     data-placement="bottom" data-html="true"
     title=" 0.5% of total for procedures.">19 statements</a>
      </li> 
-     
-     
-     
     <li><i class="fa fa-code"></i><a href="../src/bspline_oo_module.f90"> Source File</a></li>
-     
-     
   </ul>
   <ol class="breadcrumb in-well text-right">
-  
-    
      <li><a href='../sourcefile/bspline_oo_module.f90.html'>bspline_oo_module.f90</a></li>
-    
      <li><a href='../module/bspline_oo_module.html'>bspline_oo_module</a></li>
-    
-  
      <li class="active">bspline_4d_constructor_specify_knots</li>
   </ol>
 </div>
@@ -168,320 +110,135 @@
   
   <div class="row">
     <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
-    
-<div id="sidebar">
-  
-<h3>Contents</h3>
+    <div id="sidebar">
+  <h3>Contents</h3>
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="panel panel-primary">
-  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
-  <div class="list-group">
-    <a class="list-group-item" href="../proc/bspline_4d_constructor_specify_knots.html#src">bspline_4d_constructor_specify_knots</a>
-  </div>
-</div>
-
-
+<em>None</em>
 
 </div>
 
     </div>
     
     <div class="col-md-9" id='text'>
-    <h2>
-private pure function bspline_4d_constructor_specify_knots(x, y, z, q, fcn, kx, ky, kz, kq, tx, ty, tz, tq, extrap) result(me)
+    <h2>private pure function bspline_4d_constructor_specify_knots(x, y, z, q, fcn, kx, ky, kz, kq, tx, ty, tz, tq, extrap) result(me)</h2>
     
-    
-   
-</h2>
-    
-  
 
-
-    
     <p>Constructor for a <a href="../type/bspline_4d.html">bspline_4d</a> type (user-specified knots).
-  This is a wrapper for <a href="../proc/initialize_4d_specify_knots.html">initialize_4d_specify_knots</a>.</p>
-    
+This is a wrapper for <a href="../proc/initialize_4d_specify_knots.html">initialize_4d_specify_knots</a>.</p>
 
     <h3>Arguments</h3>
-    
-      
-<table class="table table-striped varlist">
-<thead><tr><th>Type</th>
-<th>Intent</th><th>Optional</th>
-<th>Attributes</th><th></th><th>Name</th><th></th></thead>
-
-
-
+      <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Intent</th><th>Optional</th><th>Attributes</th><th></th><th>Name</th><th></th></thead>
 <tbody>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-x~27"></span>real(kind=wp),</td>
-  <td>intent(in),</td>
-  <td></td>
-  
-  <td>dimension(:)</td><td>::</td>
+  <td><span class="anchor" id="variable-x~9"></span>real(kind=wp),</td>
+<td>intent(in),</td>
+  <td></td>  <td>dimension(:)</td><td>::</td>
   <td><strong>x</strong></td><td><p><code>(nx)</code> array of <script type="math/tex">x</script> abcissae. Must be strictly increasing.</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-y~14"></span>real(kind=wp),</td>
-  <td>intent(in),</td>
-  <td></td>
-  
-  <td>dimension(:)</td><td>::</td>
+  <td><span class="anchor" id="variable-y~6"></span>real(kind=wp),</td>
+<td>intent(in),</td>
+  <td></td>  <td>dimension(:)</td><td>::</td>
   <td><strong>y</strong></td><td><p><code>(ny)</code> array of <script type="math/tex">y</script> abcissae. Must be strictly increasing.</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-z~9"></span>real(kind=wp),</td>
-  <td>intent(in),</td>
-  <td></td>
-  
-  <td>dimension(:)</td><td>::</td>
+  <td><span class="anchor" id="variable-z~4"></span>real(kind=wp),</td>
+<td>intent(in),</td>
+  <td></td>  <td>dimension(:)</td><td>::</td>
   <td><strong>z</strong></td><td><p><code>(nz)</code> array of <script type="math/tex">z</script> abcissae. Must be strictly increasing.</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-q~7"></span>real(kind=wp),</td>
-  <td>intent(in),</td>
-  <td></td>
-  
-  <td>dimension(:)</td><td>::</td>
+  <td><span class="anchor" id="variable-q~2"></span>real(kind=wp),</td>
+<td>intent(in),</td>
+  <td></td>  <td>dimension(:)</td><td>::</td>
   <td><strong>q</strong></td><td><p><code>(nq)</code> array of <script type="math/tex">q</script> abcissae. Must be strictly increasing.</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-fcn~17"></span>real(kind=wp),</td>
-  <td>intent(in),</td>
-  <td></td>
-  
-  <td>dimension(:,:,:,:)</td><td>::</td>
+  <td><span class="anchor" id="variable-fcn~8"></span>real(kind=wp),</td>
+<td>intent(in),</td>
+  <td></td>  <td>dimension(:,:,:,:)</td><td>::</td>
   <td><strong>fcn</strong></td><td><p><code>(nx,ny,nz,nq)</code> matrix of function values to interpolate.
- <code>fcn(i,j,k,l)</code> should contain the function value at the
- point (<code>x(i)</code>,<code>y(j)</code>,<code>z(k)</code>,<code>q(l)</code>)</p></td>
-  
+<code>fcn(i,j,k,l)</code> should contain the function value at the
+point (<code>x(i)</code>,<code>y(j)</code>,<code>z(k)</code>,<code>q(l)</code>)</p></td>
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-kx~32"></span>integer(kind=ip),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-kx~14"></span>integer(kind=ip),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>kx</strong></td><td><p>The order of spline pieces in <script type="math/tex">x</script>
- ( <script type="math/tex"> 2 \le k_x < n_x </script> )
- (order = polynomial degree + 1)</p></td>
-  
+( <script type="math/tex"> 2 \le k_x < n_x </script> )
+(order = polynomial degree + 1)</p></td>
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-ky~22"></span>integer(kind=ip),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-ky~11"></span>integer(kind=ip),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>ky</strong></td><td><p>The order of spline pieces in <script type="math/tex">y</script>
- ( <script type="math/tex"> 2 \le k_y < n_y </script> )
- (order = polynomial degree + 1)</p></td>
-  
+( <script type="math/tex"> 2 \le k_y < n_y </script> )
+(order = polynomial degree + 1)</p></td>
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-kz~17"></span>integer(kind=ip),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-kz~8"></span>integer(kind=ip),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>kz</strong></td><td><p>The order of spline pieces in <script type="math/tex">z</script>
- ( <script type="math/tex"> 2 \le k_z < n_z </script> )
- (order = polynomial degree + 1)</p></td>
-  
+( <script type="math/tex"> 2 \le k_z < n_z </script> )
+(order = polynomial degree + 1)</p></td>
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-kq~12"></span>integer(kind=ip),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-kq~5"></span>integer(kind=ip),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>kq</strong></td><td><p>The order of spline pieces in <script type="math/tex">q</script>
- ( <script type="math/tex"> 2 \le k_q < n_q </script> )
- (order = polynomial degree + 1)</p></td>
-  
+( <script type="math/tex"> 2 \le k_q < n_q </script> )
+(order = polynomial degree + 1)</p></td>
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-tx~28"></span>real(kind=wp),</td>
-  <td>intent(in),</td>
-  <td></td>
-  
-  <td>dimension(:)</td><td>::</td>
+  <td><span class="anchor" id="variable-tx~10"></span>real(kind=wp),</td>
+<td>intent(in),</td>
+  <td></td>  <td>dimension(:)</td><td>::</td>
   <td><strong>tx</strong></td><td><p>The <code>(nx+kx)</code> knots in the <script type="math/tex">x</script> direction
- for the spline interpolant.
- Must be non-decreasing.</p></td>
-  
+for the spline interpolant.
+Must be non-decreasing.</p></td>
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-ty~19"></span>real(kind=wp),</td>
-  <td>intent(in),</td>
-  <td></td>
-  
-  <td>dimension(:)</td><td>::</td>
+  <td><span class="anchor" id="variable-ty~8"></span>real(kind=wp),</td>
+<td>intent(in),</td>
+  <td></td>  <td>dimension(:)</td><td>::</td>
   <td><strong>ty</strong></td><td><p>The <code>(ny+ky)</code> knots in the <script type="math/tex">y</script> direction
- for the spline interpolant.
- Must be non-decreasing.</p></td>
-  
+for the spline interpolant.
+Must be non-decreasing.</p></td>
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-tz~15"></span>real(kind=wp),</td>
-  <td>intent(in),</td>
-  <td></td>
-  
-  <td>dimension(:)</td><td>::</td>
+  <td><span class="anchor" id="variable-tz~6"></span>real(kind=wp),</td>
+<td>intent(in),</td>
+  <td></td>  <td>dimension(:)</td><td>::</td>
   <td><strong>tz</strong></td><td><p>The <code>(nz+kz)</code> knots in the <script type="math/tex">z</script> direction
- for the spline interpolant.
- Must be non-decreasing.</p></td>
-  
+for the spline interpolant.
+Must be non-decreasing.</p></td>
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-tq~11"></span>real(kind=wp),</td>
-  <td>intent(in),</td>
-  <td></td>
-  
-  <td>dimension(:)</td><td>::</td>
+  <td><span class="anchor" id="variable-tq~4"></span>real(kind=wp),</td>
+<td>intent(in),</td>
+  <td></td>  <td>dimension(:)</td><td>::</td>
   <td><strong>tq</strong></td><td><p>The <code>(nq+kq)</code> knots in the <script type="math/tex">q</script> direction
- for the spline interpolant.
- Must be non-decreasing.</p></td>
-  
+for the spline interpolant.
+Must be non-decreasing.</p></td>
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
-  <td><span class="anchor" id="variable-extrap~20"></span>logical,</td>
-  <td>intent(in),</td>
-  <td>optional</td>
-  
-  <td></td><td>::</td>
+  <td><span class="anchor" id="variable-extrap~9"></span>logical,</td>
+<td>intent(in),</td>
+  <td>optional</td>  <td></td><td>::</td>
   <td><strong>extrap</strong></td><td><p>if true, then extrapolation is allowed
- (default is false)</p></td>
-  
+(default is false)</p></td>
 </tr>
-
 </tbody>
 </table>
 
-    
-    
-    
-    
-    
-    
-    
-   <h3>Return Value <small><span class="anchor" id="variable-me~22"></span>type(<a href='../type/bspline_4d.html'>bspline_4d</a>)
-  </small></h3>
-    
-    
+   <h3>Return Value <small><span class="anchor" id="variable-me~22"></span>type(<a href='../type/bspline_4d.html'>bspline_4d</a>)</small></h3>
     
     <br>
-    
-    
     <div class="panel panel-default">
       <div class="panel-heading">
   <h3 class="panel-title">Calls</h3>
@@ -493,172 +250,232 @@ private pure function bspline_4d_constructor_specify_knots(x, y, z, q, fcn, kx, 
 <!-- Generated by graphviz version 2.43.0 (0)
  -->
 <!-- Title: proc~~bspline_4d_constructor_specify_knots~~CallsGraph Pages: 1 -->
-<svg id="procbspline_4d_constructor_specify_knotsCallsGraph" width="641pt" height="129pt"
- viewBox="0.00 0.00 641.00 128.92" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph" class="graph" transform="scale(1.39 1.39) rotate(0) translate(4 175)">
+<svg id="procbspline_4d_constructor_specify_knotsCallsGraph" width="641pt" height="204pt"
+ viewBox="0.00 0.00 641.00 204.09" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph" class="graph" transform="scale(1.39 1.39) rotate(0) translate(4 280)">
 <title>proc~~bspline_4d_constructor_specify_knots~~CallsGraph</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-175 886,-175 886,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-280 888,-280 888,4 -4,4"/>
 <!-- proc~bspline_4d_constructor_specify_knots -->
 <g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node1" class="node">
 <title>proc~bspline_4d_constructor_specify_knots</title>
-<polygon fill="none" stroke="black" points="212,-150 0,-150 0,-126 212,-126 212,-150"/>
-<text text-anchor="middle" x="106" y="-135.6" font-family="Helvetica,sans-Serif" font-size="10.50">bspline_4d_constructor_specify_knots</text>
+<polygon fill="none" stroke="black" points="212,-161 0,-161 0,-137 212,-137 212,-161"/>
+<text text-anchor="middle" x="106" y="-146.6" font-family="Helvetica,sans-Serif" font-size="10.50">bspline_4d_constructor_specify_knots</text>
 </g>
 <!-- proc~initialize_4d_specify_knots -->
 <g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node2" class="node">
 <title>proc~initialize_4d_specify_knots</title>
 <g id="a_proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node2"><a xlink:href=".././proc/initialize_4d_specify_knots.html" xlink:title="initialize_4d_specify_knots">
-<polygon fill="#d9534f" stroke="#d9534f" points="400,-150 248,-150 248,-126 400,-126 400,-150"/>
-<text text-anchor="middle" x="324" y="-135.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">initialize_4d_specify_knots</text>
+<polygon fill="#d9534f" stroke="#d9534f" points="400,-161 248,-161 248,-137 400,-137 400,-161"/>
+<text text-anchor="middle" x="324" y="-146.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">initialize_4d_specify_knots</text>
 </a>
 </g>
 </g>
 <!-- proc~bspline_4d_constructor_specify_knots&#45;&gt;proc~initialize_4d_specify_knots -->
 <g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_edge1" class="edge">
 <title>proc~bspline_4d_constructor_specify_knots&#45;&gt;proc~initialize_4d_specify_knots</title>
-<path fill="none" stroke="#000000" d="M212.15,-138C220.7,-138 229.26,-138 237.64,-138"/>
-<polygon fill="#000000" stroke="#000000" points="237.75,-141.5 247.75,-138 237.75,-134.5 237.75,-141.5"/>
-</g>
-<!-- proc~check_knot_vectors_sizes -->
-<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node3" class="node">
-<title>proc~check_knot_vectors_sizes</title>
-<g id="a_proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node3"><a xlink:href=".././proc/check_knot_vectors_sizes.html" xlink:title="check_knot_vectors_sizes">
-<polygon fill="#d9534f" stroke="#d9534f" points="584,-171 436,-171 436,-147 584,-147 584,-171"/>
-<text text-anchor="middle" x="510" y="-156.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">check_knot_vectors_sizes</text>
-</a>
-</g>
-</g>
-<!-- proc~initialize_4d_specify_knots&#45;&gt;proc~check_knot_vectors_sizes -->
-<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_edge2" class="edge">
-<title>proc~initialize_4d_specify_knots&#45;&gt;proc~check_knot_vectors_sizes</title>
-<path fill="none" stroke="#000000" d="M400.11,-146.57C408.6,-147.54 417.3,-148.53 425.9,-149.52"/>
-<polygon fill="#000000" stroke="#000000" points="425.59,-153 435.92,-150.66 426.38,-146.05 425.59,-153"/>
+<path fill="none" stroke="#000000" d="M212.15,-149C220.7,-149 229.26,-149 237.64,-149"/>
+<polygon fill="#000000" stroke="#000000" points="237.75,-152.5 247.75,-149 237.75,-145.5 237.75,-152.5"/>
 </g>
 <!-- proc~db4ink -->
-<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node4" class="node">
+<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node3" class="node">
 <title>proc~db4ink</title>
-<g id="a_proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node4"><a xlink:href=".././proc/db4ink.html" xlink:title="db4ink">
-<polygon fill="#d9534f" stroke="#d9534f" points="537,-129 483,-129 483,-105 537,-105 537,-129"/>
-<text text-anchor="middle" x="510" y="-114.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">db4ink</text>
+<g id="a_proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node3"><a xlink:href=".././proc/db4ink.html" xlink:title="db4ink">
+<polygon fill="#d9534f" stroke="#d9534f" points="537,-182 483,-182 483,-158 537,-158 537,-182"/>
+<text text-anchor="middle" x="510" y="-167.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">db4ink</text>
 </a>
 </g>
 </g>
 <!-- proc~initialize_4d_specify_knots&#45;&gt;proc~db4ink -->
-<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_edge3" class="edge">
+<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_edge2" class="edge">
 <title>proc~initialize_4d_specify_knots&#45;&gt;proc~db4ink</title>
-<path fill="none" stroke="#000000" d="M400.11,-129.43C425.27,-126.56 452.18,-123.49 472.95,-121.11"/>
-<polygon fill="#000000" stroke="#000000" points="473.38,-124.59 482.91,-119.98 472.58,-117.63 473.38,-124.59"/>
+<path fill="none" stroke="#000000" d="M400.11,-157.57C425.27,-160.44 452.18,-163.51 472.95,-165.89"/>
+<polygon fill="#000000" stroke="#000000" points="472.58,-169.37 482.91,-167.02 473.38,-162.41 472.58,-169.37"/>
 </g>
-<!-- proc~check_inputs -->
-<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node5" class="node">
-<title>proc~check_inputs</title>
-<g id="a_proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node5"><a xlink:href=".././proc/check_inputs.html" xlink:title="check_inputs">
-<polygon fill="#d9534f" stroke="#d9534f" points="702,-171 620,-171 620,-147 702,-147 702,-171"/>
-<text text-anchor="middle" x="661" y="-156.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">check_inputs</text>
+<!-- proc~check_knot_vectors_sizes -->
+<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node4" class="node">
+<title>proc~check_knot_vectors_sizes</title>
+<g id="a_proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node4"><a xlink:href=".././proc/check_knot_vectors_sizes.html" xlink:title="check_knot_vectors_sizes">
+<polygon fill="#d9534f" stroke="#d9534f" points="584,-140 436,-140 436,-116 584,-116 584,-140"/>
+<text text-anchor="middle" x="510" y="-125.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">check_knot_vectors_sizes</text>
 </a>
 </g>
 </g>
-<!-- proc~db4ink&#45;&gt;proc~check_inputs -->
+<!-- proc~initialize_4d_specify_knots&#45;&gt;proc~check_knot_vectors_sizes -->
+<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_edge3" class="edge">
+<title>proc~initialize_4d_specify_knots&#45;&gt;proc~check_knot_vectors_sizes</title>
+<path fill="none" stroke="#000000" d="M400.11,-140.43C408.6,-139.46 417.3,-138.47 425.9,-137.48"/>
+<polygon fill="#000000" stroke="#000000" points="426.38,-140.95 435.92,-136.34 425.59,-134 426.38,-140.95"/>
+</g>
+<!-- proc~dbtpcf -->
+<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node5" class="node">
+<title>proc~dbtpcf</title>
+<g id="a_proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node5"><a xlink:href=".././proc/dbtpcf.html" xlink:title="dbtpcf">
+<polygon fill="#d9534f" stroke="#d9534f" points="688,-234 634,-234 634,-210 688,-210 688,-234"/>
+<text text-anchor="middle" x="661" y="-219.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dbtpcf</text>
+</a>
+</g>
+</g>
+<!-- proc~db4ink&#45;&gt;proc~dbtpcf -->
 <g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_edge4" class="edge">
-<title>proc~db4ink&#45;&gt;proc~check_inputs</title>
-<path fill="none" stroke="#000000" d="M537.3,-124.41C557.41,-130.08 585.75,-138.07 610.13,-144.94"/>
-<polygon fill="#000000" stroke="#000000" points="609.37,-148.37 619.95,-147.71 611.27,-141.63 609.37,-148.37"/>
+<title>proc~db4ink&#45;&gt;proc~dbtpcf</title>
+<path fill="none" stroke="#000000" d="M537.3,-179.18C561.45,-187.61 597.44,-200.17 624.21,-209.51"/>
+<polygon fill="#000000" stroke="#000000" points="623.37,-212.92 633.97,-212.91 625.68,-206.32 623.37,-212.92"/>
 </g>
 <!-- proc~dbknot -->
 <g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node6" class="node">
 <title>proc~dbknot</title>
 <g id="a_proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node6"><a xlink:href=".././proc/dbknot.html" xlink:title="dbknot">
-<polygon fill="#d9534f" stroke="#d9534f" points="688,-129 634,-129 634,-105 688,-105 688,-129"/>
-<text text-anchor="middle" x="661" y="-114.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dbknot</text>
+<polygon fill="#d9534f" stroke="#d9534f" points="688,-182 634,-182 634,-158 688,-158 688,-182"/>
+<text text-anchor="middle" x="661" y="-167.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dbknot</text>
 </a>
 </g>
 </g>
 <!-- proc~db4ink&#45;&gt;proc~dbknot -->
-<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_edge6" class="edge">
-<title>proc~db4ink&#45;&gt;proc~dbknot</title>
-<path fill="none" stroke="#000000" d="M537.3,-117C561.34,-117 597.12,-117 623.85,-117"/>
-<polygon fill="#000000" stroke="#000000" points="623.97,-120.5 633.97,-117 623.97,-113.5 623.97,-120.5"/>
-</g>
-<!-- proc~dbtpcf -->
-<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node7" class="node">
-<title>proc~dbtpcf</title>
-<g id="a_proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node7"><a xlink:href=".././proc/dbtpcf.html" xlink:title="dbtpcf">
-<polygon fill="#d9534f" stroke="#d9534f" points="688,-87 634,-87 634,-63 688,-63 688,-87"/>
-<text text-anchor="middle" x="661" y="-72.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dbtpcf</text>
-</a>
-</g>
-</g>
-<!-- proc~db4ink&#45;&gt;proc~dbtpcf -->
 <g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_edge5" class="edge">
-<title>proc~db4ink&#45;&gt;proc~dbtpcf</title>
-<path fill="none" stroke="#000000" d="M537.3,-109.59C561.45,-102.78 597.44,-92.63 624.21,-85.09"/>
-<polygon fill="#000000" stroke="#000000" points="625.29,-88.42 633.97,-82.34 623.39,-81.68 625.29,-88.42"/>
+<title>proc~db4ink&#45;&gt;proc~dbknot</title>
+<path fill="none" stroke="#000000" d="M537.3,-170C561.34,-170 597.12,-170 623.85,-170"/>
+<polygon fill="#000000" stroke="#000000" points="623.97,-173.5 633.97,-170 623.97,-166.5 623.97,-173.5"/>
 </g>
-<!-- proc~dbnslv -->
-<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node8" class="node">
-<title>proc~dbnslv</title>
-<g id="a_proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node8"><a xlink:href=".././proc/dbnslv.html" xlink:title="dbnslv">
-<polygon fill="#d9534f" stroke="#d9534f" points="882,-108 828,-108 828,-84 882,-84 882,-108"/>
-<text text-anchor="middle" x="855" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dbnslv</text>
+<!-- proc~check_inputs -->
+<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node7" class="node">
+<title>proc~check_inputs</title>
+<g id="a_proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node7"><a xlink:href=".././proc/check_inputs.html" xlink:title="check_inputs">
+<polygon fill="#d9534f" stroke="#d9534f" points="702,-119 620,-119 620,-95 702,-95 702,-119"/>
+<text text-anchor="middle" x="661" y="-104.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">check_inputs</text>
 </a>
 </g>
 </g>
-<!-- proc~dbtpcf&#45;&gt;proc~dbnslv -->
-<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_edge7" class="edge">
-<title>proc~dbtpcf&#45;&gt;proc~dbnslv</title>
-<path fill="none" stroke="#000000" d="M688.29,-77.88C721.81,-81.54 779.91,-87.9 817.65,-92.02"/>
-<polygon fill="#000000" stroke="#000000" points="817.39,-95.52 827.72,-93.13 818.16,-88.56 817.39,-95.52"/>
+<!-- proc~db4ink&#45;&gt;proc~check_inputs -->
+<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_edge6" class="edge">
+<title>proc~db4ink&#45;&gt;proc~check_inputs</title>
+<path fill="none" stroke="#000000" d="M537.16,-164C551.29,-160.38 568.89,-155.25 584,-149 600.57,-142.14 618.15,-132.59 632.22,-124.33"/>
+<polygon fill="#000000" stroke="#000000" points="634.13,-127.26 640.92,-119.13 630.54,-121.26 634.13,-127.26"/>
 </g>
 <!-- proc~dbintk -->
-<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node9" class="node">
+<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node8" class="node">
 <title>proc~dbintk</title>
-<g id="a_proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node9"><a xlink:href=".././proc/dbintk.html" xlink:title="dbintk">
-<polygon fill="#d9534f" stroke="#d9534f" points="792,-67 738,-67 738,-43 792,-43 792,-67"/>
-<text text-anchor="middle" x="765" y="-52.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dbintk</text>
+<g id="a_proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node8"><a xlink:href=".././proc/dbintk.html" xlink:title="dbintk">
+<polygon fill="#d9534f" stroke="#d9534f" points="792,-234 738,-234 738,-210 792,-210 792,-234"/>
+<text text-anchor="middle" x="765" y="-219.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dbintk</text>
 </a>
 </g>
 </g>
 <!-- proc~dbtpcf&#45;&gt;proc~dbintk -->
-<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_edge8" class="edge">
+<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_edge7" class="edge">
 <title>proc~dbtpcf&#45;&gt;proc~dbintk</title>
-<path fill="none" stroke="#000000" d="M688,-69.9C700.02,-67.55 714.49,-64.71 727.57,-62.14"/>
-<polygon fill="#000000" stroke="#000000" points="728.55,-65.52 737.69,-60.16 727.2,-58.65 728.55,-65.52"/>
+<path fill="none" stroke="#000000" d="M688,-222C700.02,-222 714.49,-222 727.57,-222"/>
+<polygon fill="#000000" stroke="#000000" points="727.69,-225.5 737.69,-222 727.69,-218.5 727.69,-225.5"/>
+</g>
+<!-- proc~dbnslv -->
+<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node9" class="node">
+<title>proc~dbnslv</title>
+<g id="a_proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node9"><a xlink:href=".././proc/dbnslv.html" xlink:title="dbnslv">
+<polygon fill="#d9534f" stroke="#d9534f" points="883,-276 829,-276 829,-252 883,-252 883,-276"/>
+<text text-anchor="middle" x="856" y="-261.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dbnslv</text>
+</a>
+</g>
+</g>
+<!-- proc~dbtpcf&#45;&gt;proc~dbnslv -->
+<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_edge8" class="edge">
+<title>proc~dbtpcf&#45;&gt;proc~dbnslv</title>
+<path fill="none" stroke="#000000" d="M688.23,-229.89C702.8,-234.11 721.31,-239.21 738,-243 764.87,-249.11 795.55,-254.56 818.75,-258.38"/>
+<polygon fill="#000000" stroke="#000000" points="818.41,-261.87 828.84,-260.01 819.53,-254.96 818.41,-261.87"/>
+</g>
+<!-- none~check -->
+<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node10" class="node">
+<title>none~check</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="792,-108 738,-108 738,-84 792,-84 792,-108"/>
+<text text-anchor="middle" x="765" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">check</text>
+</g>
+<!-- proc~check_inputs&#45;&gt;none~check -->
+<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_edge9" class="edge">
+<title>proc~check_inputs&#45;&gt;none~check</title>
+<path fill="none" stroke="#000000" d="M702.02,-102.68C710.5,-101.77 719.4,-100.81 727.73,-99.91"/>
+<polygon fill="#000000" stroke="#000000" points="728.33,-103.37 737.89,-98.82 727.58,-96.41 728.33,-103.37"/>
 </g>
 <!-- proc~dbintk&#45;&gt;proc~dbnslv -->
-<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_edge9" class="edge">
+<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_edge12" class="edge">
 <title>proc~dbintk&#45;&gt;proc~dbnslv</title>
-<path fill="none" stroke="#000000" d="M791.93,-67.08C800.36,-71.01 809.86,-75.43 818.84,-79.62"/>
-<polygon fill="#000000" stroke="#000000" points="817.41,-82.81 827.95,-83.87 820.37,-76.47 817.41,-82.81"/>
+<path fill="none" stroke="#000000" d="M791.74,-234.15C800.6,-238.33 810.67,-243.08 820.13,-247.54"/>
+<polygon fill="#000000" stroke="#000000" points="818.78,-250.78 829.32,-251.88 821.77,-244.45 818.78,-250.78"/>
 </g>
 <!-- proc~dbnfac -->
-<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node10" class="node">
+<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node13" class="node">
 <title>proc~dbnfac</title>
-<g id="a_proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node10"><a xlink:href=".././proc/dbnfac.html" xlink:title="dbnfac">
-<polygon fill="#d9534f" stroke="#d9534f" points="882,-66 828,-66 828,-42 882,-42 882,-66"/>
-<text text-anchor="middle" x="855" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dbnfac</text>
+<g id="a_proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node13"><a xlink:href=".././proc/dbnfac.html" xlink:title="dbnfac">
+<polygon fill="#d9534f" stroke="#d9534f" points="883,-234 829,-234 829,-210 883,-210 883,-234"/>
+<text text-anchor="middle" x="856" y="-219.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dbnfac</text>
 </a>
 </g>
 </g>
 <!-- proc~dbintk&#45;&gt;proc~dbnfac -->
-<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_edge10" class="edge">
+<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_edge11" class="edge">
 <title>proc~dbintk&#45;&gt;proc~dbnfac</title>
-<path fill="none" stroke="#000000" d="M792.4,-54.7C800.39,-54.61 809.31,-54.51 817.82,-54.41"/>
-<polygon fill="#000000" stroke="#000000" points="817.96,-57.91 827.92,-54.3 817.88,-50.91 817.96,-57.91"/>
+<path fill="none" stroke="#000000" d="M792.22,-222C800.55,-222 809.91,-222 818.82,-222"/>
+<polygon fill="#000000" stroke="#000000" points="818.97,-225.5 828.97,-222 818.97,-218.5 818.97,-225.5"/>
 </g>
 <!-- proc~dbspvn -->
-<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node11" class="node">
+<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node16" class="node">
 <title>proc~dbspvn</title>
-<g id="a_proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node11"><a xlink:href=".././proc/dbspvn.html" xlink:title="dbspvn">
-<polygon fill="#d9534f" stroke="#d9534f" points="882,-24 828,-24 828,0 882,0 882,-24"/>
-<text text-anchor="middle" x="855" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dbspvn</text>
+<g id="a_proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node16"><a xlink:href=".././proc/dbspvn.html" xlink:title="dbspvn">
+<polygon fill="#d9534f" stroke="#d9534f" points="883,-192 829,-192 829,-168 883,-168 883,-192"/>
+<text text-anchor="middle" x="856" y="-177.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dbspvn</text>
 </a>
 </g>
 </g>
 <!-- proc~dbintk&#45;&gt;proc~dbspvn -->
-<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_edge11" class="edge">
+<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_edge10" class="edge">
 <title>proc~dbintk&#45;&gt;proc~dbspvn</title>
-<path fill="none" stroke="#000000" d="M790.98,-42.79C800.07,-38.35 810.5,-33.26 820.22,-28.51"/>
-<polygon fill="#000000" stroke="#000000" points="821.81,-31.62 829.26,-24.09 818.74,-25.33 821.81,-31.62"/>
+<path fill="none" stroke="#000000" d="M791.74,-209.85C800.6,-205.67 810.67,-200.92 820.13,-196.46"/>
+<polygon fill="#000000" stroke="#000000" points="821.77,-199.55 829.32,-192.12 818.78,-193.22 821.77,-199.55"/>
+</g>
+<!-- none~check_k -->
+<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node11" class="node">
+<title>none~check_k</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="883.5,-150 828.5,-150 828.5,-126 883.5,-126 883.5,-150"/>
+<text text-anchor="middle" x="856" y="-135.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">check_k</text>
+</g>
+<!-- none~check&#45;&gt;none~check_k -->
+<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_edge16" class="edge">
+<title>none~check&#45;&gt;none~check_k</title>
+<path fill="none" stroke="#000000" d="M791.74,-108.15C800.6,-112.33 810.67,-117.08 820.13,-121.54"/>
+<polygon fill="#000000" stroke="#000000" points="818.78,-124.78 829.32,-125.88 821.77,-118.45 818.78,-124.78"/>
+</g>
+<!-- none~check_t -->
+<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node12" class="node">
+<title>none~check_t</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="883,-108 829,-108 829,-84 883,-84 883,-108"/>
+<text text-anchor="middle" x="856" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">check_t</text>
+</g>
+<!-- none~check&#45;&gt;none~check_t -->
+<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_edge14" class="edge">
+<title>none~check&#45;&gt;none~check_t</title>
+<path fill="none" stroke="#000000" d="M792.22,-96C800.55,-96 809.91,-96 818.82,-96"/>
+<polygon fill="#000000" stroke="#000000" points="818.97,-99.5 828.97,-96 818.97,-92.5 818.97,-99.5"/>
+</g>
+<!-- none~check_x -->
+<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node14" class="node">
+<title>none~check_x</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="883.5,-66 828.5,-66 828.5,-42 883.5,-42 883.5,-66"/>
+<text text-anchor="middle" x="856" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">check_x</text>
+</g>
+<!-- none~check&#45;&gt;none~check_x -->
+<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_edge15" class="edge">
+<title>none~check&#45;&gt;none~check_x</title>
+<path fill="none" stroke="#000000" d="M791.74,-83.85C800.6,-79.67 810.67,-74.92 820.13,-70.46"/>
+<polygon fill="#000000" stroke="#000000" points="821.77,-73.55 829.32,-66.12 818.78,-67.22 821.77,-73.55"/>
+</g>
+<!-- none~check_n -->
+<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_node15" class="node">
+<title>none~check_n</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="884,-24 828,-24 828,0 884,0 884,-24"/>
+<text text-anchor="middle" x="856" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">check_n</text>
+</g>
+<!-- none~check&#45;&gt;none~check_n -->
+<g id="proc~~bspline_4d_constructor_specify_knots~~CallsGraph_edge13" class="edge">
+<title>none~check&#45;&gt;none~check_n</title>
+<path fill="none" stroke="#000000" d="M776.98,-83.92C789.04,-70.88 809.2,-49.73 828,-33 828.95,-32.16 829.93,-31.31 830.92,-30.46"/>
+<polygon fill="#000000" stroke="#000000" points="833.19,-33.13 838.73,-24.1 828.76,-27.7 833.19,-33.13"/>
 </g>
 </g>
 </svg>
@@ -723,8 +540,6 @@ private pure function bspline_4d_constructor_specify_knots(x, y, z, q, fcn, kx, 
     </div></div></div></div>
       </div>
     </div>
-     
-     
     <div class="panel panel-default">
       <div class="panel-heading">
   <h3 class="panel-title">Called by</h3>
@@ -825,133 +640,41 @@ private pure function bspline_4d_constructor_specify_knots(x, y, z, q, fcn, kx, 
     </div></div></div></div>
       </div>
     </div>
-     
     <br>
 
     <section class="visible-xs visible-sm hidden-md">
-      
-<h3>Contents</h3>
+      <h3>Contents</h3>
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="panel panel-primary">
-  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
-  <div class="list-group">
-    <a class="list-group-item" href="../proc/bspline_4d_constructor_specify_knots.html#src">bspline_4d_constructor_specify_knots</a>
-  </div>
-</div>
-
-
+<em>None</em>
 
     </section>
     <br class="visible-xs visible-sm hidden-md">
 
-    
 
-    
-    
-    
     
     
 
     
     
-    
-    
-    
 
 
-    
-    
-    
-    <section>
-    <h2><span class="anchor" id="src"></span>Source Code</h2>
-    <div class="highlight"><pre><span></span>    <span class="k">pure function </span><span class="n">bspline_4d_constructor_specify_knots</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">,</span><span class="n">q</span><span class="p">,</span><span class="n">fcn</span><span class="p">,</span><span class="n">kx</span><span class="p">,</span><span class="n">ky</span><span class="p">,</span><span class="n">kz</span><span class="p">,</span><span class="n">kq</span><span class="p">,&amp;</span>
-                                                        <span class="n">tx</span><span class="p">,</span><span class="n">ty</span><span class="p">,</span><span class="n">tz</span><span class="p">,</span><span class="n">tq</span><span class="p">,</span><span class="n">extrap</span><span class="p">)</span> <span class="k">result</span><span class="p">(</span><span class="n">me</span><span class="p">)</span>
-
-    <span class="k">implicit none</span>
-
-<span class="k">    type</span><span class="p">(</span><span class="n">bspline_4d</span><span class="p">)</span>                           <span class="kd">::</span> <span class="n">me</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>           <span class="kd">::</span> <span class="n">x</span>   <span class="c">!! `(nx)` array of \(x\) abcissae. Must be strictly increasing.</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>           <span class="kd">::</span> <span class="n">y</span>   <span class="c">!! `(ny)` array of \(y\) abcissae. Must be strictly increasing.</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>           <span class="kd">::</span> <span class="n">z</span>   <span class="c">!! `(nz)` array of \(z\) abcissae. Must be strictly increasing.</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>           <span class="kd">::</span> <span class="n">q</span>   <span class="c">!! `(nq)` array of \(q\) abcissae. Must be strictly increasing.</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:,:,:,:),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>     <span class="kd">::</span> <span class="n">fcn</span> <span class="c">!! `(nx,ny,nz,nq)` matrix of function values to interpolate.</span>
-                                                      <span class="c">!! `fcn(i,j,k,l)` should contain the function value at the</span>
-                                                      <span class="c">!! point (`x(i)`,`y(j)`,`z(k)`,`q(l)`)</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>                     <span class="kd">::</span> <span class="n">kx</span>  <span class="c">!! The order of spline pieces in \(x\)</span>
-                                                      <span class="c">!! ( \( 2 \le k_x &lt; n_x \) )</span>
-                                                      <span class="c">!! (order = polynomial degree + 1)</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>                     <span class="kd">::</span> <span class="n">ky</span>  <span class="c">!! The order of spline pieces in \(y\)</span>
-                                                      <span class="c">!! ( \( 2 \le k_y &lt; n_y \) )</span>
-                                                      <span class="c">!! (order = polynomial degree + 1)</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>                     <span class="kd">::</span> <span class="n">kz</span>  <span class="c">!! The order of spline pieces in \(z\)</span>
-                                                      <span class="c">!! ( \( 2 \le k_z &lt; n_z \) )</span>
-                                                      <span class="c">!! (order = polynomial degree + 1)</span>
-    <span class="kt">integer</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>                     <span class="kd">::</span> <span class="n">kq</span>  <span class="c">!! The order of spline pieces in \(q\)</span>
-                                                      <span class="c">!! ( \( 2 \le k_q &lt; n_q \) )</span>
-                                                      <span class="c">!! (order = polynomial degree + 1)</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>           <span class="kd">::</span> <span class="n">tx</span>  <span class="c">!! The `(nx+kx)` knots in the \(x\) direction</span>
-                                                      <span class="c">!! for the spline interpolant.</span>
-                                                      <span class="c">!! Must be non-decreasing.</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>           <span class="kd">::</span> <span class="n">ty</span>  <span class="c">!! The `(ny+ky)` knots in the \(y\) direction</span>
-                                                      <span class="c">!! for the spline interpolant.</span>
-                                                      <span class="c">!! Must be non-decreasing.</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>           <span class="kd">::</span> <span class="n">tz</span>  <span class="c">!! The `(nz+kz)` knots in the \(z\) direction</span>
-                                                      <span class="c">!! for the spline interpolant.</span>
-                                                      <span class="c">!! Must be non-decreasing.</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(:),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>           <span class="kd">::</span> <span class="n">tq</span>  <span class="c">!! The `(nq+kq)` knots in the \(q\) direction</span>
-                                                      <span class="c">!! for the spline interpolant.</span>
-                                                      <span class="c">!! Must be non-decreasing.</span>
-    <span class="kt">logical</span><span class="p">,</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">),</span><span class="k">optional</span>      <span class="kd">::</span> <span class="n">extrap</span>        <span class="c">!! if true, then extrapolation is allowed</span>
-                                                      <span class="c">!! (default is false)</span>
-
-    <span class="k">call </span><span class="n">initialize_4d_specify_knots</span><span class="p">(</span><span class="n">me</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">,</span><span class="n">q</span><span class="p">,</span><span class="n">fcn</span><span class="p">,</span><span class="n">kx</span><span class="p">,</span><span class="n">ky</span><span class="p">,</span><span class="n">kz</span><span class="p">,</span><span class="n">kq</span><span class="p">,</span><span class="n">tx</span><span class="p">,</span><span class="n">ty</span><span class="p">,</span><span class="n">tz</span><span class="p">,</span><span class="n">tq</span><span class="p">,</span><span class="n">me</span><span class="p">%</span><span class="n">iflag</span><span class="p">,</span><span class="n">extrap</span><span class="p">)</span>
-
-    <span class="k">end function </span><span class="n">bspline_4d_constructor_specify_knots</span>
-</pre></div>
-
-    </section>
-    <br>
     
     
     </div>
   </div>
-
 
     <hr>    
     </div> <!-- /container -->
     <footer>
       <div class="container">
       <div class="row">
-        <div class="col-xs-6 col-md-6"><p>bspline-fortran was developed by Jacob Williams<br>&copy; 2021 
-                                          </p>
+        <div class="col-xs-6 col-md-6"><p>bspline-fortran was developed by Jacob Williams<br>&copy; 2022 
+</p>
         </div>
         <div class="col-xs-6 col-md-6">
           <p class="text-right">
             Documentation generated by 
             <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
-            
-            
           </p>
         </div>
       </div>
@@ -979,14 +702,11 @@ private pure function bspline_4d_constructor_specify_knots(x, y, z, q, fcn, kx, 
         extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
       });
     </script>
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
     
     <script src="../tipuesearch/tipuesearch_content.js"></script>
     <script src="../tipuesearch/tipuesearch_set.js"></script>
     <script src="../tipuesearch/tipuesearch.js"></script>
-    
     
   </body>
 </html>
