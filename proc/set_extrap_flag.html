@@ -113,7 +113,12 @@
     <div id="sidebar">
   <h3>Contents</h3>
  
-<em>None</em>
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
+  <div class="list-group">
+    <a class="list-group-item" href="../proc/set_extrap_flag.html#src">set_extrap_flag</a>
+  </div>
+</div>
 
 </div>
 
@@ -149,7 +154,12 @@
     <section class="visible-xs visible-sm hidden-md">
       <h3>Contents</h3>
  
-<em>None</em>
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
+  <div class="list-group">
+    <a class="list-group-item" href="../proc/set_extrap_flag.html#src">set_extrap_flag</a>
+  </div>
+</div>
 
     </section>
     <br class="visible-xs visible-sm hidden-md">
@@ -163,6 +173,26 @@
 
 
     
+    <section>
+    <h2><span class="anchor" id="src"></span>Source Code</h2>
+    <div class="highlight"><pre><span></span><span class="w">    </span><span class="k">pure subroutine </span><span class="n">set_extrap_flag</span><span class="p">(</span><span class="n">me</span><span class="p">,</span><span class="n">extrap</span><span class="p">)</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">implicit none</span>
+
+<span class="k">    class</span><span class="p">(</span><span class="n">bspline_class</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">inout</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">me</span><span class="w"></span>
+<span class="w">    </span><span class="kt">logical</span><span class="p">,</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">),</span><span class="k">optional</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">extrap</span><span class="w">  </span><span class="c">!! if not present, then False is used</span>
+
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">present</span><span class="p">(</span><span class="n">extrap</span><span class="p">))</span><span class="w"> </span><span class="k">then</span>
+<span class="k">        </span><span class="n">me</span><span class="p">%</span><span class="n">extrap</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">extrap</span><span class="w"></span>
+<span class="w">    </span><span class="k">else</span>
+<span class="k">        </span><span class="n">me</span><span class="p">%</span><span class="n">extrap</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">.</span><span class="n">false</span><span class="p">.</span><span class="w"></span>
+<span class="w">    </span><span class="k">end if</span>
+
+<span class="k">    end subroutine </span><span class="n">set_extrap_flag</span><span class="w"></span>
+</pre></div>
+
+    </section>
+    <br>
     
     </div>
   </div>
